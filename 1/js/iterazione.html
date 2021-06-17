@@ -1,0 +1,51 @@
+<html>
+    <head>
+
+    </head>
+
+   <body>
+
+         <script>
+
+            var alfabeto = ['alfa', 'beta', 'gamma'];
+            alfabeto.push('delta');
+
+            // classico 0 -> n
+            for(var i=0;i<alfabeto.length;i++) {
+                console.log( alfabeto[i] );
+            }
+
+            console.log( '------------------------' );
+
+            // classico n -> 0
+            for(var i=alfabeto.length-1;i>=0;i--) {
+                console.log( alfabeto[i] );
+            }
+
+            console.log( '------------------------' );
+
+            // for in
+            for(var i in alfabeto) {
+                console.log( alfabeto[i] );
+            }
+
+            console.log( '------------------------' );
+
+            // for of
+            for(var elem of alfabeto) {
+                console.log( elem );
+            }
+
+            console.log( '------------------------' );
+
+            var numeri = [1, 7, 3, 12, 8];
+            var somma = 0;
+
+            for( var i in numeri ) {
+                somma = somma + numeri[i];
+            }
+            console.log( somma );
+
+         </script>
+   </body>
+</html>

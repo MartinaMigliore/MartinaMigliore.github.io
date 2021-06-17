@@ -1,0 +1,93 @@
+#costruzione-container {
+    position: absolute;
+    font-family: futura;
+    left: 11em;
+    top: 200%;
+    height: 100%;
+}
+
+#costruzione-left {
+    position: absolute;
+    left: 4em;
+    width: 16em;
+    top: -1em;
+    background: white;
+    padding: 2em;
+}
+
+#costruzione-left-title {
+    font-size: 2.3em;
+    color: rgb(14, 149, 148);
+    line-height: 1em;
+}
+
+#costruzione-left-caption {
+    font-size: 1.3em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    border-left: 0.2em solid rgb(14, 149, 148);
+    font-style: italic;
+}
+
+#costruzione-left-description {
+    padding-top: 1.3em;
+    font-size: 0.8em;
+}
+
+.red {
+    color: red;
+}
+
+.marked {
+    color: rgb(14, 149, 148);
+}
+
+.gold {
+    background: gold;
+}
+
+#costruzione-left-empty-block {
+    position: absolute;
+    top: 12em;
+    height: 300pt;
+    width: 300pt;
+}
+
+#costruzione-left-img {
+    position: absolute;
+    left: 24em;
+    top: 19em;
+    max-width: 32em;
+}
+
+#costruzione-right {
+    position: absolute;
+    top: 20.3em;
+    left: 45em;
+    height: 200pt;
+    width: 400pt;
+    padding: 1em;
+    color: white;
+}
+#costruzione-right td {
+    vertical-align: top;
+    padding: 1em;
+}
+
+#costruzione-right table {
+    font-size: 0.8em;
+}
+
+ #costruzione-waves {
+     position: absolute;
+     top: 18em;
+     left: 72em;
+     max-width: 2em;
+ }
+
+#costruzione-arco {
+    position: absolute;
+    top: 17em;
+    left: 41em;
+    max-width: 6em;
+}}

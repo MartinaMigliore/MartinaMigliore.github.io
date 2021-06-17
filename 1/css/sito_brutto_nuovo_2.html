@@ -1,0 +1,342 @@
+<html>
+   <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <style>
+         * {
+           box-sizing: border-box;
+         }
+         .menu{
+           display: flex;
+           align-items: baseline;
+           list-style-type: none;
+           background-color:#b30000;
+           padding:8pt;
+         }
+
+         .menu li{
+           color:white;
+           padding:10pt;
+           margin-left:20pt;
+           font-family: "futura";
+         }
+
+         a:hover{
+          color:red;
+          text-decoration: none;
+         }
+
+         #a:hover{
+         color:#ffb3b3;
+         }
+
+         .menu li#nero{
+           color:black;
+           font-size:24pt;
+           margin-top:1pt;
+         }
+
+         .menu-link{
+          text-decoration: none;
+          color:white;
+         }
+
+         #nome {
+           font-size:12pt;
+         }
+
+        /*header*/
+
+         .row {
+           display: flex;
+           flex-wrap: wrap;
+           margin-left:30pt;
+           margin-right:5pt;
+           margin-bottom:90pt;
+         }
+
+         .side {
+           margin-top:40pt;
+           flex: 50%;
+        }
+
+         .main {
+           margin-top:40pt;
+           flex: 50%;
+         }
+
+         .quote {
+           text-align:right;
+           padding-top:120px;
+           color:#b30000;
+           font-size:24pt;
+           line-height: 18px
+           line-height:14px;
+           font-family: "arial", Courier, monospace;
+           margin-right:22px;
+        }
+
+          .thumb {
+            max-width: 100%;
+            width: auto;
+            height: 500px
+          }
+
+          /*tabella*/
+
+          .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            position: relative;
+            justify-content: center;
+            margin-left:60pt;
+            margin-right:60pt;
+            opacity:0.8;
+          }
+
+          .col-1 {
+          	flex-grow: 2
+          }
+          .col-2 {
+          	flex-grow: 3
+          }
+
+          .flex-container > div {
+            margin: 1px;
+         }
+
+         h4 {
+            position: absolute;
+            margin-left:150px;
+            color:white;
+            font-family:"futura";
+            font-size:20pt;
+            padding:10px;
+            top: 100px;
+        }
+
+        h5{
+            position: absolute;
+            margin-left:265px;
+            color:white;
+            font-family:"futura";
+            font-size:20pt;
+            padding:10px;
+            top: 140px;
+        }
+
+        h6{
+           position: absolute;
+           margin-left:100px;
+           color:white;
+           font-family:"futura";
+           font-size:20pt;
+           padding:10px;
+           top: 100px;
+       }
+
+           .menu-link{
+            text-decoration: none;
+            color:white;
+           }
+
+          /*clicca qui*/
+
+         .clicca-qui{
+          margin-top:50pt;
+          text-align: center;
+          font-size:14pt;
+          }
+
+          /*community*/
+
+          .tab {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left:50pt;
+            margin-right:50pt;
+            margin-top:60pt;
+            margin-bottom:80pt;
+            text-align: justify;
+            font-family:"arial"
+          }
+
+          .side2 {
+            flex:40%;
+         }
+
+          .main2 {
+            margin-top:20pt;
+            flex:60%;
+          }
+
+          .p{
+            color:#b30000;
+            font-size:16pt;
+            font-family:futura;
+          }
+
+          /*footer*/
+
+         .footer {
+            padding: 20px;
+            text-align: center;
+            background-color:#b30000;
+            opacity:0.7;
+            color:white;
+            font-size:16pt;
+         }
+
+      </style>
+   </head>
+   <body>
+
+       <!--Menù-->
+
+      <div class="menu">
+         <li id="nero" style="flex-basis:100px">FEED</li>
+         <li>
+             <a id="a" class="menu-link" href="#feedline">FEEDLINE</a>
+         </li>
+         <li>
+             <a id="a" class="menu-link" href="#feature">FEATURE</a>
+         </li>
+         <li>
+             <a id="a" class="menu-link" href="#document">DOCUMENT</a>
+         </li>
+         <li>
+             <a id="a" class="menu-link" href="#dialog">DIALOG</a>
+         </li>
+         <li>
+             <a id="a" class="menu-link" href="filter">FILTER</a>
+         </li>
+         <li class="menu-link" style="flex-basis:400px"></li>
+           <input type="text" placeholder="cerca qui..." />
+           <button class="btn btn-info"> <span class="glyphicon glyphicon-search"></span> </button>
+      </div>
+
+      <!--header-->
+
+        <div class="row">
+            <div class="side">
+                <h1 class="quote">
+                    <b>"There's a lot of satisfaction in knowing that a <br>drug-soaked rock song has more cultural resonance <br>than 'Gode Save The Queen."</b><br><br><i>-Moby, from "The Ten-Second Top Fifty"</i>
+                </h1>
+            </div>
+            <div class="main">
+                <img class="thumb" src="https://64.media.tumblr.com/b985148214abbc78c2bffb7ca421c54c/tumblr_n64mhc51Vh1qe8zmko1_500.jpg"/>
+            </div>
+        </div>
+
+       <!--tabella-->
+
+        <div class="flex-container">
+              <div class="col-1">
+                  <img style="width: auto; height: 250px" src="https://www.stevemacias.com/wp-content/uploads/2021/02/reading.jpg">
+                  <h4 class="frase" id="feedline">
+                      <a class="menu-link" href="#">
+                          FEEDLINE
+                      </a>
+                  </h4>
+              </div>
+
+              <div class="col-1">
+                  <img style="width: auto; height:250px" src="https://lh3.googleusercontent.com/xyM7WGnKHjJSeZs6T9Cll119CnNPVEWFPOgy9W1BVO2W3tHc0mjdZgKJlvDyesQmiZW-X2tYXISPcw=w2880-h1619-l90-rj">
+                  <h4 class="frase" id="feature">
+                      <a class="menu-link" href="#">
+                          FEATURE
+                      </a>
+                  </h4>
+              </div>
+
+              <div class="col-1">
+                  <img style="width: auto; height:250px" src="https://miro.medium.com/max/780/1*C76PXdoMXtysxqiwkS5iow.png">
+                  <h6 class="frase" id="document">
+                      <a class="menu-link" href="#">
+                          DOCUMENT
+                      </a>
+                  </h6>
+              </div>
+        </div>
+
+        <div class="flex-container">
+              <div class="col-2">
+                  <img style="width: auto; height:314px" src="https://lithub.com/wp-content/uploads/2015/06/book-piles.jpg">
+                  <h5 class="frase" id="dialog">
+                      <a class="menu-link" href="#">
+                          DIALOG
+                      </a>
+                  </h5>
+              </div>
+              <div class="col-2">
+                  <img style="width: auto; height:314px" src="https://lithub.com/wp-content/uploads/2021/01/stack-of-books.png">
+                  <h5 class="frase" id="feedline">
+                      <a class="menu-link" href="#">
+                          FILTER
+                      </a>
+                  </h5>
+              </div>
+        </div>
+
+         <!--clicca qui-->
+
+        <div class="clicca-qui">
+            <p>
+               (Bold items are new this week. Check out the <a href="https://web.archive.org/web/19970225050139/http://www.feedmag.com/site_index/95.09site_index.html">Site Index</a>
+                for an overview of all FEED articles and events.)
+            </p>
+
+            <p>
+                <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/subscribe.html">
+                     CLICK HERE TO FIND OUT HOW TO BECOME AN OFFICIAL FEED READER
+                </a>
+            </p>
+        </div>
+
+        <!--community-->
+        <div class="tab">
+            <div class="side2">
+                <img style="width: auto; height:460px" src="https://images.theconversation.com/files/361577/original/file-20201005-18-lmf7w7.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop">
+            </div>
+            <div class="main2">
+                <h1 class="p">ABOUT FEED</h1>
+                <p>We've just a uploaded <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.11times_release.html"> a press release </a> describing our partnership with The New York Times Electronic Media Company.
+                The <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/howto2/howto2.html"> How To FEED </a> page provides an overview of our interface conventions.
+                <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/contributors.html"> Our Contributors Notes </a> give a good sense of who is writing for FEED,
+                while the <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.06masthead/96.06masthead.html">Masthead </a> offers a peek at the folks behind
+                the curtain. Find out more about <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/subscribe.html">becoming an official FEED Reader.</a></p>
+
+               <h1 class="p">COMMUNITY</h1>
+               <p>In the <a href="https://web.archive.org/web/19961223105317/http://www.feedmag.com/cgi-bin/HyperNews/get/SiteSpecific/responses/32.html">"Site Specific" Feedbag area</a>, FEED readers and editors are debating the merits of the new WebTV product,
+               and what it suggests about the future of the Web medium itself.
+               In our newly launched Firefly Venue, <a href="https://web.archive.org/web/19961223105317/http://www.ffly.com/venues?venueid=879&sponsorid=1"> Live FEED </a>, we're discussing the future of intelligent agents with some of the wizards behind Firefly.In the "Site Specific" Feedbag area, FEED readers and editors are debating the merits of the new WebTV product, and what it suggests about the future of the Web medium itself. In our newly launched Firefly Venue, Live FEED , we're discussing the future of intelligent agents with some of the wizards behind Firefly.</p>
+
+              <h1 class="p">FLASH BACK</h1>
+              <p>David Greenberg explains why we shouldn't write off <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.11greenberg/96.11greenberg.html">the "L-word" </a> just yet . . .
+              Tom Perrotta digs up the <a head="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.10perrotta/96.10perrotta.html"> twisted roots </a> of the 1960s myth . . .
+              Rick Perlstein reports on the thorny relationship between <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.10perlstein/96.10perlstein.html">labor and academia </a>. . .
+              Paulina Borsook looks at the new science of <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.10borsook/96.10borsook.html">Bionomics </a>. . . J.J. Gifford explains the significance of the <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.09gifford/96.09gifford.html">latest video game craze </a>. . .
+              Austin Bunn takes in Washington's <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.09bunn/96.09bunn.html">conservative brain trust </a>. . . Michael Kinsley, Marisa Bowe,
+              and Stefanie Syman discuss <a hrer="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.06dialog/96.06dialog1.html">web journalism.</a></p>
+         </div>
+    </div>
+
+
+
+
+
+
+        <!--footer-->
+        <div class="footer">
+            <p><a id="a" href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/subscribe.html">Click here to learn how to become an official FEED reader!</p>
+            </a>
+            <p>Click here to send mail to FEED at <a id="a" href="https://web.archive.org/web/19961223105317/mailto:feed@feedmag.com">feed@feedmag.com.</p>
+            </a>
+            <p>Art by <a id="a" href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/contributors.html#mark"> Mark Matcho.</p>
+            </a>
+            <p>All content © 1995,1996 Feed, Inc.</p>
+        </div>
+   </body>
+</html>

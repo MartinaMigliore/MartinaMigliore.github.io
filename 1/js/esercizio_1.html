@@ -1,0 +1,16 @@
+<html>
+   <body>
+       <h2 id="parola">Hello</h2>
+
+        <input id="inserire" type="text" size="30" placeholder="scrivi qualcosa qui..." />
+        <button onclick="changeThisPageFunc();">Click Me!</button>
+
+        <script>
+
+            function changeThisPageFunc() {
+                var valore = document.querySelector('#inserire').value;
+                document.querySelector('#parola').innerHTML = valore;
+            }
+        </script>
+   </body>
+</html>

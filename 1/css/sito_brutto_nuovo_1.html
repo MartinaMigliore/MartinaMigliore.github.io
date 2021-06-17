@@ -1,0 +1,351 @@
+<html>
+   <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <style>
+
+         * {
+           box-sizing: border-box;
+         }
+         .menu{
+           display: flex;
+           align-items: baseline;
+           list-style-type: none;
+           background-color:#b30000;
+           padding:8pt;
+         }
+         .menu li{
+           color:white;
+           padding:10pt;
+           margin-left:20pt;
+           font-family: "futura";
+         }
+         .menu li:hover{
+           color:#999999;
+         }
+         .menu li#nero{
+           color:black;
+           font-size:24pt;
+           margin-top:1pt;
+         }
+
+         .menu-link{
+          text-decoration: none;
+          color:white;
+         }
+
+         #header-img {
+           max-width:100%;
+           margin-top:20pt;
+         }
+         .side-img {
+           max-width:100%;
+           height: auto;
+           margin-top:20pt;
+           width:600px;
+         }
+         .quote {
+           text-align:center;
+           color:#b30000;
+           font-size:14pt;
+           line-height:2px;
+           font-family: "arial", Courier, monospace;
+           margin-top:20pt
+         }
+
+         #nome {
+           font-size:12pt;
+         }
+
+         .titoli {
+           text-align:left;
+           color:#b30000;
+           font-size:16pt;
+           line-height:14px;
+           font-family: "arial", Courier, monospace;
+           margin-top:20pt
+         }
+
+         p{
+           font-family:arial;
+         }
+
+        a:hover{
+         color:red;
+         text-decoration: none;
+        }
+
+        #a:hover{
+        color:#ffb3b3;
+        }
+
+         .row {
+           display: flex;
+           flex-wrap: wrap;
+           margin-left:30px;
+           margin-right:30pt;
+         }
+         .side {
+           margin-top:40pt;
+           flex: 40%;
+           padding: 20px;
+         }
+         .main {
+           margin-top:40pt;
+           flex: 60%;
+           padding: 50px;
+         }
+         .row2 {
+           display: flex;
+           flex-wrap: wrap;
+         }
+         .side2 {
+           margin-top:40pt;
+           flex:40%;
+           padding: 20px;
+         }
+         .main2 {
+           margin-top:40pt;
+           flex:60%;
+           padding: 50px;
+         }
+
+         .striscia{
+           display: flex;
+           color:white;
+           padding:30pt;
+           background-color:#b30000;
+           opacity: 0.5;
+           width:100%;
+           margin-top:20px;
+         }
+
+         .clicca-qui{
+          margin-top:50pt;
+          text-align: center;
+          font-size:14pt;
+         }
+
+         .flex-container {
+           display: flex;
+           flex-wrap:wrap;
+           padding-top:50pt;
+        }
+
+         .col-1 {
+         	flex-grow: 3;
+        }
+
+         .flex-container > div {
+           margin: 1px;
+           text-align: center;
+           background-color:#b30000;
+           opacity:0.7;
+           color:white;
+           padding:3px;
+           font-size:12pt;
+           margin-left:70pt;
+           margin-right:70pt;
+        }
+
+          .flex-container-2 {
+           display: flex;
+           flex-wrap:wrap;
+           flex-direction:row;
+       }
+
+         .colonne {
+          text-align: justify;
+          margin-top:5pt;
+          flex: 30%;
+          padding: 20px;
+          padding-left:40pt;
+          padding-right:40pt;
+          padding-bottom:60pt;
+      }
+
+         .footer {
+            padding: 20px;
+            text-align: center;
+            background-color:#b30000;
+            opacity:0.7;
+            color:white;
+            font-size:16pt;
+         }
+
+      </style>
+   </head>
+   <body>
+      <div class="menu">
+         <li id="nero" style="flex-basis:100px">FEED</li>
+         <li>
+             <a id="a" class="menu-link" href="#feedline">FEEDLINE</a>
+         </li>
+         <li>
+             <a id="a" class="menu-link" href="#feature">FEATURE</a>
+         </li>
+         <li>
+             <a id="a" class="menu-link" href="#document">DOCUMENT</a>
+         </li>
+         <li>
+             <a id="a" class="menu-link" href="#dialog">DIALOG</a>
+         </li>
+         <li>
+             <a id="a" class="menu-link" href="filter">FILTER</a>
+         </li>
+         <li class="menu-link" style="flex-basis:400px"></li>
+     </li>
+           <input type="text" placeholder="cerca qui..." />
+           <button class="btn btn-info"> <span class="glyphicon glyphicon-search"></span> </button>
+         </li>
+      </div>
+
+      <div>
+         <img id="header-img" src="https://www.improvewithmetacognition.com/wp-content/uploads/2019/11/Book_Reading.jpg">
+      </div>
+      <div>
+         <h1 class="quote">"There's a lot of satisfaction in knowing that a drug-soaked
+            rock song has more cultural resonance than 'Gode Save The Queen."
+         </h1>
+         <h1 class="quote" id="nome"><i><b>-Moby, from "The Ten-Second Top Fifty"</b></i></h1>
+      </div>
+
+      <!--Riga 1-->
+      <div class="row">
+        <div class="side">
+           <img class="side-img" src="https://www.stevemacias.com/wp-content/uploads/2021/02/reading.jpg">
+         </div>
+        <div class="main">
+           <h1 class="titoli" id="feedline">FEEDLINE</h1>
+           <p>In <a href="https://web.archive.org/web/19970225050431/http://www.feedmag.com/96.12eisenbeis/96.12eisenbeis.html">"Mall of the Wild,"</a>
+           Hans Eisenbeis explains why he can no longer shop happily;
+           Sam Lipsyte explores the world of <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.12lipsyte/96.12lipsyte.html"> public access television;</a>
+           Andrew L. Shapiro explains why he <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.12shapiro/96.12shapiro.html"> doesn't want his WebTV;</a>
+           G. Beato looks at the Web's <a href="https://web.archive.org/web/19970225050507/http://www.feedmag.com/96.11beato/96.11beato.html">"dark alliance" </a> with tabloid TV..Sitting in the Rainforest Cafe at the Mall of America, I'm surrounded by young Americans, talking about themselves. A tape loop plays an endless cycle of crashing thunder, screaming parrots, and grunting monkeys. There's a contentious divorce story on my left, prospects for career relocation on my right, and a "Seinfeld" dialogue directly ahead. Robotic birds jerk in the artificial canopy overhead. Rain falls all around me in literal curtains, landing without a splash in a mesh-lined gutter. Between the strained relationships, artificial conversations, and remote-control wilderness, I may go crazy. Or at least I'll have another beer.Everything about this place is wrong. From the podium at the entrance proclaiming "Your adventure begins here!" to the domesticated parrots available for purchase; from the huge tanks of exotic salt-water fish to the awkward caveat on the menu ("The Rainforest Cafe will not use beef from countries that deforest rain forest land to raise cattle")
+               <a class="link-blue" href="https://web.archive.org/web/19970225050431/http://www.feedmag.com/96.12eisenbeis/96.12eisenbeis.html"> ...
+               </a>
+           </p>
+        </div>
+      </div>
+
+      <!--Riga 2-->
+      <div class="row2">
+        <div class="main2">
+           <h1 class="titoli" id="feature">FEATURE</h1>
+           <p>We've just put up the first nominations for our new Feature, <a href="https://web.archive.org/web/19970225045758/http://www.feedmag.com/96.12top50/96.12top501.html">"The Ten-Second Top Fifty," </a>
+           our list of the fifty greatest pop music soundbites of all time, sponsored by <a href="https://web.archive.org/web/19961223105317/http://www.feedmag.com/cgi-bin/ad-hits2?http://www.musicblvd.com/cgi-bin/tw/1025_0_/main.txt?music_text">Music Boulevard.</a>.
+           Write in with <a href="https://web.archive.org/web/19961223105317/http://www.feedmag.com/cgi-bin/HyperNews/get/Music/responses/12.html">your own candidates </a> in the Feedbag discussion area.
+              In an age of fragmentation, who bothers to listen through an entire song any more? Sure the mainstream music mags still roll out the obligatory "Album of Year" awards this month, but the real audiostream running through our days is more disjointed, musical notes scattered about like so many TCP/IP packets. Soundbites, samples, riffs, solos, refrains, intro chords -- blurted out in commercials, lingering in the choppy wakes of channel surfers, all rigged together into a complex musical pastiche. In the spirit of this schizophrenic soundtrack, FEED hereby presents the "Ten Second Top Fifty," in which a motley panel of critics, musicians, netheads -- and you, gentle readers -- nominate the fifty greatest pop music fragments of all time <a class="link-blue" href="https://web.archive.org/web/19970225045758/http://www.feedmag.com/96.12top50/96.12top501.html"> ... </a>
+          </div>
+          <div class="side2">
+             <img class="side-img" src="https://lh3.googleusercontent.com/xyM7WGnKHjJSeZs6T9Cll119CnNPVEWFPOgy9W1BVO2W3tHc0mjdZgKJlvDyesQmiZW-X2tYXISPcw=w2880-h1619-l90-rj">
+          </div>
+      </div>
+
+      <!--Riga 3-->
+      <div class="row">
+        <div class="side">
+           <img class="side-img" src="https://miro.medium.com/max/780/1*C76PXdoMXtysxqiwkS5iow.png">
+        </div>
+        <div class="main">
+           <h1 class="titoli" id="document">DOCUMENT</h1>
+           <p>Our panel of experts -- FEED's David Greenberg, NYU's Ellen Willis, The Weekly Standard's Matthew Rees, and MSNBC commentator Laura Ingraham --
+           dissects the Dole and Clinton campaign books in <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.10document/96.10document1.html">"Between Hype and Hypocrisy."</a>Though little noticed at the time, April 30, 1991 was a historic day in the annals of American presidential politics. For it was on that blustery morning in Lowell, Massachusetts that former Democratic senator Paul Tsongas announced his intention to run for president. While the announcement itself was remarkable, considering George Bush's seemingly-invincible status, more noteworthy was that Tsongas simultaneously released an 85-page manifesto spelling his views on subjects ranging from capital gains taxes to abortion. However elementary this may have been, no major party candidate had ever published his views in such a detailed format. Tsongas dubbed his work A Call to Economic Arms and its high-minded tone helped establish that this awkward figure who had been out of politics for over six years was a serious candidate. <a class="link-blue" href="https://web.archive.org/web/19970225062550/http://www.feedmag.com/96.10document/96.10document1.html"> ... </a>
+           </p>
+         </div>
+       </div>
+
+      <!--Riga 4-->
+      <div class="row2">
+        <div class="main2">
+           <h1 class="titoli" id="dialog">DIALOG</h1>
+           <p> We've just moved onto <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.11dialog/96.11dialog3.html">Round Three </a>of our
+            Dialog on women icons,<a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.11dialog/96.11dialog1.html"> "Becoming Her,"</a> featuring Katha Pollitt,
+            Nancy Friday, Bram Dijkstra, Hilton Als, and Martha Sherrill -- sponsored by <a href="https://web.archive.org/web/19961223105317/http://www.feedmag.com/cgi-bin/ad-hits2?http://www.wired.com/%3Fsource%3D4a?wired_indextext">Wired News.<a/>
+            As always we encourage you to post your thoughts in our <a href="https://web.archive.org/web/19961223105317/http://www.feedmag.com/cgi-bin/HyperNews/get/Pop/responses/26.html">discussion area.</a>In Part Two of this Dialog, participants looked at the impact of icons on ordinary women's lives. One that can be either negligable or significant (if imperceptible). The difference seems to hinge on how we treat our icons -- as objects worthy of adulation, subjects worthy of imitation or media products that don't even merit our attention. And this brings us to a different kind of icon -- the empire builders.
+              Do Empire Builders (Martha Stewart, Helena Rubenstein, Madonna) have a different relationship to their own status as icon? Many (though clearly not all) seem to follow a trajectory from sexpot to queen of the jungle -- but in the process complicate their images. Madonna was just another babe pop star using t&a; to sell records <a class="link-blue" href="https://web.archive.org/web/19961223105317/http://www.feedmag.com:80/96.11dialog/96.11dialog3.html"> ... </a>
+        </div>
+        <div class="side2">
+           <img class="side-img" src="https://dialogobohmiano.files.wordpress.com/2020/08/cerchio-di-dialogo.jpg ">
+         </div>
+       </div>
+
+      <!--Riga 5-->
+      <div class="row">
+         <div class="side">
+            <img class="side-img" src="https://media.istockphoto.com/photos/financial-newspapers-on-a-newsstand-picture-id458650983?k=6&m=458650983&s=612x612&w=0&h=sLvTmJyhLPbMM_maRVJnnzhu_OMBQYvlXT_0S-IhfNE=">
+         </div>
+         <div class="main">
+            <h1 class="titoli" id="filter">FILTER</h1>
+            <p> In the Filter Five, Lisa Carver describes <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/filter5/96.12carver.html">five women icons.</a> In the Filter section:
+             the <a hreg="https://web.archive.org/web/19961223105317/https://www.feedmag.com/filter.html">radical left</a> shuffles paper in Brooklyn;
+             <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.11.22filter.html">the World Series</a> according to the Wall Street Journal;
+             the <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.10.31filter.html">dead air</a> during the Clinton/Dole debate.The natural look is fine for women who accept what God hands them. I like passive women -- nothing wrong with them. They don't have bleeding ulcers. Other women give other people ulcers. It's their duty. They're women who make everything -- good and very bad -- happen. This type tends to kill or maim somewhere along the way, and wear a lot of makeup when she does it. She's opinionated and finds it a bit difficult to accept nature's idea of how her face, or any aspect of her life, should be. To follow: four real live women (and one animated one) who conquered various sized chunks of the world, including their own bodies, and whose brutality is just so much more thoughtful and glamorous than
+               the menfolk's <a class="link-blue" href="https://web.archive.org/web/19970225060158/http://www.feedmag.com/filter5/96.12carver.html"> ... </a>
+            </p>
+         </div>
+      </div>
+
+      <div class="clicca-qui">
+          <p>
+             (Bold items are new this week. Check out the <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/site_index/95.09site_index.html">Site Index </a> for an overview of all FEED articles and events.)
+          </p>
+
+          <p>
+              <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/subscribe.html">
+                   CLICK HERE TO FIND OUT HOW TO BECOME AN OFFICIAL FEED READER
+              </a>
+          </p>
+      </div>
+
+      <div class="flex-container">
+        <div class="col-1">ABOUT FEED</div>
+        <div class="col-1">COMMUNITY</div>
+        <div class="col-1">FLASH BACK</div>
+      </div>
+
+      <div class="flex-container-2">
+        <div class="colonne">
+          <p>We've just a uploaded <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.11times_release.html"> a press release </a> describing our partnership with The New York Times Electronic Media Company.
+          The <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/howto2/howto2.html"> How To FEED </a> page provides an overview of our interface conventions.
+          <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/contributors.html"> Our Contributors Notes </a> give a good sense of who is writing for FEED,
+          while the <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.06masthead/96.06masthead.html">Masthead </a> offers a peek at the folks behind
+          the curtain. Find out more about <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/subscribe.html">becoming an official FEED Reader.</a></p>
+        </div>
+        <div class="colonne">
+          <p>In the <a href="https://web.archive.org/web/19961223105317/http://www.feedmag.com/cgi-bin/HyperNews/get/SiteSpecific/responses/32.html">"Site Specific" Feedbag area</a>, FEED readers and editors are debating the merits of the new WebTV product,
+          and what it suggests about the future of the Web medium itself.
+          In our newly launched Firefly Venue, <a href="https://web.archive.org/web/19961223105317/http://www.ffly.com/venues?venueid=879&sponsorid=1"> Live FEED </a>, we're discussing the future of intelligent agents with some of the wizards behind Firefly.</p>
+        </div>
+        <div class="colonne">
+          <p>David Greenberg explains why we shouldn't write off <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.11greenberg/96.11greenberg.html">the "L-word" </a> just yet . . .
+          Tom Perrotta digs up the <a head="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.10perrotta/96.10perrotta.html"> twisted roots </a> of the 1960s myth . . .
+          Rick Perlstein reports on the thorny relationship between <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.10perlstein/96.10perlstein.html">labor and academia </a>. . .
+          Paulina Borsook looks at the new science of <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.10borsook/96.10borsook.html">Bionomics </a>. . . J.J. Gifford explains the significance of the <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.09gifford/96.09gifford.html">latest video game craze </a>. . .
+          Austin Bunn takes in Washington's <a href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.09bunn/96.09bunn.html">conservative brain trust </a>. . . Michael Kinsley, Marisa Bowe,
+          and Stefanie Syman discuss <a hrer="https://web.archive.org/web/19961223105317/https://www.feedmag.com/96.06dialog/96.06dialog1.html">web journalism.</a></p>
+        </div>
+      </div>
+
+
+
+      <div class="footer">
+          <p><a id="a" href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/subscribe.html">Click here to learn how to become an official FEED reader!</p>
+          </a>
+          <p>Click here to send mail to FEED at <a id="a" href="https://web.archive.org/web/19961223105317/mailto:feed@feedmag.com">feed@feedmag.com.</p>
+          </a>
+          <p>Art by <a id="a" href="https://web.archive.org/web/19961223105317/https://www.feedmag.com/contributors.html#mark"> Mark Matcho.</p>
+          </a>
+          <p>All content © 1995,1996 Feed, Inc.</p>
+      </div>
+
+
+
+
+
+
+
+   </body>
+</html>

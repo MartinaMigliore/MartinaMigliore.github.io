@@ -1,0 +1,27 @@
+<html>
+    <body>
+
+        <button onclick="savetime()">Time</button>
+
+        <ul id="timelist"></ul>
+
+        <script>
+
+            function savetime() {
+
+                var now = Date();
+
+                var tl = document.querySelector("#timelist");
+
+                var li = document.createElement("li");
+
+                var contents = document.createTextNode( now );
+
+                tl.appendChild(li);
+                li.appendChild(contents);
+
+            }
+
+        </script>
+    </body>
+</html>

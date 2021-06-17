@@ -1,0 +1,909 @@
+<html>
+    <head>
+        <title> RGB | Roba Graficamente Bella</title>
+        <link rel="icon" type="image/png" href="file:///C:/Users/39339/Desktop/logo%20piccolo_.png"/>
+        <link rel="stylesheet" href="css/home.css" >
+        <link rel="stylesheet" href="css/chi-siamo.css" >
+        <link rel="stylesheet" href="css/costruzione.css" >
+        <link rel="stylesheet" href="css/le-griglie.css" >
+        <link rel="stylesheet" href="css/posizionare-elementi.css" >
+        <link rel="stylesheet" href="css/aldo.css" >
+        <link rel="stylesheet" href="css/caratteri.css" >
+        <link rel="stylesheet" href="css/anatomia.css" >
+        <link rel="stylesheet" href="css/lettere-singole-1.css" >
+        <link rel="stylesheet" href="css/footer.css" >
+
+        <!-- bootstrap  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+        <!-- jQuery UI -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+        <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!-- slider -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css">
+        <link rel="stylesheet" href="css/slider.min.css">
+
+    </head>
+    <body>
+        <section id="not-responsive">
+            <h1>Oops</h1>
+            <h3>Sembra che questo sito non sia responsive</h3>
+        </section>
+
+        <div id="home">
+            <div class="background" id="red-background" onmouseover="setRedBackgroundWidth()" onmouseout="resetRedBackgroundWidth()"></div>
+            <div class="background" id="white-background" onmouseover="setRedBackgroundWidth()" onmouseout="resetRedBackgroundWidth()"></div>
+            <div id="content">
+                <img src="img/logo.png" id="logo" />
+
+                <!-- hamburger -->
+                <div id="hamburger-open" class="hamburger" onmouseover="setRedBackgroundWidth()" onclick="showMenu() && hamburgerChange(this)" onmouseout="resetRedBackgroundWidth()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+
+                <ul id="menu" onmouseover="setRedBackgroundWidth()" onmouseout="resetRedBackgroundWidth()">
+                    <li>
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('chi-siamo')" href="#container-chi-siamo">Chi siamo</a>
+                        <ul class="sub-menu" id="chi-siamo">
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('costruzione')" href="#costruzione-container">Costruzione di un layout </a>
+                        <ul class="sub-menu" id="costruzione">
+                            <li>
+                                <a class="sub-menu-elem" href="#slider-container">Margini e colonne di testo </a>
+                            </li>
+                            <li>
+                                <a class="sub-menu-elem" href="#container-le-griglie">Costruire la griglia </a>
+                            </li>
+                            <li>
+                                <a class="sub-menu-elem" href="#posizionare-elementi-container">Posizionare gli elementi nella griglia </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('anatomia')" href="#container-aldo">Anatomia di un carattere tipografico </a>
+                        <ul class="sub-menu" id="anatomia">
+                            <li>
+                                <a class="sub-menu-elem" href="#container-aldo">La classificazione dei caratteri di Aldo Novarese</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu-elem" href="#container-anatomia">Anatomia del carattere</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('font')" href="#">Scegliere un font</a>
+                        <ul class="sub-menu" id="font">
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('stampa')" href="#">Gestire un testo</a>
+                        <ul class="sub-menu" id="stampa">
+                            <li>
+                                <a class="sub-menu-elem" href="#">Allineamenti e sillabazione </a>
+                            </li>
+                            <li>
+                                <a class="sub-menu-elem" href="#">I paragrafi di testo</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu-elem" href="#">Gerarchia e formattazione</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('testo')" href="#">Le tecniche di stampa da conoscere</a>
+                        <ul class="sub-menu" id="testo">
+                            <li>
+                                <a class="sub-menu-elem" href="#">Offset</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu-elem" href="#">Letterpress</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu-elem" href="#">Digitale</a>
+                            </li>
+                            <li>
+                                <a class="sub-menu-elem" href="#">Serigrafia</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-elem sub-menu-toggle" onclick="toggleSubMenu('colore')" href="#">Il colore</a>
+                        <ul class="sub-menu" id="colore">
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- chi siamo -->
+        <div id="container-chi-siamo" class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <!-- onda -->
+                <div class="row">
+                    <div class="col-md-1">
+                        <img class="ondine" src="img/ondine-horizontal.png">
+                    </div>
+                    <div class="col-md-11"></div>
+                </div>
+                <!-- prima riga-->
+                <div class="row first-row">
+                    <div class="col-md-6">
+                        <p class="chi_siamo">CHI</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="cosa_impa">COSA<br>IMPA-</h1>
+                    </div>
+                </div>
+                <!-- corpo della pagina-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="chi_siamo siamo">SIAMO.</p>
+                        <p class="citazione"><i>In desing, <br> thinking <br> wrong <br> is right. </i></p>
+                        <p class="presentazione">
+                            Siamo due studentesse<br><i>dell'Accademia di Belle arti,</i><br> appassionate di design.<br>
+                            Il nostro sito web, messo a <br> disposizione per tutti, spiega<br>i fondamenti della grafica<br>editoriale e web.<br>
+                            Troverai piccole nozioni su tutti<br> gli argomenti, con esempi.
+                        </p>
+                    </div>
+                    <div class="col-md-6 right-column" id="right-container">
+                        <div class="row">
+                            <!-- colonna sinistra -->
+                            <div class="col-md-6">
+                                <p class="cosa_impa_bianco">RERAI</p>
+                                <div class="text">
+
+                                    <p class="titolo"> Costruzione di un layout</p>
+                                    <p class="testo"> É il processo di combinazioni di parti o elementi diversi per<wbr> formare una struttura unitaria.</p><br>
+                                </div>
+
+                                <div class="text">
+                                    <p class="titolo"> Anatomia del carattere</p>
+                                    <p class="testo"> Imparare a conoscere la struttura delle lettere è fondamentale per capire le</wbr> differenze e i tratti comuni dei caratteri tipografici.</p><br>
+                                </div>
+
+                                <div class="text">
+                                    <p class="titolo">La Font</p>
+                                    <p class="testo"> Il contenuto e lo scopo della grafica costituiscono i fattori <wbr>che influenzano maggiormente la scelta della font.</p>
+                                </div>
+
+                            </div>
+
+                            <!-- colonna destra -->
+                            <div class="col-md-6">
+                              <br><br>
+                                <div class="text">
+                                    <p class="titolo"> Gestire un testo</p>
+                                    <p class="testo"> La disposizione degli parti o elementi diversi su una pagina stampata, su una pagina web, in una schermata televisiva e un progetto 3D
+                                        deve tener conto di spaziatura, organizzazione visiva, stile, dimensione e formato del lavoro finito.<br><br>
+                                    </p>
+                                </div>
+
+                                <div class="text">
+                                    <p class="titolo"> Le tecniche di stampa</p>
+                                    <p class="testo">
+                                         Le diverse tecniche di stampa.<br><br>
+                                    </p>
+                                </div>
+                                <div class="text">
+                                    <p class="titolo"> Il colore</p>
+                                    <p class="testo"> Differenza tra i colori RGB e CMYK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <!-- costruzione di un layout-->
+        <div id="costruzione-container">
+            <div id="costruzione-left-empty-block" class="gold"></div>
+            <img src="img/brochure.jpg" id="costruzione-left-img" />
+            <div id="costruzione-left">
+                <div id="costruzione-left-title">
+                    COSTRU <br/>
+                    ZIO- <br/>
+                    NE DI UN <br/>
+                    LAYOUT. <br/>
+                </div>
+                <br/>
+                <div id="costruzione-left-caption">
+                    margini e <br/>
+                    colonne
+                </div>
+                <div id="costruzione-left-description">
+                    Per i lavori da stampare, per prima cosa si deve realizzare la composizione della doppia pagina, da estendere poi al resto del lavoro.
+                    Questo è importante per visualizzare il rapporto tra <span class="red">VERSO</span> (pagina di sinistra) e <span class="marked">RECTO</span> (pagina di destra) per valutarne l'effetto complessivo.
+                </div>
+            </div>
+            <div id="costruzione-right" class="gold">
+                <table style="color: white">
+                    <tr>
+                        <td width="40%">
+                            Nello stabilire i margini di una pagina, bisogna considerare il tipo di pubblicazione:
+                            nelle brossure i margini tendono a essere ridotti per mantenere basso i numeri delle pagine e contenere i costi, mentre le pubblicazioni ricche di immagini hanno spesso margini e spazi bianchi più ampi.
+                        </td>
+                        <td width="40%">
+                            In questo caso a pesare maggiormente sono le considerazioni economiche:  brochure proporzionali e strumenti di vendita in genere hanno budget più ampi rispetto a pubblicazioni scientifiche o di narrativa.
+                        </td>
+                        <td width="20%">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <img src="img/ondine.png" id="costruzione-waves" />
+            <img src="img/arco.png" id="costruzione-arco" />
+        </div>
+
+        <!-- tipi di margini-->
+        <div id="slider-container">
+            <img id="ondina_rosa" src="img/ondine_rosa_verticali.png"/>
+
+            <div id="slider-container-title">
+                <span id="slider-container-title-tipi"> TIPI DI </span> <br/>
+                <span id="slider-container-title-margini"> MARGINI </span>
+            </div>
+
+            <section class="jd-slider slider1">
+                <!-- contenuto -->
+                <div class="slide-inner">
+                    <ul class="slide-area">
+                        <li>
+                            <img src="img/slideshow/slideshow.png" />
+                        </li>
+                        <li>
+                            <img src="img/slideshow/slideshow_2.png" />
+                        </li>
+                        <li>
+                            <img src="img/slideshow/slideshow_3.png" />
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- pulsanti -->
+                <a class="prev" href="#">
+                    <i class="fas fa-angle-left fa-2x"></i>
+                </a>
+                <a class="next" href="#">
+                    <i class="fas fa-angle-right fa-2x"></i>
+                </a>
+                <div class="controller">
+                    <div class="indicate-area"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- tipi di colonne-->
+
+        <div id="slider-container-2">
+            <img id="quadrato_puntini" src="img/quadrato_puntini.png"/>
+
+            <div id="slider-container-title-2">
+                <span id="slider-container-title-tipi-2"> TIPI DI </span> <br/>
+                <span id="slider-container-title-margini-2"> COLONNE </span>
+            </div>
+
+            <section class="jd-slider slider2">
+                <!-- contenuto -->
+                <div class="slide-inner">
+                    <ul class="slide-area">
+                        <li>
+                            <img src="img/slideshow_2colonne.png"/>
+                        </li>
+                        <li>
+                            <img src="img/slideshow_3colonne.png"/>
+                        </li>
+                        <li>
+                            <img src="img/slideshow_4colonne.png"/>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- pulsanti -->
+                <a class="prev" href="#">
+                    <i class="fas fa-angle-left fa-2x"></i>
+                </a>
+                <a class="next" href="#">
+                    <i class="fas fa-angle-right fa-2x"></i>
+                </a>
+                <div class="controller">
+                    <div class="indicate-area"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- le griglie -->
+         <div id="container-le-griglie" class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-8">
+                 <!-- onda -->
+                 <div class="row">
+                     <div class="col-md-2">
+                         <img class="ondine" src="img/ondine-horizontal.png">
+                     </div>
+                     <div class="col-md-10"></div>
+                 </div>
+                 <!-- titolo-->
+                 <div class="row first-row-2">
+                     <div class="col-md-3">
+                         <p class="le-griglie">LE</p>
+                         <p class="le-griglie">GRIGLIE.</p>
+                     </div>
+                     <div class="col-md-9"></div>
+                 </div>
+                 <div class="row">
+                     <div class="col-md-4">
+                         <br/>
+                         <p class="citazione-2"><i>Griglie, <br> colonne e <br> margini.</i></p>
+                     </div>
+                     <div class="col-md-4"></div>
+
+                     <div class="col-md-4">
+                         <p class="cose_da">COSE DA</p>
+                    </div>
+                 </div>
+                 <!-- corpo della pagina-->
+                 <div class="row">
+                     <div class="col-md-4">
+                         <p class="descrizione">
+                             L'organizzazione di una pagina prevede lo sviluppo di una <b>griglia (o gabbia)</b> all'interno della quale posizioneremo gli elementi.
+                             La griglia consente la creazione di colonne, margini, aree per il testo e per le immagini.
+                             Una griglia ben progettata consente un certo grado di flessibilità al layout delle singole pagine,
+                             ma allo stesso tempo funziona come linea guida che conferisce coerenza visiva all'interno del lavoro questo è
+                             fondamentale in ogni tipo di progetto editoriale, ma vale anche per i siti web.
+                         </p>
+                     </div>
+                     <div class="col-md-4">
+                         <p class="descrizione">
+                         Sovrapponendo la suddivisione in colonne verticali con righe orizzontali si ottiene la <b>GRIGLIA DI IMPAGINAZIONE</b> ,
+                         per collocare in modo geometrico ed armonico gli elementi grafici (testo, immagini, grafici).
+                         </p>
+                     </div>
+
+                     <div class="col-md-4 right-column-2" id="right-container-2">
+                         <div class="text-2">
+                             <p class="ricordare"> RICORDARE:</p> <br>
+                              Organizzare le informazioni in una pagina è fondamentale per veicolare i messaggi, soprattutto quando si maneggiano grandi quantità
+                              di testo. Ci sono molti modi per dividere la pagina e la scelta dovrebbe dipendere dal tipo di lavoro e dalla quantità di informazioni da presentare
+                              in ogni pagina o sub-divisione.
+                              <img src="img/arco.png" id="costruzione-arco-2" />
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+          <!-- slider griglie-->
+          <div id="slider-container-3">
+              <img id="quadrato_puntini" src="img/quadrato_puntini.png"/>
+
+              <div id="slider-container-title-2">
+                  <span id="slider-container-title-tipi-2"> ESEMPI DI </span> <br/>
+                  <span id="slider-container-title-margini-2"> GRIGLIE </span>
+              </div>
+
+              <section class="jd-slider slider2">
+                  <!-- contenuto -->
+                  <div class="slide-inner">
+                      <ul class="slide-area">
+                          <li>
+                              <img src="img/griglie_1.png"/>
+                          </li>
+                          <li>
+                              <img src="img/griglie_2.png"/>
+                          </li>
+                          <li>
+                              <img src="img/griglie_3.png"/>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <!-- pulsanti -->
+                  <a class="prev" href="#">
+                      <i class="fas fa-angle-left fa-2x"></i>
+                  </a>
+                  <a class="next" href="#">
+                      <i class="fas fa-angle-right fa-2x"></i>
+                  </a>
+                  <div class="controller">
+                      <div class="indicate-area"></div>
+                  </div>
+              </section>
+          </div>
+
+          <!-- posizionare elementi -->
+          <div id="posizionare-elementi-container">
+              <img src="img/imm-griglie.png" id="posizionare-griglie" />
+              <div id="posizionare-left-empty-block-2" class="gold"></div>
+              <img src="img/ondine_rosa_verticali.png" id="ondine-rosa-verticali"/>
+              <div id="posizionare-left-2">
+                  <div id="posizionare-left-title-2">
+                      POSIZIONARE GLI <b>ELEMENTI</b> NELLA <b>GRIGLIA</b>.
+                  </div>
+                  <br/>
+                  <div id="posizionare-left-caption-2">
+                      il layout
+                  </div>
+                  <div id="posizionare-left-description-2">
+                      Il <span class="red">layout</span> serve per dare una gerarchia <wbr>
+                      alle informazioni. Si tratta della disposizione degli elementi grafici <wbr>
+                      in relazione allo spazio che occupano all'interno di un progetto complessivo.<wbr>
+                      Lo scopo del layout è offrire una presentazione degli elementi grafici e <wbr>
+                      testuali che ne consenta la comprensione con il minor sforzo possibile.
+                  </div>
+              </div>
+              <div id="posizionare-right-2" class="gold">
+                  <table style="color: white">
+                      <tr>
+                          <td width="50%">
+                              Esistono due categorie principali di layout:<span class="red">simmetrico</span> e <span class="verde">asimmetrico.</span>
+                              Il layout simmetrico segue uno stile più tradizionale in cui il progetto si sviluppa intorno ad un asse centrale.
+                              Questa tipologia ha origine nei primi libri stampati e deriva dal layout dei manoscritti medievali.
+                              Il layout asimmetrico non è centrato, è dinamico e legato al modernismo del XX secolo e legato al design del contemporaneo.
+                          </td>
+                          <td width="50%">
+                              Oggi i grafici usano spesso integrare i due stili.
+                              È importante capire i due stili e i rispettivi contesti per poterne valutare l'uso in modo consapevole.
+                              Il modo migliore per acquistare flessibilità è conoscere più a fondo possibile le differenze dei due stili e le loro regole,
+                              in modo da poterne sfrutttare le potenzialità nella creazione di layout originali ed equilibrati.
+                          </td>
+                          <td width="20%">
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+
+              <img src="img/arco.png" id="posizionare-arco-2" />
+          </div>
+
+         <!-- ALDO NOVARESE-->
+         <div id="container-aldo" class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-8">
+                 <div class="row">
+                     <div class="col-md-6">
+                         <!-- onda -->
+                         <div class="row">
+                             <div class="col-md-4">
+                                 <img class="ondine_rosa" src="img/ondine_rosa_orizzontale.png">
+                             </div>
+                             <div class="col-md-8"></div>
+                         </div>
+                         <!-- aldo -->
+                         <div class="row first-row-2">
+                             <div class="col-md-6">
+                                 <p class="aldo">ALDO<br>NOVARESE</p>
+                             </div>
+                             <div class="col-md-6"></div>
+                         </div>
+
+                         <!-- titolo-->
+                         <div class="row">
+                             <div class="col-md-6">
+                                 <br/>
+                                 <p class="frase"><i>"Non esistono <br> carattri brutti, <br> ma solo caratteri<br>mal utilizzati."</i></p>
+                             </div>
+                             <div class="col-md-6"></div>
+                         </div>
+
+                         <!-- corpo della pagina-->
+                         <div class="row">
+                             <div class="col-md-6">
+                                 <p class="descrizione-2">
+                                     Aldo Novarese è stato sicuramente il disegnatore di caratteri più prolifico che l’Italia abbia visto nel secolo scorso.
+                                     Durante la sua carriera durata oltre 50 anni ha disegnato più di 70 caratteri, che hanno contribuito allo stile del panorama
+                                     visivo internazionale tra gli anni ’50 e ’90. Novarese è stato poco utilizzato dai grafici professionisti, dalle agenzie e dagli studi tipografici,
+                                     ma è radicato profondamente nella società e nella vita quotidiana degli italiani.
+                                 </p>
+                             </div>
+                             <div class="col-md-6"></div>
+                         </div>
+
+                     </div>
+                     <div class="col-md-6">
+                         <img src="img/aldo.png" id="aldo-img" />
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-4"></div>
+         </div>
+
+         <!-- classificazione caratteri -->
+         <div id="container-caratteri" class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-8">
+                 <div class="row first-row-3">
+                     <div class="col-md-4">
+                         <p class="la-classificazione">LA<br>CLASSIFICA-<br>ZIONE<br>DEI<span class="red"> CARATTERI</span></p>
+                         <p class="descrizione-testo">
+                             Nel 1957 Aldo Novarese si dedicò ad una sua classificazione dei caratteri tipografici basata sugli stili,
+                             ispirata a quella di Maximilien Vox del 1955.<br><br>Attraverso questa classificazione, è possibile riconoscere i
+                             caratteri suddividendoli in dieci famiglie, secondo la caratterizzazione storica, estetica e stilistica.
+                         </p>
+                         <img src="img/quadrato_puntini.png" id="quadrati-puntini" />
+                     </div>
+                     <div class="col-md-2"></div>
+                     <div class="col-md-6">
+                         <div id="quadrati-verdi-block">
+                             <div class="row quadrati-verdi-container">
+
+                                 <div class="col-md-6 quadrati-verdi-title" title="Nascono nella Roma antica, venivano usati per le epigrafi e per le iscrizioni sui monumenti. Hanno grazie triangolari che formano un angolo acuto con la linea di base. Tali grazie erano “causate” da un colpo di scalpello, poiché gli scalpellini romani avevano necessità di creare lettere con terminazione ad angolo retto. Esempi: Trajan, Augustea, Nova-Augustea.">
+                                     <img src="img/quadrati-verdi/Lapidari.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">LAPIDARI</span>
+                                 </div>
+                                 <div class="col-md-6 quadrati-verdi-title" title="Sono riconoscibili per le grazie ad angolo retto. Esempi: Rockwell, Egizio, Landi Echo.">
+                                     <img src="img/quadrati-verdi/Egizi.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">EGIZI</span>
+                                 </div>
+                             </div>
+                             <div class="row quadrati-verdi-container">
+                                 <div class="col-md-6 quadrati-verdi-title" title="Chiamati anche “Gotici”, derivano dalle scritture del Medioevo, e di conseguenza, molto diffusi in quel periodo. Inoltre furono i caratteri tipici del periodo di Gutenberg. Si riconoscono per la particolare forma contrastata e aguzza, che imita la scrittura con la penna d’oca. A causa della loro forma, la lettura risulta alquanto difficile. Esempi: Textura, Schwabacher, Rotunda, Fraktur.">
+                                     <img src="img/quadrati-verdi/Medievali.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">MEDIEVALI</span>
+                                 </div>
+                                 <div class="col-md-6 quadrati-verdi-title" title="Sono i caratteri più moderni, privi di grazie e presentano aste uniformi, ( oggi chiamati li chiamiamo “sans serif”) . Esempi: Helvetica, Arial, Recta, Microgramma, Forma.">
+                                     <img src="img/quadrati-verdi/Lineari.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">LINEARI</span>
+                                 </div>
+                             </div>
+                             <div class="row quadrati-verdi-container">
+                                 <div class="col-md-6 quadrati-verdi-title" title="Anche questi derivano dai caratteri romani antichi, ma si differenziano per l’estremità arrotondata delle grazie e le linee più contrastate. Si diffusero intorno alla seconda metà del ‘400 a Venezia, patria dei primi stampatori italiani. Esempi: Garamond, Jenson, Garaldus, Minion.">
+                                     <img src="img/quadrati-verdi/Veneziani.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">VENEZIANI</span>
+                                 </div>
+                                 <div class="col-md-6 quadrati-verdi-title" title="Sono detti anche calligrafici, poiché imitano la scrittura a mano. Si suddividono in calligrafici legati o non legati. Di questa categoria fanno parte caratteri di diverse epoche. Esempi: Inglese, Juliet, Slogan.">
+                                     <img src="img/quadrati-verdi/Scritti.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">SCRITTI</span>
+                                 </div>
+                             </div>
+                             <div class="row quadrati-verdi-container">
+                                 <div class="col-md-6 quadrati-verdi-title" title="Chiamati così perché indicano la transizione tra il Romano Antico e il Romano Moderno, e nascono intorno al ‘700. Le aste non hanno quasi mai inclinazione, e siccome la stampa si faceva più precisa, il contrasto tra le aste è molto netto. Esempi: Baskerville, Times, Magister.">
+                                     <img src="img/quadrati-verdi/Transizionali.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">TRANSIZIONALI</span>
+                                 </div>
+                                 <div class="col-md-6 quadrati-verdi-title" title="Presentano decorazioni molto evidenti, e per questo generalmente vengono usati come capilettera. Esempi: Romantiques, Carrick.">
+                                     <img src="img/quadrati-verdi/Ornati.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">ORNATI</span>
+                                 </div>
+                             </div>
+                             <div class="row quadrati-verdi-container">
+                                 <div class="col-md-6 quadrati-verdi-title" title="Sono caratteri con grazie ad angolo retto, che hanno le aste estremamente contrastate. Esempi: Bodoni, Didot, Fenice.">
+                                     <img src="img/quadrati-verdi/Bodoniani.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">BODONIANI</span>
+                                 </div>
+                                 <div class="col-md-6 quadrati-verdi-title" title="Comprendente caratteri con caratteristiche non classificabili nelle precedenti categorie. Esempio: Ritmo, Estro, Stop.">
+                                     <img src="img/quadrati-verdi/Fantasia.png" class="quadrati-verdi" />
+                                     <span class="quadrati-verdi-description">FANTASIA</span>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-2"></div>
+         </div>
+
+         <!-- anatomia caratteri -->
+         <div id="container-anatomia" class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-8">
+                 <div class="row">
+                     <div class="col-md-6">
+                         <!-- onda -->
+                         <div class="row">
+                             <div class="col-md-4">
+                                 <img class="ondine_rosa" src="img/ondine_rosa_orizzontale.png">
+                             </div>
+                             <div class="col-md-8"></div>
+                         </div>
+                         <!-- anatomia -->
+                         <div class="row first-row-4">
+                             <div class="col-md-6">
+                                 <p class="anatomia-titolo">L'ANATOMIA DEL <br> <span class="green"> CARATTERE</span></p>
+                             </div>
+                             <div class="col-md-6"></div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="row">
+                         <img id="anatomia_foto" src="img/LETTERE.png" />
+                     </div>
+                 </div>
+                 <!-- testo -->
+                 <div class="row">
+                     <div class="col-md-6 anatomia-text">
+                         <div class="anatomia-text-title">
+                             ASCENDENTI
+                         </div>
+                         In tipografia, un tratto ascendente è la parte di una lettera dell’alfabeto che si estende al di sopra della linea mediana di una font
+                         È, in altre parole, la parte del carattere che ha un’altezza maggiore dell’altezza della x (in inglese x-height).
+                     </div>
+                     <div class="col-md-6 anatomia-text">
+                         <div class="anatomia-text-title">
+                             LINEA DI BASE
+                         </div>
+                         la linea di base, si estende sotto le lettere come un appoggio; nella vita quotidiana corrisponde alle righe dei quaderni.
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-md-6 anatomia-text">
+                         <div class="anatomia-text-title">
+                             DISCENDENTE
+                         </div>
+                         con tratto discendente si intende la porzione di una lettera che si estende al di sotto della linea di base  (in inglese baseline).
+                     </div>
+                     <div class="col-md-6 anatomia-text">
+                         <div class="anatomia-text-title">
+                             CORPO
+                         </div>
+                         è la sua altezza, si misura in punti tipografici (1 pt è uguale a 0,35 mm)
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-md-6 anatomia-text">
+                         <div class="anatomia-text-title">
+                             ALTEZZA DELLA X
+                         </div>
+                         o CORPO cambia a seconda del disegno del carattere.
+                     </div>
+                     <div class="col-md-6 anatomia-text">
+                         <div class="anatomia-text-title">
+                             OCCHIO
+                         </div>
+                         l'occhio medio del carattere, o altezza della X, cambia a seconda del disegno del carattere.
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-2"></div>
+         </div>
+
+         <div id="lettere-singole-1-container" class="row">
+             <div class="col-md-3 lettere-singole-img-container">
+                 <img class="lettere-singole-img" src="img/lettere/A/A_.png" />
+             </div>
+             <div class="col-md-3">
+                 <!-- lista A -->
+                 <ul class="lettere-singole-list">
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Punto d'intersezione più alto della lettera dove non troviamo ornamenti di nessun tipo">
+                         <img class="lettere-singole-min-img" src="img/lettere/A/apice.png" />
+                         <span class="lettere-singole-description">APICE</span>
+                     </li>
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="La troviamo nelle lettere (N), (X), (Z), (x) e (z).">
+                         <img class="lettere-singole-min-img" src="img/lettere/A/asta.png" />
+                         <span class="lettere-singole-description">ASTA OBLIQUA</span>
+                     </li>
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Tratto orizzontale che collega due tratti.">
+                         <img class="lettere-singole-min-img" src="img/lettere/A/barra.png" />
+                         <span class="lettere-singole-description">BARRA</span>
+                     </li>
+                 </ul>
+             </div>
+             <!-- lista F -->
+             <div class="col-md-3 lettere-singole-img-container">
+                 <img class="lettere-singole-img f" src="img/lettere/f/F.png" />
+             </div>
+             <div class="col-md-3">
+                 <ul class="lettere-singole-list">
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="parte di una lettera che si estende al di sopra dell’ altezza della x.">
+                         <img class="lettere-singole-min-img" src="img/lettere/f/ascendente.png" />
+                         <span class="lettere-singole-description">ASCENDENTE</span>
+                     </li>
+                 </ul>
+             </div>
+             <div class="col-md-3 lettere-singole-img-container">
+                 <img class="lettere-singole-img g" src="img/lettere/g/G.png" />
+             </div>
+             <div class="col-md-3">
+                 <!-- lista G -->
+                 <ul class="lettere-singole-list">
+                     <li class="g quadrati-verdi-title" title="Breve sporgenza della g e in base allo stile anche alla p e alla z.">
+                         <img class="lettere-singole-min-img" src="img/lettere/g/orecchio.png" />
+                         <span class="lettere-singole-description">ORECCHIO</span>
+                     </li>
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Tratto che collega la sezione superiore a quella inferiore della g">
+                         <img class="lettere-singole-min-img" src="img/lettere/g/collo.png" />
+                         <span class="lettere-singole-description">COLLO</span>
+                     </li>
+
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Occhiello inferiore della g.">
+                         <img class="lettere-singole-min-img" src="img/lettere/g/cappio.png" />
+                         <span class="lettere-singole-description">CAPPIO</span>
+                     </li>
+                 </ul>
+             </div>
+             <div class="col-md-3 lettere-singole-img-container">
+                 <img class="lettere-singole-img x" src="img/lettere/x/X.png" />
+             </div>
+             <div class="col-md-3">
+                 <!-- lista x -->
+                 <ul class="lettere-singole-list x">
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Pretuberanza che è presente in alcuni caratteri alla fina dell'asta.">
+                         <img class="lettere-singole-min-img" src="img/lettere/x/grazia.png"/>
+                         <span class="lettere-singole-description">GRAZIA</span>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+
+         <div id="lettere-singole-2-container" class="row">
+             <div class="col-md-3 lettere-singole-img-container">
+                 <img class="lettere-singole-img V" src="img/lettere/V/V.png" />
+             </div>
+             <div class="col-md-3">
+                 <!-- lista V -->
+                 <ul class="lettere-singole-list">
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Punto d'intersezione più basso della lettera dove non troviamo ornamenti di nessun tipo">
+                         <img class="lettere-singole-min-img" src="img/lettere/V/vertice.png" />
+                         <span class="lettere-singole-description">VERTICE</span>
+                     </li>
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Detto anche STAFFA, è un componente della grazia di una font">
+                         <img class="lettere-singole-min-img" src="img/lettere/V/raccordo.png" />
+                         <span class="lettere-singole-description">RACCORDO</span>
+                     </li>
+                 </ul>
+             </div>
+             <!-- lista b -->
+             <div class="col-md-3 lettere-singole-img-container">
+                 <img class="lettere-singole-img b" src="img/lettere/b/B.png" />
+             </div>
+             <div class="col-md-3">
+                 <ul class="lettere-singole-list">
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Spazio chiuso nella parte superiore della lettera.">
+                         <img class="lettere-singole-min-img" src="img/lettere/b/occhiello.png" />
+                         <span class="lettere-singole-description">OCCHIELLO</span>
+                     </li>
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Si trova ad esempio nella “b” e nella “p”, è la convessità che si forma in certe lettere">
+                         <img class="lettere-singole-min-img" src="img/lettere/b/pancia.png" />
+                         <span class="lettere-singole-description">PANCIA</span>
+                     </li>
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Breve proiezione appuntita di un'asta o di un tratto di un carattere serif.">
+                         <img class="lettere-singole-min-img" src="img/lettere/b/sperone.png" />
+                         <span class="lettere-singole-description">SPERONE</span>
+                     </li>
+                 </ul>
+             </div>
+
+             <div class="col-md-3 lettere-singole-img-container">
+                 <img class="lettere-singole-img k" src="img/lettere/k/K.png" />
+             </div>
+             <div class="col-md-3">
+                 <!-- lista k -->
+                 <ul class="lettere-singole-list k">
+                     <li class="lettere-singole-img-elem quadrati-verdi-title" title="Sono così chiamate propriamente solo quelle delle lettere maiuscole.">
+                         <img class="lettere-singole-min-img" src="img/lettere/k/asta-verticale.png" />
+                         <span class="lettere-singole-description">ASTA VERTICALE</span>
+                     </li>
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="ratto ascendente, orizzontale o diagonale, collegato alla lettera di un'estremità e libero dall'altra">
+                         <img class="lettere-singole-min-img" src="img/lettere/k/braccio.png" />
+                         <span class="lettere-singole-description">BRACCIO</span>
+                     </li>
+
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Prolungamneto che di estende da una lettera verso il basso, normalmente sotto la linea di base.">
+                         <img class="lettere-singole-min-img" src="img/lettere/k/coda-o-gamba.png" />
+                         <span class="lettere-singole-description">CODA O GAMBA</span>
+                     </li>
+                 </ul>
+             </div>
+             <div class="col-md-3 lettere-singole-img-container">
+                 <img class="lettere-singole-img Q" src="img/lettere/Q/Q.png" />
+             </div>
+             <div class="col-md-3">
+                 <!-- lista Q -->
+                 <ul class="lettere-singole-list Q">
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Ampio spazio all'interno di una lettera.">
+                         <img class="lettere-singole-min-img" src="img/lettere/Q/cassa.png"/>
+                         <span class="lettere-singole-description">CASSA</span>
+                     </li>
+                     <li class="lettere-singole-list-elem quadrati-verdi-title" title="Prolungamneto che di estende da una lettera verso il basso, normalmente sotto la linea di base. Detto anche GAMBA.">
+                         <img class="lettere-singole-min-img" src="img/lettere/Q/coda.png"/>
+                         <span class="lettere-singole-description">CODA</span>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+
+         <!-- footer -->
+         <div id="container-footer">
+             <div class="footer">
+                 <p>Progetto a cura di </p>
+                 <p><b>Alessi Carolina & Migliore Martina</b></p>
+             </div>
+         </div>
+
+        <script src="js/jquery.jdSlider-latest.min.js"></script>
+        <script>
+
+            // controllo responsive
+            function checkResponsive() {
+                if( $( window ).width() < 600) {
+                    $('body > div').hide();
+                    $('#not-responsive').show();
+                } else {
+                    $('body div').show();
+                    $('#not-responsive').hide();
+                }
+            }
+            // ogni volta che viene ridimensionata la finestra, esegue il controllo sulla dimensione della pagina
+            $( window ).resize(function() {
+                checkResponsive();
+            });
+            // la funzione si avvia non appena la pagina viene caricata
+            checkResponsive();
+
+            // slideshow
+            $('.slider1').jdSlider();
+            $('.slider2').jdSlider();
+
+            $('.quadrati-verdi-title').tooltip({
+                tooltipClass: "tooltip-class",
+            });
+
+            var menu = document.getElementById('menu');
+            var whiteBackground = document.getElementById('white-background');
+            var redBackground = document.getElementById('red-background');
+
+            function hamburgerChange(elem) {
+                elem.classList.toggle("change");
+            }
+
+            function positioning() {
+                // logo
+                let logo = document.getElementById('logo');
+                logo.style.top = (window.innerHeight) / 1;
+                // hamburger
+                let hamburgerOpen = document.getElementById('hamburger-open');
+                hamburgerOpen.style.top = (window.innerHeight) / 2.3;
+                // menù
+                menu.style.top = (window.innerHeight) / 7; // per far salire il menù
+            }
+
+            function showMenu() {
+                if( menu.style.display == 'block' ) {
+                    whiteBackground.style.width = 0;
+                    menu.style.display = 'none';
+                } else {
+                    whiteBackground.style.width = '35%'; // per aumentare la sezione bianca
+                    menu.style.display = 'block';
+                }
+                return true;
+            }
+
+            function setRedBackgroundWidth() {
+                redBackground.style.width = '36%'; // per aumentare la sezione rossa
+            }
+
+            function resetRedBackgroundWidth() {
+                redBackground.style.width = '8%'; // per ridurre la sezione rossa
+            }
+
+            function toggleSubMenu(id) {
+                var menuToShow = document.getElementById(id);
+                if( menuToShow.style.maxHeight == menuToShow.scrollHeight + "px" ) {
+                    menuToShow.style.maxHeight = 0;
+                } else {
+                    menuToShow.style.maxHeight = menuToShow.scrollHeight + "px";
+                }
+            }
+
+            positioning();
+
+        </script>
+
+    </body>
+</html>

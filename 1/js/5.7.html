@@ -1,0 +1,29 @@
+<html>
+    <body>
+
+
+        <script>
+
+            var b1 = document.createElement("button");
+            b1.innerHTML = "Button1";
+
+            var b2 = document.createElement("button");
+            b2.innerHTML = "Button2";
+
+            function hello1() {
+                alert("is this the real life?");
+            }
+            function hello2() {
+                alert("is this just fantasy?");
+            }
+
+            document.body.appendChild(b1);
+            document.body.appendChild(b2);
+
+            b1.onclick = hello1;
+            b2.onclick = hello2;
+
+        </script>
+
+    </body>
+</html>

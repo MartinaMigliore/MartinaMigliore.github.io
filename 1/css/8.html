@@ -1,0 +1,101 @@
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         * {
+         box-sizing: border-box;
+         }
+         .header {
+         background-color:rgb(153, 0, 204);
+         padding:15px;
+         color:rgb(255, 255, 255);
+         font-size:12pt;
+         font-family:Verdana;
+         }
+         .menu {
+         list-style-type: none;
+         padding:0:
+         margin:0;
+         }
+         .menu li {
+         background-color:rgb(51, 187, 255);
+         color:rgb(255, 255, 255);
+         padding:8pt;
+         margin-bottom: 7px;
+         font-size:14pt;
+         font-family:Verdana;
+         }
+         li:hover{
+         background-color:rgb(179, 230, 255);
+         }
+         .destro {
+         text-align:center;
+         background-color:rgb(51, 187, 255);
+         color:rgb(255, 255, 255);
+         padding:8pt;
+         font-size:12pt;
+         font-family:Verdana;
+         }
+         .footer {
+         background-color:rgb(51, 187, 255);
+         color:rgb(255, 255, 255);
+         text-align: center;
+         font-size: 12px;
+         font-family:Verdana;
+         }
+         .city {
+         padding:8pt;
+         font-family:Verdana;
+         }
+         [class*="col-"] {
+         float: left;
+         padding:10pt;
+         }
+         .col-1 {
+         width: 25%;
+         }
+         .col-2 {
+         width: 50%;
+         }
+         .col-4 {
+         width: 100%;
+         }
+         @media only screen and (max-width: 768px) {
+         [class*="col-"] {
+         width: 100%;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <div  class="header">
+         <h1>Chaina</h1>
+      </div>
+      <div class="col-1 col-s-1 menu">
+         <li>The Flight</li>
+         <li>The City</li>
+         <li>The Island</li>
+         <li>The Food</li>
+      </div>
+      <div class="col-2 col-s-2 city">
+        <h1>The City</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete.
+            The city can be divided in two parts, the old town and the modern city.
+            Resize the browser window to see how the content respond to the resizing.
+        </p>
+      </div>
+      <div class="col-1">
+         <div class="destro">
+            <h2>Che cosa?</h2>
+            <p>Chania è una città dell'isola di Creta.</p>
+            <h2>Dove?</h2>
+            <p>Creta è un'isola greca nel Mar Mediterraneo.</p>
+            <h2>Come?</h2>
+            <p>Puoi raggiungere l'aeroporto di Chania da tutta Europa.</p>
+         </div>
+      </div>
+      <div class="col-4 footer">
+         <p>Ridimensiona la finestra del browser per vedere come il contenuto risponde al ridimensionamento.</p>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,75 @@
+#lettere-singole-1-container {
+    position: absolute;
+    top: 1220%;
+    left: 10%;
+}
+
+#lettere-singole-2-container {
+    position: absolute;
+    top: 1330%;
+    left: 10%;
+}
+
+.lettere-singole-img {
+    max-width: 15em;
+
+}
+
+.lettere-singole-min-img {
+    max-width: 4em;
+    text-align: left;
+    margin-left: 0;
+}
+
+.lettere-singole-img-container {
+    text-align: right;
+
+}
+
+.lettere-singole-list {
+    list-style-type: none;
+}
+
+.lettere-singole-description {
+    padding-left: 1em;
+    font-weight: bold;
+}
+
+.lettere-singole-list-elem {
+    padding-top: 1em;
+}
+
+
+.f {
+    max-width: 12em;
+    margin-top: 0.5em;
+}
+
+.g{
+    margin-top: 7em;
+}
+
+.x {
+    margin-top: 11em;
+}
+
+.lettere_sinistra{
+    margin-left: 5em;
+}
+
+.k{
+    margin-top: 4em;
+}
+
+.Q{
+    margin-top: 4em;
+}
+
+.V{
+    margin-top: 1.5em;
+}
+
+.b{
+    max-width: 11em;
+    margin-top: 0.5em;
+}

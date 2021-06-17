@@ -1,0 +1,63 @@
+
+<html>
+    <head>
+        <style>
+        body{
+            background-size:cover;
+
+            background-image: url("https://www.larcadinoepetshop.it/wp-content/uploads/2019/03/articolo-gatto.jpg");
+        }
+
+        </style>
+    </head>
+    <body>
+        <input type="text" placeholder="cerca" id="non-lo-soh" onkeyup="ffff()"/>
+        <input type="password" id="password"/>
+        <input type="button" onclick="peppe()" value="cerca"/>
+        <input type="date"/>
+        <select onchange="ciccio()">
+            <option>casa</option>
+            <option>casa2</option>
+            <option>casa3</option>
+        </select>
+        <br />
+
+        <input type="radio" name="group1" value="audi">Audi<br />
+        <input type="radio" name="group1" value="bmw">BMW<br />
+        <input type="radio" name="group1" value="mercedes">Mercedes<br />
+
+        <br/>
+        <input type="checkbox" value="audi">Audi<br />
+        <input type="checkbox" value="bmw">BMW<br />
+        <input type="checkbox" value="mercedes">Mercedes<br />
+        <script>
+
+
+            console.log("qualcosa");
+            alert("qualcos'altro");
+            var digitato=prompt("dimmi qualcosa");
+            console.log("mi hai detto "+ digitato);
+
+
+            var i="ok";
+            var j="id = ";
+            console.log(j + i);
+            function peppe(){
+                var testo = document.getElementById("non-lo-soh");
+                console.log(testo.value);
+                var pvd = document.getElementById("password");
+                console.log(pvd.value);
+            }
+            function ffff(){
+
+                var uno = document.getElementById("non-lo-soh");
+                console.log(uno.value.toUpperCase());
+            }
+            function ciccio(){
+                console.log("oilloc");
+            }
+
+
+        </script>
+    </body>
+</html>

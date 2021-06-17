@@ -1,0 +1,14 @@
+#container-footer {
+    position: absolute;
+    top: 1450%;
+    width: 100%;
+}
+  .footer {
+     padding: 1em;
+     text-align: center;
+     background-color:#006666;
+     color:white;
+     font-size: 1em;
+     line-height: 2em;
+     font-family: Arial;
+  }

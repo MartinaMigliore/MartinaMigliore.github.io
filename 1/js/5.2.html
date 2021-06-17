@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Colors</title>
+  </head>
+  <body>
+
+      <label for="redi">Red:</label> <br/>
+      <input type="range" min=0 max=255 id="redi" onmousemove="changeColor()" onmouseup="showValues()" value="125" />
+      <span id="redv"></span><br>
+
+      <label for="greeni">Green:</label> <br/>
+      <input type="range" min=0 max=255 id="greeni" onmousemove="changeColor()" onmouseup="showValues()" value="125" />
+      <span id="greenv"></span><br>
+
+      <label for="bluei">Blue:</label> <br/>
+      <input type="range" min=0 max=255 id="bluei" onmousemove="changeColor()" onmouseup="showValues()" value="200" />
+      <span id="bluev"></span>
+
+    <br>
+    <script>
+
+      function changeColor() {
+          var red = document.querySelector('#redi').value;
+          var green = document.querySelector('#greeni').value;
+          var blue = document.querySelector('#bluei').value;
+          var colorStr = "rgb(" + red + "," + green + "," + blue + ")";
+          document.body.style.backgroundColor = colorStr;
+      }
+
+      function showValues() {
+        var red = document.querySelector("#redi").value
+        document.querySelector('#redv').innerHTML = red;
+
+        var green = document.querySelector('#greeni').value;
+        document.querySelector("#greenv").innerHTML = green;
+
+        var blue = document.querySelector("#bluei").value;
+        document.querySelector('#bluev').innerHTML = blue;
+      }
+
+       showValues();
+       changeColor();
+
+    </script>
+  </body>
+</html>

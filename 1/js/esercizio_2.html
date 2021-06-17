@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+
+   <body>
+
+         <button onclick="incrementa();">Click Me!</button>
+
+         <p id="conteggio"></p>
+
+         <script>
+
+            var conteggio=0;
+
+            function incrementa(){
+                conteggio++;
+                document.querySelector("#conteggio").innerHTML=conteggio;
+                document.querySelector("#conteggio").style.fontSize = conteggio + "em";
+            }
+         </script>
+   </body>
+</html>

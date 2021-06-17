@@ -1,0 +1,29 @@
+<html>
+  <head>
+      <style>
+
+       #container {
+         text-align: center;
+       }
+      .rotate {
+        animation: gira 2s infinite linear;
+      }
+      @keyframes gira {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+
+      </style>
+  </head>
+  <body>
+
+  <div id='container'>
+    <img class='rotate' src="http://interactivepython.org/runestone/static/webfundamentals/_images/ace-of-hearts.gif">
+  </div>
+
+ </body>
+</html>

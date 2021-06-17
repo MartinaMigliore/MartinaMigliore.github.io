@@ -1,0 +1,110 @@
+#posizionare-elementi-container {
+    position: absolute;
+    font-family: futura;
+    left: 11em;
+    top: 740%;
+    height: 100%;
+}
+
+#posizionare-left-2 {
+    position: absolute;
+    left: 4em;
+    width: 22em;
+    top: -1em;
+    background: white;
+    padding: 2em;
+}
+
+#posizionare-left-title-2 {
+    font-family: arial;
+font-size: 2.3em;
+    line-height: 1em;
+}
+
+#posizionare-left-caption-2 {
+    font-size: 1.3em;
+    font-family:futura;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    border-left: 0.2em solid rgb(14, 149, 148);
+    font-style: italic;
+}
+
+#posizionare-left-description-2 {
+    padding-top: 1.3em;
+    font-size: 0.8em;
+    line-height: 1.5;
+    font-family: futura;
+}
+
+.red {
+    color: red;
+}
+
+.marked {
+    color: rgb(14, 149, 148);
+}
+
+.gold {
+    background: gold;
+}
+
+.verde{
+    color:#0e9594;
+    font-size:12pt;
+}
+
+#posizionare-left-empty-block-2 {
+    position: absolute;
+    top: 12em;
+    height: 26em;
+    width: 28em;
+}
+
+#posizionare-left-img-2 {
+    position: absolute;
+    left: 24em;
+    top: 19em;
+    max-width: 32em;
+}
+
+#posizionare-right-2 {
+    position: absolute;
+    font-family:arial;
+    top: 20.3em;
+    left: 45em;
+    width: 27em;
+    padding: 1em;
+    color: white;
+    font-size:14pt;
+}
+#posizionare-right-2 td {
+    vertical-align: top;
+    padding: 1em;
+}
+
+#posizionare-right-2 table {
+    font-size: 0.8em;
+}
+
+#ondine-rosa-verticali {
+     position: absolute;
+     top: 1em;
+     left: 1em;
+     max-width: 3em;
+ }
+
+#posizionare-arco-2 {
+    position: absolute;
+    top: 17em;
+    left: 41em;
+    max-width: 6em;
+}
+
+#posizionare-griglie {
+    position: absolute;
+    max-width: 39em;
+    top: 18em;
+    left: 19em;
+
+}

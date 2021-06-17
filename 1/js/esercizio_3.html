@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+
+   <body>
+
+         <button onclick="incrementa();">Click Me!</button>
+
+         <ul id="conteggio"></ul>
+
+         <script>
+
+            var conteggio=0;
+
+            function incrementa(){
+                conteggio++;
+                var lista = document.querySelector('#conteggio');
+                var elementLista = document.createElement('li');
+                var nuovoNumero = document.createTextNode(conteggio);
+                lista.appendChild(elementLista);
+                elementLista.appendChild(nuovoNumero);
+            }
+         </script>
+   </body>
+</html>

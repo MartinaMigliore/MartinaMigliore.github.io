@@ -1,0 +1,96 @@
+
+#container-chi-siamo {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+}
+
+#right-container {
+    padding-top: 0px;
+}
+
+.right-column {
+    background: #0e9594;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+    padding-top: 0em;
+}
+
+.text {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.first-row {
+    height: 5em;
+    margin-bottom: 0.1em;
+}
+
+.pallini {
+    color: white;
+}
+
+.pallini-right {
+    text-align: left;
+    margin-top: 0.8em
+}
+
+.siamo {
+    margin-top: -0.2em;
+}
+
+/*1 colonna*/
+.chi_siamo{
+    font-family: futura;
+    font-size: 3em;
+    color: #D24150;
+}
+
+
+.citazione{
+    font-family:futura;
+    font-size:1em;
+    border-left: 0.2em #0e9594 solid;
+    padding-left: 0.5em;
+}
+
+.ondine{
+    width:85pt;
+}
+
+.presentazione{
+    font-family:Arial;
+    font-size:14pt;
+
+    padding-top: 1em;
+}
+
+/*3 colonna*/
+
+ .cosa_impa{
+    font-family:futura;
+    font-size: 2.3em;
+    color: #0E9594;
+    margin-left: 0.4em;
+
+}
+
+.cosa_impa_bianco{
+   font-family:Futura;
+   font-size:2.3em;
+   color:white;
+   margin-top: -0.1em;
+   margin-left: 0.4em;
+}
+
+.titolo{
+ font-family:futura;
+ color:white;
+ font-size:15pt;
+}
+
+.testo{
+ font-family: Arial;
+ font-size:10pt;
+}

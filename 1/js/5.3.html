@@ -1,0 +1,28 @@
+<html>
+<body>
+    <button onclick="stop()">Stop</button>
+    <script>
+
+      function changeColor() {
+          var rand1 = Math.random()*255;
+          var red = Math.floor( rand1 );
+
+          var rand2 = Math.random()*255;
+          var green = Math.floor( rand2 );
+
+          var rand3 = Math.random()*255;
+          var blue = Math.floor( rand3 );
+
+          var colorStr = "rgb(" + red + "," + green + "," + blue + ")";
+          document.body.style.backgroundColor = colorStr;
+      }
+
+      function stop() {
+          window.clearInterval(intId);
+      }
+
+      var intId = window.setInterval(changeColor, 2500);
+
+    </script>
+</body>
+</html>

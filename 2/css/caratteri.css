@@ -1,0 +1,56 @@
+#container-caratteri {
+    position: absolute;
+    top: 1000%;
+    width: 100%;
+    height: 100%;
+}
+
+#quadrati-verdi-block {
+    margin-top: 2em;
+}
+
+#quadrati-puntini {
+    max-width: 10em;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.la-classificazione{
+    font-family: futura;
+    font-size: 2em;
+    margin-left:0.5em;
+}
+
+.red {
+    color: red;
+}
+
+.descrizione-testo{
+    font-family: Arial;
+    font-size: 1em;
+    padding: 1em;
+    border-left: 0.2em #0e9594 solid;
+    line-height: 1.4em;
+}
+
+.quadrati-verdi {
+    max-width: 4.5em;
+}
+
+.quadrati-verdi-container {
+    padding-top: 3em;
+}
+
+.quadrati-verdi-description {
+    font-weight: bold;
+}
+
+.tooltip-class {
+    box-shadow: 0 0 0 !important;
+    text-align: left !important;
+    margin: auto;
+}
+
+.tooltip-inner {
+    text-align: left !important;
+}

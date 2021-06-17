@@ -1,0 +1,29 @@
+<html>
+    <head>
+    </head>
+   <body>
+
+      <h1>Hello World!!</h1>
+
+      <button onclick="changeThisPageFunc();">Click Me!</button>
+
+      <main id="pippo">
+         <h1>Hello Main</h2>
+         <p>The quick brown fox jumped over the lazy dog.</p>
+      </main>
+
+      <script>
+
+         function changeThisPageFunc() {
+            document.body.style.backgroundColor = "lightblue";
+
+            var franco = document.querySelector('#pippo');
+            franco.innerHTML = "<h3>Where have all the flowers gone?<h3>";
+            franco.style.fontSize = "3em";
+            franco.style.backgroundColor = "lightgreen";
+            
+         }
+
+      </script>
+   </body>
+</html>
