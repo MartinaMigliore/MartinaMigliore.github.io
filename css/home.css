@@ -5,6 +5,7 @@ html {
 #not-responsive {
     display: none;
     padding: 2em;
+    text-align:center;
 }
 
 body {
