@@ -1,6 +1,6 @@
 #posizionare-elementi-container {
     position: absolute;
-    font-family: futura;
+    font-family: "Futura", "Gill Sans", "Montserrat", sans-serif;
     left: 11em;
     top: 740%;
     height: 100%;
@@ -16,14 +16,14 @@
 }
 
 #posizionare-left-title-2 {
-    font-family: arial;
+    font-family: "Arial", "Helvetica", "Arthura", sans-serif;
 font-size: 2.3em;
     line-height: 1em;
 }
 
 #posizionare-left-caption-2 {
     font-size: 1.3em;
-    font-family:futura;
+    font-family:"Futura", "Gill Sans", "Montserrat", sans-serif;
     padding-left: 0.5em;
     padding-bottom: 0.5em;
     border-left: 0.2em solid rgb(14, 149, 148);
@@ -34,7 +34,7 @@ font-size: 2.3em;
     padding-top: 1.3em;
     font-size: 0.8em;
     line-height: 1.5;
-    font-family: futura;
+    font-family: "Futura", "Gill Sans", "Montserrat", sans-serif;
 }
 
 .red {
@@ -70,7 +70,7 @@ font-size: 2.3em;
 
 #posizionare-right-2 {
     position: absolute;
-    font-family:arial;
+    font-family:"Arial", "Helvetica", "Arthura", sans-serif;
     top: 20.3em;
     left: 45em;
     width: 27em;

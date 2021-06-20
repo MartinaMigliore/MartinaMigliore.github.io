@@ -6,7 +6,7 @@
 }
 
 .text-3 {
-    font-family: Arial;
+    font-family: "Arial", "Helvetica", "Arthura", sans-serif;
     font-size: 1em;
     padding-left: 1em;
     padding-right: 1em;
@@ -23,20 +23,20 @@
 }
 
 .aldo{
-    font-family: futura;
+    font-family: "Futura", "Gill Sans", "Montserrat", sans-serif;
     font-size: 3em;
     color: #0e9594;
 }
 
 .frase{
-    font-family: futura;
+    font-family: "Futura", "Gill Sans", "Montserrat", sans-serif;
     font-size: 1em;
     border-left: 0.2em #0e9594 solid;
     padding-left: 1em;
 }
 
 .descrizione-2{
-    font-family: Arial;
+    font-family: "Arial", "Helvetica", "Arthura", sans-serif;
     font-size: 1em;
     padding: 1em;
 }

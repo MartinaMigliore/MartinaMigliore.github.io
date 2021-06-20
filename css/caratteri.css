@@ -16,7 +16,7 @@
 }
 
 .la-classificazione{
-    font-family: futura;
+    font-family: "Futura", "Gill Sans", "Montserrat", sans-serif;
     font-size: 2em;
     margin-left:0.5em;
 }
@@ -26,7 +26,7 @@
 }
 
 .descrizione-testo{
-    font-family: Arial;
+    font-family: "Arial", "Helvetica", "Arthura", sans-serif;
     font-size: 1em;
     padding: 1em;
     border-left: 0.2em #0e9594 solid;

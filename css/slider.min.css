@@ -16,14 +16,14 @@
     }
 
     #slider-container-title {
-        font-family: arial;
+        font-family: "Arial", "Helvetica", "Arthura", sans-serif;
         font-size: 2.3em;
         margin-left:2em;
     }
 
     #slider-container-title-margini {
-        font-family: Futura;
-        font-size: 1.3em;
+        font-family: "Futura", "Gill Sans", "Montserrat", sans-serif;
+        font-size"Futura", "Gill Sans", "Montserrat", sans-serifm;
     }
 
     #quadrato_puntini {
@@ -41,13 +41,13 @@
     }
 
     #slider-container-title-2 {
-        font-family: arial;
+        font-family: "Arial", "Helvetica", "Arthura", sans-serif;
         font-size: 2.3em;
         margin-left:5em;
     }
 
     #slider-container-title-margini-2 {
-        font-family: Futura;
+        font-family: "Futura", "Gill Sans", "Montserrat", sans-serif;
         font-size: 1.3em;
     }
 

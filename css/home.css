@@ -107,7 +107,8 @@ body {
 }
 
 #menu {
-    font-family:Arial,bold;
+    font-family:"Arial", "Helvetica", "Arthura", sans-serif;
+    font-weight:bold;
     color: black;
     display: none;
     position: absolute;
