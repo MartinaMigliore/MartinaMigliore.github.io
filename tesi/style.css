@@ -1,0 +1,139 @@
+.sfondo{
+    background-image: url(file:///C:/Users/39339/Desktop/TESI/immagini%20sfondo/sfondo.png);
+    height:8000px;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.titoli-testi{
+    color: #aeb8fe;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: -12pt;
+}
+
+.titoli-testi-blu{
+    color: #27187e;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: -12pt;
+}
+
+.titolo-capitolo-blu{
+    color: #27187e;
+    font-size: 50pt;
+    font-weight: bold;
+    line-height: 40pt;
+}
+
+.titolo-capitolo-blu-regular{
+    color: #27187e;
+    font-size: 40pt;
+    line-height: 20pt;
+}
+
+.numero-capitolo{
+    color: #cdd079;
+    font-size: 60pt;
+    font-weight: bold;
+    line-height: 40pt;
+}
+
+.numero-capitolo-lilla{
+    color: #aeb8fe;
+    font-size: 60pt;
+    font-weight: bold;
+    line-height: 40pt;
+}
+
+.titolo-lilla{
+    color: #aeb8fe;
+    font-size: 60pt;
+    font-family: "Bodoni";
+    font-style: italic;
+}
+
+.paragrafi{
+    color: #27187e;
+}
+
+.parole-arancioni{
+    color:#ff8600;
+    font-weight: bold;
+}
+
+.parole-verdi{
+    color:#cdd079;
+    font-weight: bold;
+}
+
+.rettangolo{
+    background-color: #aeb8fe;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    padding-left: 20pt;
+    box-shadow: 10px 10px 5px #dedede;
+}
+
+.quadrato-grigio{
+    background-color:#f1f2f6;
+    box-shadow: 10px 10px 5px #dedede;
+}
+.testo-bianco{
+    color: white;
+    font-size: 10pt;
+}
+
+.testo-italic{
+    font-style: italic;
+    color:#27187e;
+    line-height: 12pt;
+    font-size: 18pt;
+}
+
+.testo-italic-lilla{
+    font-style: italic;
+    color:#aeb8fe;
+    font-family:"Bodoni";
+    font-size: 22pt;
+}
+
+.luminosità{
+    color: white;
+    text-shadow:1px 1px 5px white;
+}
+
+.no-padding {
+    padding: 0; }
+
+.go-bottom {
+    position:absolute;
+    bottom:0;
+}
+
+.go-top {
+    margin-top: -22;
+}
+
+.border-radius {
+    border-radius: 8px;
+ }
+
+.immagine{
+    background-color: pink;
+}
+
+.vuoto{
+    background-color: rgba(128,128,128,0);
+    height:30px;
+}
+
+.blu{
+    background-color: blue;
+    height:30px;
+}
+
+.rosso{
+    background-color: red;
+    height:30px;
+}
