@@ -26,6 +26,13 @@
     line-height: 40pt;
 }
 
+.titolo-capitolo-lilla{
+    color: #aeb8fe;
+    font-size: 40pt;
+    font-weight: bold;
+    line-height: 40pt;
+}
+
 .titolo-capitolo-blu-regular{
     color: #27187e;
     font-size: 40pt;
@@ -73,6 +80,15 @@
     padding-bottom: 16px;
     padding-left: 20pt;
     box-shadow: 10px 10px 5px #dedede;
+    border-radius: 20px;
+}
+
+.quadrato{
+    background-color: #aeb8fe;
+    margin-left: 20;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #dedede;
 }
 
 .quadrato-grigio{
@@ -119,9 +135,6 @@
     border-radius: 8px;
  }
 
-.immagine{
-    background-color: pink;
-}
 
 .vuoto{
     background-color: rgba(128,128,128,0);
@@ -136,4 +149,8 @@
 .rosso{
     background-color: red;
     height:30px;
+}
+
+.immagine{
+    background-color: pink;
 }
