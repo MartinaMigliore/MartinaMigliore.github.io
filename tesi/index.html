@@ -8,11 +8,87 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>RGB - Roba Graficamente Bella</title>
-    <link rel="icon" type="image/x-icon" href="imag/favicon.ico">
+    <title>RGB | Roba Graficamente Bella</title>
+    <link rel="icon" type="image/x-icon" href="img/title.png">
 </head>
 
-<body class="">
+<body class="sfondo">
+<!--menù-->
+<div class="wrapper">
+
+    <!-- Sidebar  -->
+
+    <nav id="sidebar">
+
+        <ul class="list-unstyled components">
+            <li></li>
+            <li><a href="#1">01</a></li>
+
+            <li><a href="#2">02</a></li>
+
+            <li><a href="#3">03</a></li>
+
+            <li><a href="#4">04</a></li>
+
+            <li><a href="#5">05</a></li>
+
+            <li><a href="#6">06</a></li>
+        </ul>
+    </nav>
+
+    <!-- Overlay  -->
+    <div id="overlay">
+        <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+    </div>
+
+    <!-- Page Content  -->
+    <div id="content">
+        <button type="button" id="sidebarCollapse" class="btn btn-dark d-md-none">
+            <i class="fas fa-align-justify"></i>
+        </button>
+    </div>
+
+</div>
+
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('#overlay').toggleClass('active');
+            });
+
+            $('#dismiss, #overlay').on('click', function () {
+                $('#overlay').removeClass('active');
+                $('#sidebar').removeClass('active');
+            });
+        });
+</script>
+
+<!-- GIF -->
+<section>
+    <div class="container">
+        <div class="row vuoto"></div>
+        <div class="row vuoto"></div>
+        <div class="row vuoto"></div>
+        <div class="row">
+            <div class="col-12 col-md-2 "></div>
+            <div class="col-md-6">
+                <img  style="height:520px" src="img/RGB.gif">
+            </div>
+            <div class="col-md-3 "></div>
+        </div>
+    </div>
+</section>
+<br/><br/><br/><br/><br/><br/><br/>
 
 <!-- Chi siamo -->
 <br/><br/>
@@ -64,7 +140,7 @@
             <div class="col-md-6 rettangolo pt-4">
                 <div class="row">
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità">01</h1>
+                        <h1 class="luminosità"><a href="#1">01</a></h1>
                     </div>
                     <div class="col-md-5">
                         <h4>COSTRUZIONE di un LAYOUT</h4>
@@ -72,7 +148,7 @@
                             una struttura unitaria.</p>
                     </div>
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità">04</h1>
+                        <h1 class="luminosità"><a href="#4">04</a></h1>
                     </div>
                     <div class="col-md-5">
                         <h4>ALDO NOVARESE</h4>
@@ -83,7 +159,7 @@
 
                 <div class="row">
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità">02</h1>
+                        <h1 class="luminosità"><a href="#2">02</a></h1>
                     </div>
                     <div class="col-md-5">
                         <h4>GESTIRE un TESTO</h4>
@@ -94,7 +170,7 @@
                             visiva, stile, dimensione e formato del lavoro finito.</p>
                     </div>
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità">05</h1>
+                        <h1 class="luminosità"><a href="#5">05</a></h1>
                     </div>
                     <div class="col-md-5">
                         <h4>Il COLORE</h4>
@@ -107,7 +183,7 @@
 
                 <div class="row">
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità">03</h1>
+                        <h1 class="luminosità"><a href="#3">03</a></h1>
                     </div>
                     <div class="col-md-5">
                         <h4>DIFFERENZA tra CARATTERE e FONT</h4>
@@ -115,7 +191,7 @@
                             influenzano maggiormente la scelta della font.</p>
                     </div>
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità">06</h1>
+                        <h1 class="luminosità"><a href="#6">06</a></h1>
                     </div>
                     <div class="col-md-5">
                         <h4>Le TECNICHE di STAMPA</h4>
@@ -130,13 +206,13 @@
     </div>
 </section>
 
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <!-- 01 - Costruzione di un layout -->
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 numero-capitolo">
-                <p class="">01</p>
+            <div class="col-md-6">
+                <p class="numero-capitolo"><a id="1">01</a></p>
             </div>
             <div class="col-md-6"></div>
         </div>
@@ -146,7 +222,7 @@
                 <h3>COSTRUZIONE</h3>
                 <h3>di un <span class="titolo-capitolo-blu">LAYOUT</span></h3>
                 <h2>Margini</h2>
-                <h2>e <span class="testo-italic-lilla">colonne</span>.</h2>  <br/>
+                <h3>e <span class="testo-italic-lilla">colonne</span>.</h3>  <br/>
                 <p class="paragrafi">Per i lavori da stampare, per prima cosa si deve realizzare la composizione della
                     doppia pagina,
                     da estendere poi al resto del lavoro. Questo è importante per visualizzare il rapporto tra
@@ -172,7 +248,7 @@
         </div>
     </div>
 </section>
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <!-- Tipi di Margini  -->
 <section>
@@ -183,28 +259,28 @@
                 <p class="titolo-capitolo-lilla">MARGINI</p>
             </div>
         </div>
-        <br/>
+
         <div class="col-md-12">
-            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <div  id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner ombra border-radius-2">
                     <div class="carousel-item active">
                         <img class="d-block w-100"
-                             src="https://st.ilfattoquotidiano.it/wp-content/uploads/2021/11/24/bambino-meme-1200.jpg"
+                             src="img/slider/slider_1_margini.png"
                              alt="First slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100"
-                             src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUREhEVFhUVFhUVFhAXFRUVFRIXFRUWFxUYFRcYHSggGBolGxUXITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OFxAQFy0fHR0tLS0tLS0tKystLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0rKy0rLS0tNysrLS0tNzcrK//AABEIAKgBLAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAIDBQYHAQj/xABDEAACAQIDBAUJBgMHBQEAAAAAAQIDEQQhMQUSQVEGYXGBsQcTIkJScpGhwRQkMjVz0SOS8ENigqKy4fEIFTM00iX/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAhEQEBAAICAgIDAQAAAAAAAAAAAQIRAzESIQRBEzJRcf/aAAwDAQACEQMRAD8A4aAAAAAAAAAAOh9H5r7PTfsxzXHK7sQ9jbVlWk00le7SXC3Ak7FpPzFKUcnuLsks8mXMPhqMJuW7uTeqeS7uD7jnXadJTie2KnJe0viil4imtakf5kRRIvUyP9spe2n2Z+BXHFw/vPshP9gIUsTW+1yjJy3PUSXoblsuq99TK+vLqUY96vJ/6rdx4sS/Vi7+1JJKPWo6t9tke0o2VvnxberfWKRegi/Es0y8jLS/SlmZbDV7GE84lq0u1kzC4qL0kg1GZni7IgVcaXNzeWR4sA2NJax1T0ncxvSDC71CpHnF27s0bfhNlriiH0jwCjDJGoy4NiFn2leFaUleTirq8lm4q+bS45EzaWG3ZTXsSa7nmjHQOzhZ7fRGx/JTs+D3p+cxDytKrN7ruvZhZfG5u+wtlUcO/N0qdOEWvwwhGOnO2veYfye7R+07OwtRtt+aUJ6/jpPzcm++F+82KDtNdr+ZUSd2x83+X782l+jR8GfSk1mz5q8vf5q/0aPgyUc5ABAAAAAAAAAAAAAAAAAAAHSOj8fu1L3V9SfKCeTVyP0eh91o+4vFk2UTnXWX0gSwdPXcj/KinzaWiXwRMlEsyRGotplcWWpSPFVMqlRZciRqdUk02BfgWsRibejH8XF+z/uXVoR8HTvm9Xm+8N4qaOGbd3m+bMhSoW4EnDU0iurI52vTxyaTdkYlRkt7TwNlpQjJXi00aTh8RBvd3kr6SfPq5mQ6ObUf2p0bScbNb7dllbNLius3jXPlwncbZCmY/b9DegzLyRYxjjutN58uL7jpp5tuFdKsDuYhrhUgpd8bp/I1G1m0dR8pGG3PMTcWvTlHedtGtLHNtoU92ozrGMncPIJtDewtWg3nSrKUVyjVjf8A1Rl8TqFSnJ2tFvTxOIf9P2NUMbOm/wC2otL3qbUl8nI+hA5qHE+ZvL4v/wBaX6NHwZ9OHzJ5fvzaX6NHwZBzcAAAAAAAAAAAAAAAAAAAAB1bo5H7pR9xeLJcokbo2vulD3F4snSiZrpESpEjVET6kSJWiZrUY+rIsbxcrFhmGl+lMyWHZh0zIYOoWKy1ONyxg1Z7vJ2L1FlNan6afBtJ/X+uola4/d0yCRY2ipJWiteei7T2+dlpdpddna+RLtbrOVeyTU0wOH2S95VJybce5dyM/gcbTU4xc0pSSajf0mufVo/gU4id1Yg4ysoRtCCc7WS0S65PgjUTUkdAwc/OwUm5K14uOma4881ZkmGHS0VjGdDq1SdCLq2crWe6rLLTXqNijA9OHT5vL6ysaF5TNm+cwVSS1puNRdzz+TZxXbEb7s+aR9M7YwSq0alN+vCUfij5s2hRapuL1pylF9qZtnHplPJ1tP7PjcPV4RqxUvdk92Xykz6yPizZ1S0j696KbR+04PD173c6UHL3krT/AMyYrLLHzJ5fvzaX6NHwZ9NnzJ5fvzaX6NHwZkc3AAAAAAAAAAAAAAAAAAAAAdb6Lr7pR9xeLMlOBA6K/wDqUfcXizKyRluIFVEOsjI1YkKrElbjDYjUsMm4umQ2jm0obLtGpZlmQTCtgwdYlV8435Zmt0sZukiO1JyaiuOXWa7J6u2dddWVl3kyMsjDYWsk92Ss18HfSxko4hWsmuw5616r3SyzcX/OIUVGTbbRi8VXkuBDliPWm4winnJ69iXF9QmO2Ms9OldGMVFKS3koq1rtJX6jYoYiHtx+KOJ1ttXm3h3KEclFPNSskryXW7vquZjYnSeU/RuoT7Lxfatfge3Hisj52eczytdWqxOAdOMB5rG4mnbKdqi/xK7+dzp9TaWJlC1OUadVZwlbeo1H7M0+D6rM0nbVOvtStCdHDS+00oypYrDq29Ts/Rkt5reg7uzJYzjNVzCi92XefSXkK2n5zASot50Ksl/hqemvm5HzrtfCTo1p06kJQnF2lCSalF8mnodQ/wCnvbG7jKuGb/8ANS3l71J3X+WUvgT6K71jq0oxvCO872Uc/pofM3l0c/8Auj84kpeZo3S0WTPqE+ZPL9+bS/Ro+DMo5uAAAAAAAAAAAAAAAAAAAAA670Vf3Sj7i8WZdmE6Ly+60fcXizJzxcI/ikkZrcKyIc0W8TtiHqpv5IxtbaUnpZGa3ErEwyMVXkkeVKrerLUqUnpF9uiIu1qpVLDmS1g3xfcv3L9KjFaL9y+KXJDo4eUupc2Z7Y2y1feedtH1kO9lfkYvE9KZx9Gnayyvw/d9p1wwY8/63PE4RPWN+rmYTaWHai0pzivVkpaP2ZJ5djMdgOmEllVhvLnFu67m7M2SlUp1470WpRlk1y7VqmdLi15fxz7GVK8Jbsqs+p3klJd3gVYOjOTv+Lr3rv55m4V9mQlenVV4N5TX4qb0jNeD5rsNa2lsqVCe7UvzjVhmpLmlr2rh8zWMjnnv+pVKL4qxW4572d/aX1M15Osa41J05WqqcU41dXDdbumnpfeXwJnS+lCnu1lTsr7k5QVrPWLa67NX6kWc08/CpeG/j84s7D6Yul6FX0483r38H3rvMlttzqShtXZdS9egkqlOP4501wlD1raNK912I1enWoVOMX7ys/iidg8PCElOlUdOS0kv3X1Olw25zK/bLeUfD0trYCG2sLG1Wj/DxlH1oW4y57r4+zLqNC8n21Ps20cJWvkq0Yy92p/Dl8pN9x13o3tSFOpOdanGarQ83iJQSSrRtZSqQWTkrv0lwbOTdN+jTwOLlTg3KhO1TD1ldqVOV3Fb3tRs0+PonnyxuPqty7fXJ8yeX782l+jR8GfQHRqu8ThMPiJTlerRpSlG6SUnFOWmet+J8++XuKW1pJL+xo+DOaucgAAAAAAAAAAAAAAAAAAAAN32ViZ+Ypx3nZRWRdlI92FgN6hTk27OOSWRl6OFjHRLtebM+O2/KSMVToSlmo9+hLp7Nesn3L9zJZcrIt1KjL4pc6sxw0I6LveZarT4Hs6rLd7l0m1tst3LsyrA4bzlSNLe3d523n2XAw+28Tuw3U85fL+vqa1cynSSf8ecFpBuK7uJij0SenO1UpE7Z20p0Zb0X2rn2mPRUUldC2R0gVV/+PK1pNvK/JWzV+ZlMXWhiaUsO7PROorb9JNb0W17Ssu65zXZeI83Pe4cVzRvGGrwSU07RUY70ud0l3vdTX+IzW5lvtb6BbPlRx86dRelGE4y/vZwaa5pqzTOmQ2bK7lGWT1jZZ9ppCUpuhiqa/jU7QktHUpyyafWr7y7+ZtdHa07Waz5nh5/3293x/11GvdL+g8atquFgoVb2nT/AA05r2l7Mvk7mI2X0Fxl7VJRpx9q+8+5L9zoFPa8llu587XTKMVi6tVP1I+1x7kax+RnJpL8fC3bB0Oj0aFSH8aU1m5RyWmjy0LHSjEQrUZ0PwxaSjo/STut1PjfsMjicTGK83TWb/FN5t9rMXHEKOVk1LVNJpq/FM1x5ZZ5yU5McMOO6mm/+R/F72z40XK7oTlTvplL045cMp27jjnl+/Npfo0fBnVuhO06FCc7RjDzzjvtNqO9G6UraJ55nJ/L1UUtqyaaa8zRzTvwZ2zwuNeDHKVzkAGGgAAAAAAAAAAAAAAAAAAdJ2BL7tS9xeLMgYvYMvu9L3V4vUnORUXJS/5LFRhyLU2Acihs8vfgUSIr1si1JtNNOzTTvxyL1yPWA13ajvWqPnKT+ZFsS9oxtUl23+Kv9SNY9LlVKR6UnqYF6jK3C5mNmY7dTpyvZ5xT6tbvkYNSL0Fx5F0u3Tuh7p1a6k3qpRjnlvpRfxcd63us3DF7OeqaOM7C2r5mTUr7krXadnFp3UovhJPR/Rs6js7pVGSUKzV3lGulaFXt9ifOPwyPF8jiu/J7vj8ss19rkN+N7VLdVj11Yt3lOUkleyeTPcXdxc1ZR5t6nNNv9J8RGcowlFU77qkldu2Ts721TWnA48eFyvp25OSYz22/am3KEI707LXcpR1fWzVf+7ucnJ5XenJcEau8S5O8m23xepdp1z6HFxzD2+dzct5P8brg9q9Zp/TjE+cxO83f0IL4IrhiDFbYqb1S/UjfNd4uXHNVBAB5XYAAAAAAAAAAAAAAAAAAG+bArRlQgoyTcYpSV80+tGS7TnGHrypyUotprNPq+qN62VtFV6alpJejKPBPXLqZUTXrqW5Svf8AplbkUAeLRlmRcmy00BbbKKyyK2uRRPMgw+16X4Z8/RfatPk/kYw2ijTU1KnLRq/euKNdxNBwlKL4P48menG7jne0dhIqsVwRrSbVU4JFTCDKikn7P2nKl6OUoP8AFTeaa+hAZ4Szay6bbT2j52DhRruLs7UajyWXqz/+rdpr2Jwc6VGUatrN3pyUlJOXrK6us7J9xAkyNUquWrbtocvCTp2/Jb2QkXlMsIuI3GKkQmRMa7y7kXkyNiHmZ5P1Me1oAHBsAAAAAAAAAAAAAAAAAAGfWz3PBqo16UHJxfOnfNeLLfRXFblXc4TVu9Zr6/E2LZEb4aCejhb43NNw03TrRfsTV+52ZR0FczyQZTJhFE2UWK5spYFE1zLE2XpFqQFuMt2SlyZTtnASqLfile2SXFHtTQymzZb1NL2cv2OvFfemM2iuPiXLmX6QYHcnvrSWvVIw1zswuA8TDAM8BIwVByYCOB3qcn61suq2djEo3LDYfd7H48DVMVR3KkoPg38OHyOdjcUJFSQsepFHhHr6klkavqY5Olx7WwAcWwAAAAAAAAAAAAAAAAAAdB2J/wCvS1/Cvqaht+lu16i5ve/mV/E23Ya/gUvdRgel9G1SMl60bfyv/cqNh2dV36MJc4xv22s/AkWMT0XqXoJezKUfnvfUyyBVDSKLnsn/AMlqUrAYfae05xm4wStHJtrV8SPDa74l+WCcpSlJpRu3ftZG2lhY2iqcXvX15rs4doX0lvEvTR/1Yyexa9m4v1l80Y/BbPtFb2tlcmRhuu64ZlxuqzYyePwyqQcXx48mtGadisNKErSXY+D7DdYSvG/NFlYeM1uyimnwZ7O3DqtJsVI2ev0Wu/4c7LlJXt3ov4bolFZzm5dSW6vjqTStXwuElUdortfBGx4XZ+5GORn8Ns2MVaMUl1ZEXaPo58Iyj8JXX7E00pVBbpp/Sqg4VYy9qOvPdf8AujfaMLxRhumeA3sPvJZwd79uoynoxvtosJFZHgy9FmJdtWKiNiNSSRsRqZ5Olx7WgAcGwAAAAAAAAAAAAAAAAAAbLR2+qVKnCMN5qKu27JdXWy3t/GKtSpTStnPLlayYBUT+iqtRb5zk/kl9DLyeX9ZHgAjuq3+Fdr4FnceuvW9O4AsFSp/8vh2LgVRoWAFEiEC3NAERNwecLcrr6lUJKN29Fq+S5gHrw6csu2Vw2Z5Xqq4BpYfalos+zP56Ix2PvOnVvk1DetyfpPJ8VkgCG03ZrvTg+pFW1YKVCrH+438MzwFvTP25HEv04noOOLrkrUCLiVmegnJ0mPayADg6AAAAAAAAP//Z"
+                             src="img/slider/slider_2_margini.png"
                              alt="Second slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100"
-                             src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISFRgVEhIYEhESEhgSGBIREhERERERGBUZGRgUGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhISGjQhGCE0MTQ0NDQ0NDQxNDQ0NDE0NDQ0NDQ0NDQ0NDQ0MTQ0MTE0NDQxMTE0MTQ0QDE/PzQ0NP/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAECBAUGBwj/xAA9EAACAQIEAgcFBQYHAQAAAAABAgADEQQSITEFQQYiUWFxgZETMlKhsRRCweHwI0NicqLRB1Nzg5Ky8RX/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAjEQEBAAIDAAICAgMAAAAAAAAAAQIRAyExEkEEMiJxQlFh/9oADAMBAAIRAxEAPwDxoR7yMUKaRMaKNGEjNjDL1V8JjTaw3uL4SMlY+pWiXeTtI21kqqjiT128fwg7wmJHXP65QNppGdMY6iK0cHWNIqWAJOvIDtMAzExO15ERKWqQKjW3WANr66bH6zRwDmm1zqyOOqdjYzJWXKV/G+kDi3jcUXqMQMqM5YID1VvyE3OB46nTualAVri3XsAuvvBjqD4TnABfWbfCqiWs5QggC1RQdL8idpGXise3r3R96GLpFHohQbZb1Wc25WzG48p5x056Ivg6hand6LaiwuUJ+73zpuj2Fp0znpMMx0IpuQCO8AgTr+P4UYnDHMLMF3tflsbTCZaqvi+dXWQYTW4rgzSdkPMA3A0KnUEfTymU4m8u0X0fhp/aDwP0l0HfxlLhvvjwP0lxOfjJyaY+CSamDEmslaL7yQkH3klgBGlc7ywZX5xQUdDpJAyC7R7wppKZLNBAx1MR7FfaRQ6x6psBAo0UGxWaNeQJjXjFrj4o5iE6nGUUeNAFNjCN1B4TIE1cH7okXxeK1eRG8edBwTozUxCGpdcoUv7IPatURd8mlr6eMjemkxuXjlq1DM+mrHZRqSZucI6OJUt7d3W+mWnluveSQb+Am9guH0FvlU081rtdqzt5sRYdwmzh8PhswVmbLoMyoiEH4iNbyMuTrptx8Hf8ptz1foCj3+y4oM6qWFPEJkZ7C+VWXS+nMTh6xGlhae3JgadLM4/aGkDmQNlOU6Zh26Hy8p5F0pwVOhiqtKizNSRlyZiC4DIrFSeZUsRfuj4c7luVP5PFjjq4+MUwiL3XiRZYopNtuaTaHs+Y2+kuYZ1AIYG+4YHbuIO4hqNGWHwhIuoG17A6+Q/CL5L+DLrOSf7RUBrqYXE0iOVpWuR3Q2mzT0Dow1rZdG78w+k9UpVXNAgCz5dGBDi9vWeC8Dr4jMPZO+4uFzN8hPRTxnFIl6hLJlC5kDBlfXQ6Agznzx/ltpLuOb6TU86BnFnV2BIDXyFz1rX23nHVFnYY/EtWR3Lsz5dS4OgHIG+t9BOOG9ppx+FydUXhy2cfyt9JZX8ZDCUwGDX3Di3ZYL/eEX8ZWXp4+HMnTkIRJC0Km8cSNTeSEVAhMDJsYMGELIZdoiZHNEIfajAya7iQEmu4hQLiRoIACHxHKCAigRMaTtGtGVcgI8aPOiuQo0laRhAkomrgvdEy1mpgh1R4ycvGmK3RpliAJ1nC8c1DIV3SxHZpMTAUgNxqZrYXCNUbKilj2AEmc3Jk6+Ga7SOLO9tSSdO8xVcUyFcwYFxnFxYZL2B9YuKU/YZC1lqdcFNc4IbTMPP5QOKxftcr1GLVAAmp6uTsmXrpmTd4TxA5gL5zU6hVhdbMbes8443Uz4iswvZ69QjNo1s7Wv32tO04RWFOqrkaKwaw7jynGcbVhXqZt2qM9+3Mxa/zmvD1aw/Ku5FJFl3D0oLD0rzSo07TfKubDFZw9MWhhTg6Zh1MxuTomKNVS65W1A2NhcecyMTgwNfpNmDdLxzNOWErI4ViXpVFZXNOxHWBtbWeq8UxFSvQWpTqoxCC5YoqkAc2Bt6iecHBh7DQNffa4PKdRwpRhabA0xUJG+mcLtmXe/eN48spWUxsY9bFEJUXKM7KAGBFr5h9RrfnOcTedFxZ0qIzra6ixsD26XJ3NrTnU3l4eI5PVjC+/wD7Z/CGpwOG9/8A2z+EIhjy9PHwSTBkCZISKtBzJCRfeOID7SaBvCtAQgyFvJjaChBtFQSmODrGWIbwUNXbaQVpCqY14QCgyOeRvGvGTlgI8YR5vXIUa0eKIHWa3C+XnMlZqcMfKAe8xZeNML26jBUCRcazqcHjPsKU2RMzVsxYgkk5COoezecxwrFKNCdTsdTN/wC19QICCBfW2us4s5u6d2NmnP8AFFevUes987sW12F9h5CDo0geqy2217J0BphxBPw8gFjbKvfrCeK2q0cERqG8jMjpThgSjWs3unw3nTUWFrE+fPxmF0jv1L8iZeF7Z59xhU1sAP1eWUaVjIV2uAfI+I5+f95rZtlvTUSFAmEmIqJqLlfAkTRwnEUfQmzdknLDS8eSXqr4EiwkwYst5m0oBaXcLinNl94g6do8/wBbwX2UmWOH4Zru+UsKdNqht2IpY/SUzyVOMVMq5FKgs2Zxa2Y8tphgC99u7lD4uuzvmI1ve3KVxN8JqOXO7o+HHXP+mfwklkcN75/kP1Ekg1hl6vHxMyayAEkBJq4i+8cQbHWTU6xaE9O+0AIZ9oK0IL6cCFg7wl4UQ4jqNZEGSWJRqu8iZKsdZCEI95EmOZC0dJzgEe0uUuH1HTOqXS+W+ZRc3tYDnqZdwfRnGVtKdAsbXtnpqxGuwZgTtym9snrmYtorTV4t0fxeECtiaJpBzZc7ISxAueqCTMuE1fCSWXsJt5yiJfwpBGg7B521k5Lx9X8JWyMOydHhsTectNXAVSR3iY54/bowy+nU4apfaXmAYEHmNRMDCVCu+g+suDFC/VN+6YN5UQjISDqAbA9omHxytchd7azS4njTbQWFr6ic2zZiSd7zTCfbPKoLJGqadzYMGGXK4DKewkd28YCEamHFjNUa6VcTxKo2hqOLadV2X5A2lQ4tj75FQfxi7DwbcesLiOHsDpr4a/OSw/D2J62g+cvcZfHK1pYD2mQHUqQCDcHQ7A98KcWQfdOh1LEKoPZcxxTCpoOUxXqMTZjtoAeQmcxmVbZZXGadLga5qMFz01JNhnqogv3k6Cei8G4I4p1adRAr1MI9yCGUh1IFmGh/8njuE1a52GpnVdH+k1agtXKQxqJkX2hZvZrqOqL9h+QheO/TL52sHiOGyMR2G0pMLS7icQGJvv2yoxufOaTxnfRML7zfyH6iOhj4Yddv9M/USNOTfV4+CSSmRjgxLgT7x0OsjVipQH2K50grwr7QMUOiMskYzNE0KCBk13gs0mrRaNGu2sgGkaraxgY5CEJjyEnaFDH9trcXHXzjsGt7WnonCemlPOi1yhphsxa1nQAZuqdxqJ5xl0011tIqhM0zxmXVYR0v+IHHRjsTmW3s6dNaahTcHUszeJJHpOWKQtRLbXtHD2tppe/ytKk+M1CyCtLuBGh8ZVWpYW56H0v/AHlzBtceGkMvBj6sy/wprEyhJ0KpQ3meU3Gsuq6RHGx+gmhS12P0mKla9ppYStMbi2mSPE6dkJuCT1SCNQN7ic4yZWM7KmmfkGI1AO17aEzlceLGxADISGI+815cK1XYSdKRBvAPXsSJWtlMtLlSEo09QJnHFG0sYXiAuM+n8X94viqZS1p1U6tpROERtxr3c/KHq46nsCGPdNjo0iI616yFqebKpB0Rv81hzAOnzhh1RnZf+tTgPQqjlD12ZmOpoq2UKOxyNSe6WOMdB6dQFsI3snGuR2LU37rnVT6ib7qQQwOhFxUXUMO+WaVW++jfI94nfjjjY4crZXhuPoVKTslVDTqIbMjbjv7weRgkaenf4h8ISrTXEG4eiQjFd2puba+DW9TPPRh6I+8/oJhnj8bpU77Phveb+T8Y1OTV6aklSxLDLqBaCTaZVrBSYwMheOJKtoVZKhIta+t/KEpug5N6/lAHqbQJh3qJ2N6/lBh6fYfX8oQ7UrR22kTiE5KT5/lGNYfA0C+SBMmhgzVX4D6x/bL8B/5Q0fyRfeOJE1B8J9Yvaj4fnAbEks0D7X+H5yQvA2TSrZf+Qb0k1xNr6b38ryveK83c21lsRcW7ba+EhUe/LS0CDJrAJhhcG2wA8bQ+B5+UAFMuYakV35221ivhz0YCdVgOjuSg9Ssv7V6ZyUz+7Ftz/GflLvRro77O1asv7Q6pTP7v+Jh8Xdy8Z0dajdWud1I+U6eLg63kjPk71HmmGfQd2kv0qtjKNJbMw7GI9DCgzgznddWPjpMFXub32FvKUeK8LNQl6erHdNAO8r3wfDagBs23d8ptU2uBJx6vZ2dOILlCUOmtyp0II/8AYREUzpuJ4OlVHXFm5Otgw8+c5rE4R6J3zpuHAO3f2Gb3jsm2czmyOHHdbwjfZQPuiOtZWFr8pBLLoNT4zLtvMp/pbwHC1qPY9VRuRv4CdhhkWmoRRZVFgJznD+qAed50uHYMBM8tqkjT4XilpsKbj9jUNlJ2p1D93uU8uwzVrYY09Rql/NDOcdVZSragi02OjXEzUVqNQ3rUtDf95T+6/wDednBybnxrl5sNdwTiSCtQqodc9Jx3Xykg+oE8hVQRftF57TWoZTdfdJsR2XniLvlYjYB2Fu4MRaVzTxjjloV1FoBIQvf0kBOetpdnjgSMe8mqTVb+Mcp3WksOt9ZYKRaG1ZqdxBCnraaKppF9nXsvDQ2r4TDEm6t7p9ZpZO6Uh1fd08NIzu3aYyIcOFzm1BNxbS3dAY7DogGW9zvfs7oVa7jv8byOIrM4AKjTxgNqSJeM6ASyiMOXygaga/5QPaIivBljFCntjWitJRTdzmAjgmKIQAqVCPznb9AeGiqWr1F6lNsqC2jVNy3fbTzPdOHpoXYKouzMFA7WJsB6me08KwS4ailFf3aAEj7z7s3mbzbhx3lulldRecwFTYyZMg+07d9MNdvOGXrv/O3/AGMmBFYZ31t12/7GFVJ4/J+1ejh4JhjrNrCP2m5MwaRIOu02MK+oP60mdXGhUwoYdh7YD7ARuLqe64I7J33AOFUnT9oAzMNuaXHKZ2M4W1NmUi4XUMBuvIzbi5PlPj9ufkx1k4HGdGNS9JSRuaY1I707R3RsPwQZbgAX9Z6Jg0pkBWvTcbVBcr3Zhy8RBcW4I7DOgAfsBHs6o7VOwbu5w5Mb7F8eU8rzxsKyG3ZNDB1CNITFUzrcWZTYgixB7CJTWqAZhp0baoYmUquLOHrpWXdGsw+JD7w/XZLOEqBpm8XtrKw6yTnNx6lcMoYaq6hh3gi88b6Z4RaWLqKosHy1LdhcdYeoJ856r0ecthKBbf2Y37OXynB/4n4LLVp1htUpmm3c6G49Vb+mduXeLg1q2OIQnwA7YZTKtRrenzhKTaTnyi8b2NeK8heOJDU/t2XaP9rqd3rBmIwAhxlUcx+vKMMbWP37SB2iQawGk2rVfjgnrVPjhXgTCBHPU+M/ORzufvGEgrxg+ZviMgCfiMZ3gs8ciMqOAe2TvKvtbDvhBVjuImSlFGjy0FFFFANbowgbF0AdvbKfS5HzAnr6teeMcFrZMRRb4ayehYA/Wex020nTw3UqM/oUGRfaKM5m29o088f33t/mN/2MtrKoKl3JJBzMVsLgnNseyWUOk8rP9q9DD9YfLeaGBR1Af7quEvcXDkZgLeA3lBVPIE2F9BfQc4dGkLj0LgWIYBSG1Jubb+Bna0HDLqL3Fj4dk8w6P4q5ynS073hmIvMPncMtwcmHyx2q8U4MVJemLruV+H8pQw2MenoDdOaPqD5Tq6lQ2JXUjcd0y62Fp17lCFf4dgZ6GGUynbj8ZmP4bQxi3HUqgbi2bw/iHcdewzgeNcGq4ckuuamP3iXKefNT3GdtiKL0m1BUj9aQbYtiSb2JFj3+PbHeKZLx5Li89wta2oMsYfBvinyKOoCM9T7qL49p5CdTVwmHY9fD0s3xBMl/ELYGW6KLTAUIFpjULTAVfGwjx4NUZc3XS/hwAqoosiKFA7hpOb/xDwvtMGzgXajUSoO4Zsjf0ufSdMlRfu6Sj0goiphq6H71Bx5hCR8wJrlOmG9vDXaSRxIExKs57DnVGzSQMAG+cXtLSNNplBbxzBK15MmLSkjEh1kWMih1hohXaBzRqjwLPHIVyWSwtAs0BnhLx6KZBO0Fmk3MiN7RxNpSQMig1sf0Y+WMgoooowUeNFAJ03sQRupDDxBuJ7Hw/EioiOuzqGHmJ4yJ3XQfil0NBj1kJZL80OpUeB+svDLVTZt3QMBj6op03cm2VGPnbQRU3mB0yxtlWkPvddvAe6PXXym9y+MtKY7unM0mvr26zQoNpMyk00MM2k83O7rux8GZyNjblp2QlJx/5AsYU1M2XqgZUC9UWzWJ6zdra79wiNqYWoabgjUX0I2Inf8AB8QHCkHQi/ZPNqDHTXQbC+g15Tp+j2N1yXsb3HnvMOXHca436dvjcUaZSoDdT1WHI84LFICPb0rlbXKqbFW5HwjVLNSYMLgWbyB1t5XmLgMe1JtNVbQpyIM6fxsvlj/Tl5cdVsUOJpUGSuL9jcxM/HYHIbqcynUMOcbFUFIz09UOtuansMFRxbJ1W1TsP4TtxmvHPVZjfQxUqrJpuvYZZrhG1WUnuJqhdSqvZaSxL5qbjtpuP6DKCPaVuN8QNLDVXHvCmQv8zdUfX5ScvDjxwHqqf4R9Ii5iA2HISYtfunPTDzQd7mWSgErVR2GQcHRhJZ5WUyReLTSZdCVKtpBnI9LwZa+pNh84O8abVkueQ9YJnNuz8YgCCLaiPUX9CBojXa525QiU6h2UnykFYjY28IZcVU+IwEiX2Ko3ID+YiTp8Ibm4HgCZBcY47/GSXiJG6+hgehzw6mPeYn5Rxg6Xf6mQHEl5g/Iwn/0k/QgNMKK8UUpBRRRQBxLXD6zU3Dr76nMNbajlFFAPVOH44VEV12dQRf6TkOkFcvXfXZsg8FFv7xRSuT9YrD1USW8O8UU5a6IsASaGKKKqXaQt6S1ScoQVNiIopNVHoPCMX7SkCdyhB9Jm1U5ruNe+/bHij/D/AMkfkfQOGxTUzrqDuDzll2VtRziinoYuTIHLbaReKKaRFCyzA6ZuwRE2Dl3PflWwH9V4opHJ+p4+vNooopgCvIkeUUUk4g0iWiiguItyiUm+vOKKAOLg9xiJiigZxGvFFA0SZHNFFAjZoooo4Vf/2Q=="
+                             src="img/slider/slider_3_margini.png"
                              alt="Third slide">
                     </div>
                 </div>
@@ -219,9 +295,15 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2">
+                <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+            </div>
+        </div>
+    </div>
 </section>
-<br/><br/><br/><br/>
-
 <!-- Tipi di Colonne  -->
 <section>
     <div class="container">
@@ -231,28 +313,27 @@
                 <p class="titolo-capitolo-lilla">COLONNE</p>
             </div>
         </div>
-        <br/>
         <div class="col-md-12">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner ombra border-radius-2">
                     <div class="carousel-item active">
                         <img class="d-block w-100"
-                             src="https://st.ilfattoquotidiano.it/wp-content/uploads/2021/11/24/bambino-meme-1200.jpg"
+                             src="img/slider/slider_1_colonne.png"
                              alt="First slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100"
-                             src="data:image/jpeg;base64,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"
+                             src="img/slider/slider_2_colonne.png"
                              alt="Second slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100"
-                             src="data:image/jpeg;base64,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"
+                             src="img/slider/slider_3_colonne.png"
                              alt="Third slide">
                     </div>
                 </div>
@@ -268,65 +349,66 @@
         </div>
     </div>
 </section>
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 <!-- Le griglie-->
-
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10">
                 <h3>Le</h3>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3 class="titolo-capitolo-blu" style="color:#27187e">GRIGLIE</h3> <br/>
-                        <h3>Griglie</h3>
-                        <h3>colonne e </h3>
-                        <h2 class="testo-italic-lilla">margini<span class="paragrafi">.</span></h2>
-                        <p class="paragrafi">L’organizzazione di una pagina prevede lo sviluppo di una griglia (o
-                            gabbia) all’interno della quale posizioneremo gli elementi. La griglia consente la creazione
-                            di
-                            colonne, margini, aree per il testo e per le immagini. Una griglia ben progettata consente
-                            un certo
-                            grado di flessibilità al <span class="parole-arancioni">layout</span> delle singole pagine,
-                            ma allo stesso tempo funziona come linea guida che conferisce coerenza visiva all’interno
-                            del lavoro questo è fondamentale in ogni tipo di progetto editoriale, ma vale anche per i
-                            siti
-                            web.
-                        </p>
-                    </div>
-
-                    <div class="col-md-4 "></div>
-
-                    <div class="col-md-4">
-                        <div class="rettangolo pl-3 pr-2">
-                            <h1 class="luminosità">COSE da RICORDARE</h1>
-                            <p class="testo-bianco">Organizzare le informazioni in una pagina è fondamentale per
-                                veicolare i messaggi,
-                                soprattutto quando si maneggiano grandi quantità di testo. <br/><br/> Ci sono molti modi
-                                per dividere la pagina e
-                                la scelta dovrebbe dipendere dal tipo di lavoro e dalla quantità di informazioni da
-                                presentare in ogni
-                                pagina o sub-divisione</p>
-                        </div>
-                        <br/><br/>
-                        <div class="paragrafi">
-                            <p>Sovrapponendo la suddivisione in colonne verticali con righe orizontali si ottiene la
-                                <span class="parole-verdi">GRIGLIA DI IMPAGINAZIONE</span>, per collocare in modo
-                                geometrico
-                                ed armonico gli elementi grafici (testo, immagini, grafici).</p>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>
+    <div class="container">
+         <div class="row">
+             <div class="col-md-4">
+                 <h3 class="titolo-capitolo-blu" style="color:#27187e">GRIGLIE</h3> <br/>
+                 <h3>Griglie</h3>
+                 <h3>colonne e </h3>
+                 <h2 class="testo-italic-lilla">margini<span class="paragrafi">.</span></h2>
+                 <p class="paragrafi">L’organizzazione di una pagina prevede lo sviluppo di una griglia (o
+                     gabbia) all’interno della quale posizioneremo gli elementi. La griglia consente la creazione
+                     di colonne, margini, aree per il testo e per le immagini. Una griglia ben progettata consente
+                     un certo grado di flessibilità al <span class="parole-arancioni">layout</span> delle singole pagine,
+                     ma allo stesso tempo funziona come linea guida che conferisce coerenza visiva all’interno
+                     del lavoro questo è fondamentale in ogni tipo di progetto editoriale, ma vale anche per i siti web.
+                 </p>
+             </div>
+
+             <div class="col-md-4 "></div>
+
+             <div class="col-md-4">
+                 <div class="row">
+                     <div class="col-md-7"></div>
+                     <div class="col-md-2">
+                         <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+                     </div>
+                 </div>
+
+                 <div class="rettangolo pl-3 pr-2">
+                     <h1 class="luminosità">COSE da RICORDARE</h1>
+                     <p class="testo-bianco">Organizzare le informazioni in una pagina è fondamentale per
+                         veicolare i messaggi, soprattutto quando si maneggiano grandi quantità di testo.
+                         <br/><br/> Ci sono molti modi per dividere la pagina e la scelta dovrebbe dipendere
+                         dal tipo di lavoro e dalla quantità di informazioni da presentare in ogni pagina o sub-divisione.
+                     </p>
+                 </div>
+
+
+                 <br/><br/>
+                 <div class="paragrafi">
+                     <p>Sovrapponendo la suddivisione in colonne verticali con righe orizontali si ottiene la
+                         <span class="parole-verdi">GRIGLIA DI IMPAGINAZIONE</span>, per collocare in modo
+                         geometrico ed armonico gli elementi grafici (testo, immagini, grafici).
+                     </p>
+                 </div>
+             </div>
+         </div>
+    </div>
 </section>
-<br/><br/><br/><br/>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <!-- Esempi di griglie  -->
 <section>
     <div class="container">
@@ -344,20 +426,20 @@
                     <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner ombra border-radius-2">
                     <div class="carousel-item active">
                         <img class="d-block w-100"
-                             src="https://st.ilfattoquotidiano.it/wp-content/uploads/2021/11/24/bambino-meme-1200.jpg"
+                             src="img/slider/slider_1_griglie.png"
                              alt="First slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100"
-                             src="data:image/jpeg;base64,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"
+                             src="img/slider/slider_2_griglie.png"
                              alt="Second slide">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100"
-                             src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISFRgVEhIYEhESEhgSGBIREhERERERGBUZGRgUGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhISGjQhGCE0MTQ0NDQ0NDQxNDQ0NDE0NDQ0NDQ0NDQ0NDQ0MTQ0MTE0NDQxMTE0MTQ0QDE/PzQ0NP/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAECBAUGBwj/xAA9EAACAQIEAgcFBQYHAQAAAAABAgADEQQSITEFQQYiUWFxgZETMlKhsRRCweHwI0NicqLRB1Nzg5Ky8RX/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAjEQEBAAIDAAICAgMAAAAAAAAAAQIRAyExEkEEMiJxQlFh/9oADAMBAAIRAxEAPwDxoR7yMUKaRMaKNGEjNjDL1V8JjTaw3uL4SMlY+pWiXeTtI21kqqjiT128fwg7wmJHXP65QNppGdMY6iK0cHWNIqWAJOvIDtMAzExO15ERKWqQKjW3WANr66bH6zRwDmm1zqyOOqdjYzJWXKV/G+kDi3jcUXqMQMqM5YID1VvyE3OB46nTualAVri3XsAuvvBjqD4TnABfWbfCqiWs5QggC1RQdL8idpGXise3r3R96GLpFHohQbZb1Wc25WzG48p5x056Ivg6hand6LaiwuUJ+73zpuj2Fp0znpMMx0IpuQCO8AgTr+P4UYnDHMLMF3tflsbTCZaqvi+dXWQYTW4rgzSdkPMA3A0KnUEfTymU4m8u0X0fhp/aDwP0l0HfxlLhvvjwP0lxOfjJyaY+CSamDEmslaL7yQkH3klgBGlc7ywZX5xQUdDpJAyC7R7wppKZLNBAx1MR7FfaRQ6x6psBAo0UGxWaNeQJjXjFrj4o5iE6nGUUeNAFNjCN1B4TIE1cH7okXxeK1eRG8edBwTozUxCGpdcoUv7IPatURd8mlr6eMjemkxuXjlq1DM+mrHZRqSZucI6OJUt7d3W+mWnluveSQb+Am9guH0FvlU081rtdqzt5sRYdwmzh8PhswVmbLoMyoiEH4iNbyMuTrptx8Hf8ptz1foCj3+y4oM6qWFPEJkZ7C+VWXS+nMTh6xGlhae3JgadLM4/aGkDmQNlOU6Zh26Hy8p5F0pwVOhiqtKizNSRlyZiC4DIrFSeZUsRfuj4c7luVP5PFjjq4+MUwiL3XiRZYopNtuaTaHs+Y2+kuYZ1AIYG+4YHbuIO4hqNGWHwhIuoG17A6+Q/CL5L+DLrOSf7RUBrqYXE0iOVpWuR3Q2mzT0Dow1rZdG78w+k9UpVXNAgCz5dGBDi9vWeC8Dr4jMPZO+4uFzN8hPRTxnFIl6hLJlC5kDBlfXQ6Agznzx/ltpLuOb6TU86BnFnV2BIDXyFz1rX23nHVFnYY/EtWR3Lsz5dS4OgHIG+t9BOOG9ppx+FydUXhy2cfyt9JZX8ZDCUwGDX3Di3ZYL/eEX8ZWXp4+HMnTkIRJC0Km8cSNTeSEVAhMDJsYMGELIZdoiZHNEIfajAya7iQEmu4hQLiRoIACHxHKCAigRMaTtGtGVcgI8aPOiuQo0laRhAkomrgvdEy1mpgh1R4ycvGmK3RpliAJ1nC8c1DIV3SxHZpMTAUgNxqZrYXCNUbKilj2AEmc3Jk6+Ga7SOLO9tSSdO8xVcUyFcwYFxnFxYZL2B9YuKU/YZC1lqdcFNc4IbTMPP5QOKxftcr1GLVAAmp6uTsmXrpmTd4TxA5gL5zU6hVhdbMbes8443Uz4iswvZ69QjNo1s7Wv32tO04RWFOqrkaKwaw7jynGcbVhXqZt2qM9+3Mxa/zmvD1aw/Ku5FJFl3D0oLD0rzSo07TfKubDFZw9MWhhTg6Zh1MxuTomKNVS65W1A2NhcecyMTgwNfpNmDdLxzNOWErI4ViXpVFZXNOxHWBtbWeq8UxFSvQWpTqoxCC5YoqkAc2Bt6iecHBh7DQNffa4PKdRwpRhabA0xUJG+mcLtmXe/eN48spWUxsY9bFEJUXKM7KAGBFr5h9RrfnOcTedFxZ0qIzra6ixsD26XJ3NrTnU3l4eI5PVjC+/wD7Z/CGpwOG9/8A2z+EIhjy9PHwSTBkCZISKtBzJCRfeOID7SaBvCtAQgyFvJjaChBtFQSmODrGWIbwUNXbaQVpCqY14QCgyOeRvGvGTlgI8YR5vXIUa0eKIHWa3C+XnMlZqcMfKAe8xZeNML26jBUCRcazqcHjPsKU2RMzVsxYgkk5COoezecxwrFKNCdTsdTN/wC19QICCBfW2us4s5u6d2NmnP8AFFevUes987sW12F9h5CDo0geqy2217J0BphxBPw8gFjbKvfrCeK2q0cERqG8jMjpThgSjWs3unw3nTUWFrE+fPxmF0jv1L8iZeF7Z59xhU1sAP1eWUaVjIV2uAfI+I5+f95rZtlvTUSFAmEmIqJqLlfAkTRwnEUfQmzdknLDS8eSXqr4EiwkwYst5m0oBaXcLinNl94g6do8/wBbwX2UmWOH4Zru+UsKdNqht2IpY/SUzyVOMVMq5FKgs2Zxa2Y8tphgC99u7lD4uuzvmI1ve3KVxN8JqOXO7o+HHXP+mfwklkcN75/kP1Ekg1hl6vHxMyayAEkBJq4i+8cQbHWTU6xaE9O+0AIZ9oK0IL6cCFg7wl4UQ4jqNZEGSWJRqu8iZKsdZCEI95EmOZC0dJzgEe0uUuH1HTOqXS+W+ZRc3tYDnqZdwfRnGVtKdAsbXtnpqxGuwZgTtym9snrmYtorTV4t0fxeECtiaJpBzZc7ISxAueqCTMuE1fCSWXsJt5yiJfwpBGg7B521k5Lx9X8JWyMOydHhsTectNXAVSR3iY54/bowy+nU4apfaXmAYEHmNRMDCVCu+g+suDFC/VN+6YN5UQjISDqAbA9omHxytchd7azS4njTbQWFr6ic2zZiSd7zTCfbPKoLJGqadzYMGGXK4DKewkd28YCEamHFjNUa6VcTxKo2hqOLadV2X5A2lQ4tj75FQfxi7DwbcesLiOHsDpr4a/OSw/D2J62g+cvcZfHK1pYD2mQHUqQCDcHQ7A98KcWQfdOh1LEKoPZcxxTCpoOUxXqMTZjtoAeQmcxmVbZZXGadLga5qMFz01JNhnqogv3k6Cei8G4I4p1adRAr1MI9yCGUh1IFmGh/8njuE1a52GpnVdH+k1agtXKQxqJkX2hZvZrqOqL9h+QheO/TL52sHiOGyMR2G0pMLS7icQGJvv2yoxufOaTxnfRML7zfyH6iOhj4Yddv9M/USNOTfV4+CSSmRjgxLgT7x0OsjVipQH2K50grwr7QMUOiMskYzNE0KCBk13gs0mrRaNGu2sgGkaraxgY5CEJjyEnaFDH9trcXHXzjsGt7WnonCemlPOi1yhphsxa1nQAZuqdxqJ5xl0011tIqhM0zxmXVYR0v+IHHRjsTmW3s6dNaahTcHUszeJJHpOWKQtRLbXtHD2tppe/ytKk+M1CyCtLuBGh8ZVWpYW56H0v/AHlzBtceGkMvBj6sy/wprEyhJ0KpQ3meU3Gsuq6RHGx+gmhS12P0mKla9ppYStMbi2mSPE6dkJuCT1SCNQN7ic4yZWM7KmmfkGI1AO17aEzlceLGxADISGI+815cK1XYSdKRBvAPXsSJWtlMtLlSEo09QJnHFG0sYXiAuM+n8X94viqZS1p1U6tpROERtxr3c/KHq46nsCGPdNjo0iI616yFqebKpB0Rv81hzAOnzhh1RnZf+tTgPQqjlD12ZmOpoq2UKOxyNSe6WOMdB6dQFsI3snGuR2LU37rnVT6ib7qQQwOhFxUXUMO+WaVW++jfI94nfjjjY4crZXhuPoVKTslVDTqIbMjbjv7weRgkaenf4h8ISrTXEG4eiQjFd2puba+DW9TPPRh6I+8/oJhnj8bpU77Phveb+T8Y1OTV6aklSxLDLqBaCTaZVrBSYwMheOJKtoVZKhIta+t/KEpug5N6/lAHqbQJh3qJ2N6/lBh6fYfX8oQ7UrR22kTiE5KT5/lGNYfA0C+SBMmhgzVX4D6x/bL8B/5Q0fyRfeOJE1B8J9Yvaj4fnAbEks0D7X+H5yQvA2TSrZf+Qb0k1xNr6b38ryveK83c21lsRcW7ba+EhUe/LS0CDJrAJhhcG2wA8bQ+B5+UAFMuYakV35221ivhz0YCdVgOjuSg9Ssv7V6ZyUz+7Ftz/GflLvRro77O1asv7Q6pTP7v+Jh8Xdy8Z0dajdWud1I+U6eLg63kjPk71HmmGfQd2kv0qtjKNJbMw7GI9DCgzgznddWPjpMFXub32FvKUeK8LNQl6erHdNAO8r3wfDagBs23d8ptU2uBJx6vZ2dOILlCUOmtyp0II/8AYREUzpuJ4OlVHXFm5Otgw8+c5rE4R6J3zpuHAO3f2Gb3jsm2czmyOHHdbwjfZQPuiOtZWFr8pBLLoNT4zLtvMp/pbwHC1qPY9VRuRv4CdhhkWmoRRZVFgJznD+qAed50uHYMBM8tqkjT4XilpsKbj9jUNlJ2p1D93uU8uwzVrYY09Rql/NDOcdVZSragi02OjXEzUVqNQ3rUtDf95T+6/wDednBybnxrl5sNdwTiSCtQqodc9Jx3Xykg+oE8hVQRftF57TWoZTdfdJsR2XniLvlYjYB2Fu4MRaVzTxjjloV1FoBIQvf0kBOetpdnjgSMe8mqTVb+Mcp3WksOt9ZYKRaG1ZqdxBCnraaKppF9nXsvDQ2r4TDEm6t7p9ZpZO6Uh1fd08NIzu3aYyIcOFzm1BNxbS3dAY7DogGW9zvfs7oVa7jv8byOIrM4AKjTxgNqSJeM6ASyiMOXygaga/5QPaIivBljFCntjWitJRTdzmAjgmKIQAqVCPznb9AeGiqWr1F6lNsqC2jVNy3fbTzPdOHpoXYKouzMFA7WJsB6me08KwS4ailFf3aAEj7z7s3mbzbhx3lulldRecwFTYyZMg+07d9MNdvOGXrv/O3/AGMmBFYZ31t12/7GFVJ4/J+1ejh4JhjrNrCP2m5MwaRIOu02MK+oP60mdXGhUwoYdh7YD7ARuLqe64I7J33AOFUnT9oAzMNuaXHKZ2M4W1NmUi4XUMBuvIzbi5PlPj9ufkx1k4HGdGNS9JSRuaY1I707R3RsPwQZbgAX9Z6Jg0pkBWvTcbVBcr3Zhy8RBcW4I7DOgAfsBHs6o7VOwbu5w5Mb7F8eU8rzxsKyG3ZNDB1CNITFUzrcWZTYgixB7CJTWqAZhp0baoYmUquLOHrpWXdGsw+JD7w/XZLOEqBpm8XtrKw6yTnNx6lcMoYaq6hh3gi88b6Z4RaWLqKosHy1LdhcdYeoJ856r0ecthKBbf2Y37OXynB/4n4LLVp1htUpmm3c6G49Vb+mduXeLg1q2OIQnwA7YZTKtRrenzhKTaTnyi8b2NeK8heOJDU/t2XaP9rqd3rBmIwAhxlUcx+vKMMbWP37SB2iQawGk2rVfjgnrVPjhXgTCBHPU+M/ORzufvGEgrxg+ZviMgCfiMZ3gs8ciMqOAe2TvKvtbDvhBVjuImSlFGjy0FFFFANbowgbF0AdvbKfS5HzAnr6teeMcFrZMRRb4ayehYA/Wex020nTw3UqM/oUGRfaKM5m29o088f33t/mN/2MtrKoKl3JJBzMVsLgnNseyWUOk8rP9q9DD9YfLeaGBR1Af7quEvcXDkZgLeA3lBVPIE2F9BfQc4dGkLj0LgWIYBSG1Jubb+Bna0HDLqL3Fj4dk8w6P4q5ynS073hmIvMPncMtwcmHyx2q8U4MVJemLruV+H8pQw2MenoDdOaPqD5Tq6lQ2JXUjcd0y62Fp17lCFf4dgZ6GGUynbj8ZmP4bQxi3HUqgbi2bw/iHcdewzgeNcGq4ckuuamP3iXKefNT3GdtiKL0m1BUj9aQbYtiSb2JFj3+PbHeKZLx5Li89wta2oMsYfBvinyKOoCM9T7qL49p5CdTVwmHY9fD0s3xBMl/ELYGW6KLTAUIFpjULTAVfGwjx4NUZc3XS/hwAqoosiKFA7hpOb/xDwvtMGzgXajUSoO4Zsjf0ufSdMlRfu6Sj0goiphq6H71Bx5hCR8wJrlOmG9vDXaSRxIExKs57DnVGzSQMAG+cXtLSNNplBbxzBK15MmLSkjEh1kWMih1hohXaBzRqjwLPHIVyWSwtAs0BnhLx6KZBO0Fmk3MiN7RxNpSQMig1sf0Y+WMgoooowUeNFAJ03sQRupDDxBuJ7Hw/EioiOuzqGHmJ4yJ3XQfil0NBj1kJZL80OpUeB+svDLVTZt3QMBj6op03cm2VGPnbQRU3mB0yxtlWkPvddvAe6PXXym9y+MtKY7unM0mvr26zQoNpMyk00MM2k83O7rux8GZyNjblp2QlJx/5AsYU1M2XqgZUC9UWzWJ6zdra79wiNqYWoabgjUX0I2Inf8AB8QHCkHQi/ZPNqDHTXQbC+g15Tp+j2N1yXsb3HnvMOXHca436dvjcUaZSoDdT1WHI84LFICPb0rlbXKqbFW5HwjVLNSYMLgWbyB1t5XmLgMe1JtNVbQpyIM6fxsvlj/Tl5cdVsUOJpUGSuL9jcxM/HYHIbqcynUMOcbFUFIz09UOtuansMFRxbJ1W1TsP4TtxmvHPVZjfQxUqrJpuvYZZrhG1WUnuJqhdSqvZaSxL5qbjtpuP6DKCPaVuN8QNLDVXHvCmQv8zdUfX5ScvDjxwHqqf4R9Ii5iA2HISYtfunPTDzQd7mWSgErVR2GQcHRhJZ5WUyReLTSZdCVKtpBnI9LwZa+pNh84O8abVkueQ9YJnNuz8YgCCLaiPUX9CBojXa525QiU6h2UnykFYjY28IZcVU+IwEiX2Ko3ID+YiTp8Ibm4HgCZBcY47/GSXiJG6+hgehzw6mPeYn5Rxg6Xf6mQHEl5g/Iwn/0k/QgNMKK8UUpBRRRQBxLXD6zU3Dr76nMNbajlFFAPVOH44VEV12dQRf6TkOkFcvXfXZsg8FFv7xRSuT9YrD1USW8O8UU5a6IsASaGKKKqXaQt6S1ScoQVNiIopNVHoPCMX7SkCdyhB9Jm1U5ruNe+/bHij/D/AMkfkfQOGxTUzrqDuDzll2VtRziinoYuTIHLbaReKKaRFCyzA6ZuwRE2Dl3PflWwH9V4opHJ+p4+vNooopgCvIkeUUUk4g0iWiiguItyiUm+vOKKAOLg9xiJiigZxGvFFA0SZHNFFAjZoooo4Vf/2Q=="
+                             src="img/slider/slider_3_griglie.png"
                              alt="Third slide">
                     </div>
                 </div>
@@ -373,9 +455,9 @@
         </div>
     </div>
 </section>
-<br><br>
+<br><br><br/><br/><br/><br/><br/><br/><br/>
 
-<br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 <!-- Posizionare gli elementi nella griglia-->
 <section>
     <div class="container">
@@ -431,12 +513,14 @@
     </div>
 </section>
 
-<br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 <!-- 02 - ALDO NOVARESE -->
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 numero-capitolo"><p>02</p></div>
+            <div class="col-md-4 numero-capitolo">
+                <p> <a id="2">02</a></p>
+            </div>
             <div class="col-md-4"></div>
         </div>
 
@@ -458,13 +542,13 @@
 
             <div class="col-md-2"></div>
             <div class="col-md-6">
-                <img style="height:520px" src="img/aldo.png">
+                <img class="border-radius-2" style="height:520px" src="img/aldo.png">
             </div>
         </div>
     </div>
 </section>
 
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 
 <!-- La classificazione dei caratteri -->
 <section>
@@ -472,66 +556,78 @@
         <div class="row">
             <div class="col-md-5">
                 <h3>La CLASSIFICAZIONE</h3>
-                <h3>dei <span class="titolo-capitolo-blu">CARATTERI</span></h3> <br/>
+                <h3>dei <span class="titolo-capitolo-blu">CARATTERI</span></h3>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 go-bottom">
+                        <h5>Passa il <span style="color:#ff8600">mouse</span> sui caratteri:</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="paragrafi">
+                    <p>Nel 1957 Aldo Novarese si dedicò ad una sua classificazione dei caratteri tipografici
+                        basata sugli stili, ispirata a quella di Maximilien Vox del 1955.
+                    <p>
+                </div>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-1 mr-4" title="LAPIDARI:nascono nella Roma antica, venivano usati per le epigrafi e per le iscrizioni sui monumenti. Hanno grazie triangolari che formano un angolo acuto con la linea di base. Tali grazie erano “causate” da un colpo di scalpello, poiché gli scalpellini romani avevano necessità di creare lettere con terminazione ad angolo retto. Esempi: Trajan, Augustea, Nova-Augustea.">
+                <img style="height:100px" src="img/caratteri/lapidari.png">
+            </div>
+            <div class="col-md-1 mr-4" title="MEDIEVALI:chiamati anche “Gotici”, derivano dalle scritture del Medioevo, e di conseguenza, molto diffusi in quel periodo. Inoltre furono i caratteri tipici del periodo di Gutenberg. Si riconoscono per la particolare forma contrastata e aguzza, che imita la scrittura con la penna d’oca. A causa della loro forma, la lettura risulta alquanto difficile. Esempi: Textura, Schwabacher, Rotunda, Fraktur.">
+                <img style="height:100px" src="img/caratteri/medievali.png">
+            </div>
+            <div class="col-md-1 mr-4" title="VENEZIANI:anche questi derivano dai caratteri romani antichi, ma si differenziano per l’estremità arrotondata delle grazie e le linee più contrastate. Si diffusero intorno alla seconda metà del ‘400 a Venezia, patria dei primi stampatori italiani. Esempi: Garamond, Jenson, Garaldus, Minion.">
+                <img style="height:100px" src="img/caratteri/veneziani.png">
+            </div>
+            <div class="col-md-1 mr-4" title="TRANSIZIONALI:chiamati così perché indicano la transizione tra il Romano Antico e il Romano Moderno, e nascono intorno al ‘700. Le aste non hanno quasi mai inclinazione, e siccome la stampa si faceva più precisa, il contrasto tra le aste è molto netto. Esempi: Baskerville, Times, Magister.">
+                <img style="height:100px" src="img/caratteri/transizionali.png">
+            </div>
+            <div class="col-md-1" title="BODONIANI:sono caratteri con grazie ad angolo retto, che hanno le aste estremamente contrastate. Esempi: Bodoni, Didot, Fenice.">
+                <img style="height:100px" src="img/caratteri/bodoniani.png">
             </div>
 
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="paragrafi">
-                            <p>Nel 1957 Aldo Novarese si dedicò ad una sua classificazione dei caratteri tipografici
-                                basata sugli stili,
-                                ispirata a quella di Maximilien Vox del 1955.
-                            <p>
+                            <p>Attraverso questa classificazione, è possibile riconoscere i caratteri
+                                suddividendoli in <span class="parole-arancioni">dieci</span> famiglie, secondo la
+                                caratterizzazione storica, estetica e stilistica</p>
                         </div>
                     </div>
 
                     <div class="col-md-1"></div>
-
-                    <div class="col-md-1 mr-4">
-                        <img style="height:100px" src="img/caratteri/lapidari.png">
+                    <div class="col-md-1 mr-4" title="EGIZI:Sono riconoscibili per le grazie ad angolo retto. Esempi: Rockwell, Egizio, Landi Echo.">
+                        <img style="height:100px" src="img/caratteri/egiziani.png">
                     </div>
-                    <div class="col-md-1 mr-4">
-                        <img style="height:100px" src="img/caratteri/medievali.png">
+                    <div class="col-md-1 mr-4" title="LINEARI:sono i caratteri più moderni, privi di grazie e presentano aste uniformi, ( oggi chiamati li chiamiamo “sans serif”) . Esempi: Helvetica, Arial, Recta, Microgramma, Forma.">
+                        <img style="height:100px" src="img/caratteri/lineari.png">
                     </div>
-                    <div class="col-md-1 mr-4">
-                        <img style="height:100px" src="img/caratteri/veneziani.png">
+                    <div class="col-md-1 mr-4" title="SCRITTI:sono detti anche calligrafici, poiché imitano la scrittura a mano. Si suddividono in calligrafici legati o non legati. Di questa categoria fanno parte caratteri di diverse epoche. Esempi: Inglese, Juliet, Slogan.">
+                        <img style="height:100px" src="img/caratteri/scritti.png">
                     </div>
-                    <div class="col-md-1 mr-4">
-                        <img style="height:100px" src="img/caratteri/transizionali.png">
+                    <div class="col-md-1 mr-4" title="ORNATI:presentano decorazioni molto evidenti, e per questo generalmente vengono usati come capilettera. Esempi: Romantiques, Carrick.">
+                        <img style="height:100px" src="img/caratteri/ornati.png">
                     </div>
-                    <div class="col-md-1">
-                        <img style="height:100px" src="img/caratteri/bodoniani.png">
-                    </div>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="paragrafi">
-                                    <p>Attraverso questa classificazione, è possibile riconoscere i caratteri
-                                        suddividendoli in
-                                        <span class="parole-arancioni">dieci</span> famiglie, secondo la
-                                        caratterizzazione storica, estetica e stilistica</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-1"></div>
-                            <div class="col-md-1 mr-4 ">
-                                <img style="height:100px" src="img/caratteri/egiziani.png">
-                            </div>
-                            <div class="col-md-1 mr-4">
-                                <img style="height:100px" src="img/caratteri/lineari.png">
-                            </div>
-                            <div class="col-md-1 mr-4">
-                                <img style="height:100px" src="img/caratteri/scritti.png">
-                            </div>
-                            <div class="col-md-1 mr-4">
-                                <img style="height:100px" src="img/caratteri/ornati.png">
-                            </div>
-                            <div class="col-md-1">
-                                <img style="height:100px" src="img/caratteri/fantasia.png">
-                            </div>
-                        </div>
+                    <div class="col-md-1" title="FANTASIA:comprendente caratteri con caratteristiche non classificabili nelle precedenti categorie. Esempio: Ritmo, Estro, Stop.">
+                        <img style="height:100px" src="img/caratteri/fantasia.png">
                     </div>
                 </div>
             </div>
@@ -539,9 +635,9 @@
     </div>
 </section>
 
-<br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
-<!-- 02 - L'anatomia del CARATTERE -->
+<!-- L'anatomia del CARATTERE -->
 <section>
     <div class="container">
         <div class="row">
@@ -550,12 +646,14 @@
                 <h3>del <span class="titolo-capitolo-lilla">CARATTERE</span></h3>
             </div>
         </div>
-
+        </br>
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-10 blu"></div>
+            <div class="col-md-12">
+                <img style="height:230px" src="img/abcdefg.png">
+            </div>
         </div>
-
+        </br>
         <div class="row">
             <div class="col-md-4">
                 <div class="rettangolo pr-2">
@@ -615,14 +713,180 @@
     </div>
 </section>
 
-<br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
+<!-- anatomia parte 1-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="parole-lilla">
+                    APICE
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        È l’intersezione superiore dove congiungono due tratti.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    ORECCHIO
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        È una piccola sporgenza che troviamo nella lettera g. A volte,
+                        a seconda del carattere, è possibile trovarla anche nella lettera o.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    ASTA OBLIQUA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Sono quelle che troviamo nelle lettere (N), (X), (Z), (x) e (z).
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    GRAZIA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        È una proiezione che si estende oltre i tratti principali dei caratteri Serif.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    BARRA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Sono quelle che uniscono direttamente fra loro le aste verticali o le montanti.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    CAPPIO
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Occhiello inferiore della g.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <img style="height:500px" src="img/anatomia_parte_uno.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+</br></br><br/><br/><br/><br/>
+<!-- anatomia parte due -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 vuoto"></div>
+                </div>
+                <div class="row">
+                    <img style="height:750px" src="img/anatomia_parte_due.png">
+                </div>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-3">
+                <div class="parole-lilla">
+                        VERTICE
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Punto d'intersezione più basso della lettera.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                        OCCHIELLO
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Spazio chiuso nella parte superiore della lettera.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                      PANCIA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                       è la convessità che si forma in certe lettere.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    SPERONE
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Breve proiezione appuntita di un'asta o di un tratto di un carattere serif.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    ASTA VERTICALE
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Sono così chiamate propriamente solo quelle delle lettere maiuscole.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    BRACCIO
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Tratto ascendente, orizzontale o diagonale, collegato alla lettera di un'estremità e libero dall'altra.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                    CASSA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Ampio spazio all'interno di una lettera.
+                    </p>
+                </div>
+                <div class="parole-lilla">
+                        CODA O GAMBA
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Prolungamento che di estende da una lettera verso il basso, normalmente sotto la linea di base.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br/><br/><br/><br/><br/><br/>
 <!-- 03 - Differenza tra carattere tipografico e font-->
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 numero-capitolo">
-                <p class="">03</p>
+            <div class="col-md-6">
+                <p class="numero-capitolo"><a id="3">03</a></p>
             </div>
         </div>
 
@@ -634,7 +898,7 @@
                 <p style="color:#27187e" class="titolo-capitolo-blu">FONT</span></p>
             </div>
 
-            <div class="col-md-6"></div>
+            <div class="col-md-4"></div>
         </div>
         </br>
         <div class="row">
@@ -659,7 +923,8 @@
                         COSE da RICORDARE
                     </h1>
                     <p class="testo-bianco">
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        Molti pensano che font sia un termine di origine inglese ma, in realtà la sua origine è francese.
+                        È infatti la trasposizione inglese del termine “fonte”, del francese medievale.
                     </p>
                 </div>
             </div>
@@ -676,18 +941,16 @@
 
                     <div class="col-md-6"></div>
                     <div class="col-md-2">
-                        <img style="weight:100px;height:100px"
-                             src="img/puntini_arancioni.png">
+                        <img style="weight:100px;height:100px" src="img/puntini_arancioni.png">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 <!-- differenza carattere tipografico e font-->
-
 <section>
     <div class="container">
         <div class="row">
@@ -726,8 +989,8 @@
                         <li>
                             L’<span class="parole-arancioni">obliquo</span>, o oblique, è invece la variante inclinata,
                             senza alcuna modifica estetica e funzionale, del font normale.
-                            Per farti capire meglio la differenza con gli italic, ecco un esempio con Garamond, Garamond
-                            Italic e Garamond oblique:
+                            Per farti capire meglio la differenza con gli italic, ecco un esempio con Garamond: Garamond
+                            Italic e Garamond oblique.
                         </li>
 
                         <li>
@@ -742,7 +1005,7 @@
         </div>
     </div>
 </section>
-<br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 <!-- Scegliere una font-->
 <section>
@@ -794,7 +1057,8 @@
         </div>
     </div>
 </section>
-<br/>
+<br/><br/><br/><br/><br/><br/>
+
 
 </br>
 
@@ -802,8 +1066,8 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 numero-capitolo">
-                <p class="">04</p>
+            <div class="col-md-6">
+                <p class="numero-capitolo"><a id="4">04</a></p>
             </div>
         </div>
 
@@ -863,7 +1127,359 @@
         </div>
     </div>
 </section>
-</br></br></br>
+</br></br></br><br/><br/><br/><br/>
+
+<!-- interlinea-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="titolo-capitolo-blu">
+                    INTERLINEA
+                </p>
+                <br>
+                <p class="paragrafi">
+                    L'interinea è la distanza che intercorre tra una linea di composizione del testo e la successiva.</br>
+                    È sempre rapportata al corpo del testo ed entrambi si misurano in punti tipografici,
+                    <span class="parole-arancioni">pt </span> </br>(1pt = 0,352 mm).
+                </p>
+            </div>
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+                <div class="rettangolo pr-4 pt-4 pb-1">
+                    <p class="testo-bianco">
+                        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                    </p>
+                    <p class="interlinea">
+                        8/10 pt
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="paragrafi">
+                        L’interlinea automatica dei software è impostata sul 120% del corpo del carattere, ma
+                        ascendenti, discendenti e l’altezza delle “x”
+                        influiscono su questa percentuale che non può essere considerata identica per tutti i caratteri.
+                        Per questo motivo si può
+                        aumentare o diminuire per migliorare la <span class="parole-arancioni">leggibilità</span> di un
+                        testo in relazione
+                        al tipo di carattere che viene utilizzato. Facendo partica sarà sempre più facile capire se
+                        l'interlinea applicata è giusta o meno.
+                    </p>
+                </div>
+
+                <div class="col-md-4"></div>
+
+                <div class="col-md-4">
+                    <div class="rettangolo pr-4 pt-4 pb-1">
+                        <p class="testo-bianco" style="line-height:18pt">
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
+                            ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        </p>
+                        <p class="interlinea">
+                            8/12 pt
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conteiner">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="paragrafi">
+                            Un testo breve come in titolo può avere un'interlinea negativa, cioè inferiore al corpo del
+                            testo, a condizione che ascendenti
+                            e discendenti non si tocchino tra loro.
+                        </p>
+                        <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+                    </div>
+
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-4">
+                        <div class="rettangolo pr-4 pt-4 pb-1">
+                            <p class="testo-bianco" style="line-height:20pt">
+                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
+                                ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                            </p>
+                            <p class="interlinea">
+                                8/15 pt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+</br></br></br><br/><br/><br/><br/>
+<!-- Lunghezza o giustezza-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="titolo-capitolo-lilla">
+                    LUNGHEZZA
+                </p>
+                <h3>
+                    o GIUSTEZZA
+                </h3>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-2">
+                <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+            </div>
+        </div>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="paragrafi">
+                        La giustezza della riga deve permettere una lettura facile e veloce; righe troppo lunghe
+                        rendono difficile la lettura e ritrovare l'accapo successivo. Il numero ideale di caratteri
+                        per riga varia da <span class="parole-arancioni">60</span> a <span
+                            class="parole-arancioni">72</span>.</br></br>
+                        La giustezza dipende da vari fattori:
+                    <ul class="paragrafi">
+                        <li>La gabbia di impaginazione;</li>
+                        <li>Il formato della pagina;</li>
+                        <li>Il numero di colonne;</li>
+                        <li>L'allineamento del testo;</li>
+                        <li>Ccorpo del testo;</li>
+                        <li>Interlinea del carattere;</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-3"></div>
+
+                <div class="col-md-5">
+                    <div class="rettangolo pr-4 pt-4 pb-1">
+                        <h1 class="luminosità">COSE da RICORDARE</h1>
+                        <h5 style="color:white">SILLABAZIONE</h5>
+                        <p class="testo-bianco">Nello stabilire i margini di una pagina, bisogna considerare il tipo di
+                            pubblicazione:
+                            nelle brossure i margini tendono a essere ridotti per mantenere basso i numeri
+                            delle pagine e contenere i costi, mentre le pubblicazioni ricche di immagini hanno spesso
+                            margini e spazi bianchi più ampi. In questo caso a pesare maggiormente sono le
+                            considerazioni
+                            economiche: brochure proporzionali e strumenti di vendita in genere hanno budget più ampi
+                            rispetto a pubblicazioni scientifiche o di narrativa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </br>
+            <div class="conteiner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="rettangolo pr-4 pt-3">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img style="height:210px" src="img/giustificato_senza_sillabazione.png">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <img style="height:210px" src="img/giustificato_con_sillabazione.png">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <img style="height:210px" src="img/non_giustificato.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</section>
+</br></br></br><br/><br/><br/><br/>
+<!-- Allineamento-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="titolo-capitolo-blu">
+                    ALLINEAMENTO
+                </h3>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+    </div></br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="paragrafi">
+                         Significa dare una direzione alla lettura e un ritmo al testo. </br></br>
+                         Le tipologie di allineamento sono:
+                        <ul class="parole-arancioni">
+                            <li>Bandiera a sinistra o a destra;</li>
+                            <li>A epigrafe o lapidario;</li>
+                            <li>Giustificato o a pacchetto; o sagomato.</li>
+                            <li>Sagomato.</li>
+                        </ul>
+                </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="rettangolo pt-4 pr-4" style="text-align:right">
+                    <h5 style="color:white">BANDIERA a</h5>
+                    <h1 class="luminosità">DESTRA</h1>
+                    <p class="testo-bianco">I testi con la bandiera a destra possono essere usati per piccoli blocchi di testo,
+                        in copertine o manifesti, difficilmente vengono adottati per i testi lunghi. Anche questo non prevede
+                        la sillabazione.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br></br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="rettangolo pt-4 pr-4" style="text-align:center" >
+                    <h5 style="color:white">TESTO a</h5>
+                    <h1 class="luminosità">EPIGRAFE</h1>
+                    <p class="testo-bianco">Normalmente viene usato per i testi brevi a cui dare più enfasi e
+                        anche esso non prevede la sillabazione. Collegando le estremità delle linee si deve
+                        ottenere una figura simmetrica, come una clessidra o un calice.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="rettangolo pt-4 pr-4">
+                    <h5 style="color:white">BANDIERA a</h5>
+                    <h1 class="luminosità">SINISTRA</h1>
+                    <p class="testo-bianco">I testi con la bandiera a sinistra vengono utilizzati per composizioni
+                        dinamiche e possono essere usati per testi più lunghi come ad esempio i libri.
+                        Non prevedono sillabazione e non va usata una giustezza troppo lunga.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </br></br>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="rettangolo pt-4 pr-4" style="text-align:justify">
+                    <h5 style="color:white">TESTO </h5>
+                    <h1 class="luminosità">GIUSTIFICATO</h1>
+                    <p class="testo-bianco">Sono maggiormente usati per i testi lunghi, sono percepiti come blocchi di testo,
+                        molto statici e prevedono la sillabazione. Senza la sillabazione si creerebbero buchi tra le parole
+                        o una riduzione dello spazio tra loro. Per facilitare la lettura e dare ritmo si usano i RIENTRI,
+                        l'inizio del paragrafo sporge in dentro o in fuori rispetto alla giustezza.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-5">
+                <div class="rettangolo pt-4 pr-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 style="color:white">TESTO </h5>
+                            <h1 class="luminosità">SAGOMATO</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img style="height:170px" src="img/sagomato.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br/><br/><br/><br/><br/><br/><br/>
+
+<!-- Gerarchia delle informazioni-->
+<section>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>GERARCHIA delle</h2>
+                <p class="titolo-capitolo-blu">INFORMAZIONI</span></p>
+            </div>
+
+            <div class="col-md-6"></div>
+        </div>
+        </br>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p class="paragrafi">Prima di iniziare un progetto, è basilare capire e decidere la gerarchia delle informazioni:
+                    titoli, sottotitoli, testo introduttivo, didascalie, citazioni ecc.</br>
+                    Qualsiasi soluzione di design può essere definita integrata quando tutte le sue componenti sono correlate in modo chiaro attraverso:
+                    <ul class="paragrafi">
+                        <li> <span class="titoli-testi"> Formato</span>: le proporzioni devono evocare sentimenti appropriati al messaggio che si vuole trasmettere (intimità, allegria, aggressività).</li>
+                <li> <span class="titoli-testi"> Organizzazione del contenuto</span>: deve essere coerente con il formato e con i requisiti delle informazioni da presentare.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="rettangolo pr-2">
+                            <h1 class="luminosità">
+                                COSE da RICORDARE
+                            </h1>
+                            <p class="testo-bianco">
+                                Questi livelli di importanza sono detti gerarchie. Una volta definite, le gerarchie possono essere indicate in vari modi, soprattutto mediante spazio, peso e forma.
+                                Alcune efficaci tecniche per dare enfasi si basano sul >contrasto> che si ottiene dall'alternanza
+                                tra caratteri stretti e larghi, sull'uso del olore e sulla differenza dei pesi del carattere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7"></div>
+                    <div class="col-md-5">
+                        <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</br></br><br/><br/><br/><br/><br/>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="paragrafi">
+                    <ul class="paragrafi">
+                         <li> <span class="titoli-testi">Immagini e caratteri tipografici</span>: devono supportarsi reciprocamente rafforzando il concept, la loro disposizione deve essere coerente sul piano visivo e deve suscitare emozioni.</li>
+                         <li><span class="titoli-testi">Ritmo e sequenza dei contenuti</span>: devono corrispondere alla loro importanza gerarchica, creare alti e bassi visivi per tenere viva l’attenzione.</li>
+                         <li><span class="titoli-testi">Dettagli tipografici o astratti</span>: valutare il modo in cui si rapportano agli elementi compositivi di grande dimensione o alla loro interazione spaziale.</li>
+                         <li><span class="titoli-testi">Qualità fisica</span>: l’esperienza del progetto deve essere valutata in base al mezzo utilizzato cartaceo o elettronico.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <img style="height:500px" src="img/gerarchia.png">
+            </div>
+        </div>
+    </div>
+</section>
+<br/><br/><br/><br/>
+
 <!-- Formattazione -->
 <section>
     <div class="container">
@@ -878,12 +1494,16 @@
         </div>
 
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-7 mb-4">
                 <div class="no-padding">
                     <p class="titolo-capitolo-blu ">tazione </p>
                 </div>
-                <div class="col-md-8 no-padding go-bottom">
-                    <div class="titoli-testi"><p> KERNING (CRENATURA)</p></div>
+                <div class="col-md-7 no-padding go-bottom">
+                    <div class="titoli-testi">
+                        <p>
+                            KERNING (CRENATURA)
+                        </p>
+                    </div>
                     <div class="paragrafi">
                         <p>Regolazione dello spazio tra due lettere all’interno di una parola.</p>
                     </div>
@@ -891,17 +1511,17 @@
             </div>
 
             <!-- Rettangolo lilla -->
-            <div class="col-md-6 rettangolo ">
+            <div class="col-md-4 rettangolo" style="align:center">
                 <div class="row">
-                    <div class="col-md-6 mt-3"><img style="weight:100px;height:100px" src="img/traking.png"></div>
-                    <div class="col-md-6 mt-3"><img style="weight:100px;height:100px" src="img/kerning.png"></div>
+                    <div class="col-md-12 mt-3" style="text-align:center">
+                        <h3 class="luminosità">
+                            LEGATURE
+                        </h3>
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 mt-3 "><img style="weight:100px;height:100px" src="img/legature.png"></div>
-                    <div class="col-md-6 testo-bianco mt-3"><p>Attraverso la funzione del Tracking è possibile allargare
-                        o restringere un paragrafo,
-                        mandare a capo una riga o riportarla nel rigo precedente.</p></div>
+                    <div class="col-md-12 mt-3 ml-5"><img style="height:100px" src="img/legature.png"></div>
                 </div>
             </div>
         </div>
@@ -914,7 +1534,7 @@
                     <p>TRAKING</p>
                 </div>
                 <div class="paragrafi">
-                    <p>Gestioen dello spazio "totale" tra tutte le lettere e le parole di una font.</p>
+                    <p>Gestione dello spazio "totale" tra tutte le lettere e le parole di una font.</p>
                 </div>
             </div>
 
@@ -922,118 +1542,125 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="titoli-testi">
-                            <p> VEDOVE E ORFANE</p>
+                            <p> LEGATURE</p>
                         </div>
                         <div class="paragrafi">
-                            <p>Linee isolate create dai paragrafi che iniziano sull'ultima linea della pagina
-                                precedente,
-                                o di una colonna, sono dette
-                                <spam class="parole-arancioni">VEDOVE</spam>
-                                . Invece, quando un paragrafo termina sulla prima riga di una nuova pagina,
-                                o di una colonna, si ha una riga
-                                <spam class="parole-arancioni">ORFANA</spam>
-                                . La riga che non supera il 30% della giustezza del blocco di testo è da correggere.
-                            </p>
-                        </div>
-                        <div class="titoli-testi"><p> RIGHINO</p></div>
-                        <div class="paragrafi"><p>Riga di fine paragrafo composta da meno di quattro battute.</p></div>
-                    </div>
-
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-3"></div>
-
-                            <div class="col-md-9">
-                                <img style="weight:320px;height:320px" src="img/vedove_orfane.png">
-                            </div>
+                            <p>Duo o più lettere che si fondono per formare un solo carattere.</p>
                         </div>
                     </div>
+
+                     <div class="col-md-2"></div>
+                     <div class="col-md-6">
+                         <div class="rettangolo pt-4">
+                             <img style="height:85px" src="img/kerning_traking.png">
+                         </div>
+                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
+</br></br></br></br><br/><br/><br/>
 <section>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="titoli-testi">
-                    <p> LEGATURE</p>
+                    <p>
+                        VEDOVE E ORFANE
+                    </p>
                 </div>
                 <div class="paragrafi">
-                    <p>Duo o più lettere che si fondono per formare un solo carattere.</p>
+                    <p>Linee isolate create dai paragrafi che iniziano sull'ultima linea della pagina
+                        precedente,
+                        o di una colonna, sono dette
+                        <spam class="parole-arancioni">VEDOVE</spam>
+                        . Invece, quando un paragrafo termina sulla prima riga di una nuova pagina,
+                        o di una colonna, si ha una riga
+                        <spam class="parole-arancioni">ORFANA</spam>
+                        . La riga che non supera il 30% della giustezza del blocco di testo è da correggere.
+                    </p>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="titoli-testi">
+                    <p>
+                        RIGHINO
+                    </p>
+                </div>
+                <div class="paragrafi">
+                    <p>
+                        Riga di fine paragrafo composta da meno di quattro battute.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <img style="height:400px" src="img/vedove_orfane.png">
             </div>
         </div>
     </div>
 </section>
 
-<br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 
 <!-- 05 - Il colore -->
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 numero-capitolo "><p>05 </p></div>
+            <div class="col-md-6">
+                <p class="numero-capitolo"><a id="5">05</a> </p>
+            </div>
             <div class="col-md-6"></div>
         </div>
 
         <div class="row">
-            <div class="col-md-6 titolo-capitolo-blu mb-4"><p> il<span class="titolo-lilla"> colore </span></p></div>
-            <div class="col-md-6"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 paragrafi"><p>Quando si progetta una grafica è necessario prestare molta attenzione
-                alla scelta del <span class="parole-verdi">colore</span>,
-                questo perché, ogni colore ha un significato ben preciso e ci deve essere corrispondenza tra il
-                messaggio che si vuole trasmettere e
-                il colore scelto per enfatizzare questo messaggio.</p>
+            <div class="col-md-6 titolo-capitolo-blu mb-4">
+                <p>
+                    il<span class="titolo-lilla"> colore </span>
+                </p>
             </div>
-
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-9"></div>
-                    <div class="col-md-3">
-                        <img style="weight:100px;height:160px" src="img/puntini_viola.png">
-                    </div>
-                </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <img style="height:100px" src="img/puntini_arancioni.png">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-4 paragrafi"><p>
-                Per questo motivo gioca un ruolo fondamentale <span
-                    class="parole-arancioni">la psicologia del colore </span>
-                che aiuta a capire meglio quale sia il colore da utilizzare nelle diverse situazioni.
-                La psicologia del colore riguarda gli aspetti che influenzano la <span class="parole-verdi">mente</span>
-                e le <span class="parole-verdi">emozioni</span>.
-                La scelta di un colore ha il potere di suscitare un certo tipo di emozioni nelle persone, ad
-                esempio sensazioni di benessere e sicurezza. Alcuni aspetti della
-                psicologia del colore sono anche legati alla simbologia che questi rivestono e ai ricordi ai
-                quali sono associati.<br/><br/> Ma la
-                scelta del colore è un aspetto che riguarda anche la mente. Il colore infatti <span
-                    class="parole-arancioni">stimola </span> il cervello, quando l’occhio percepisce
-                un colore manda degli stimoli al cervello che li recepisce in pochissimi secondi, per questo
-                motivo è importantissimo catturare l’attenzione dell’utente in modo tempestivo.</p>
+            <div class="col-md-4 paragrafi">
+                <p>
+                    Quando si progetta una grafica è necessario prestare molta attenzione alla scelta
+                    del <span class="parole-verdi">colore</span>, questo perché, ogni colore ha un significato
+                    ben preciso e ci deve essere corrispondenza tra il messaggio che si vuole trasmettere e
+                    il colore scelto per enfatizzare questo messaggio.</br></br>
+                    Per questo motivo gioca un ruolo fondamentale <span class="parole-arancioni">la psicologia del colore </span>
+                    che aiuta a capire meglio quale sia il colore da utilizzare nelle diverse situazioni.
+                    La psicologia del colore riguarda gli aspetti che influenzano la <span class="parole-verdi">mente</span>
+                    e le <span class="parole-verdi">emozioni</span>.La scelta di un colore ha il potere di suscitare un certo
+                    tipo di emozioni nelle persone, ad esempio sensazioni di benessere e sicurezza.
+                </p>
             </div>
 
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-9 quadrato-grigio">
-                        <img style="weight:4600px;height:460px" src="img/palette_colori.png">
-                    </div>
-                </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <img style="height:400px" src="img/palette_colori.png">
             </div>
         </div>
-
+    </div>
+    <div class="container">
+            <div class="row">
+                <div class="col-md-4 paragrafi">
+                    <p>
+                        Alcuni aspetti della psicologia del colore sono anche legati alla simbologia che questi rivestono e ai ricordi ai quali sono associati.
+                        Ma la scelta del colore è un aspetto che riguarda anche la mente. Il colore infatti <span
+                            class="parole-arancioni">stimola </span> il cervello,
+                        quando l’occhio percepisce un colore manda degli stimoli al cervello che li recepisce in pochissimi secondi,
+                        per questo motivo è importantissimo catturare l’attenzione dell’utente in modo tempestivo.
+                    </p>
+                </div>
+            </div>
     </div>
 </section>
 
-<br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 
 <!-- Colori RGB e CMYK -->
 <section>
@@ -1066,76 +1693,50 @@
                 </div>
             </div>
 
-            <div class="col-md-1"></div>
+            <div class="col-md-3"></div>
 
-            <div class="col-md-7">
-                <div class="row">
-                    <div class="col-md-6 ">
-                        <img style="weight:300px;height:300px" src="img/RGB.png">
-                    </div>
+            <div class="col-md-5">
+                <div>
+                    <img style="height:330px" src="img/RGB.png">
+                </div>
+             </div>
+        </div>
+    </div>
+    </br></br></br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="titoli-testi">
+                      <p>COLORI <span class="titoli-testi-blu">CMYK</span></p>
+                </div>
 
-                    <div class="col-md-6 ">
-                        <img style="weight:300px;height:300px" src="img/CMYK.png">
-                    </div>
+                <div class="col-md-8"></div>
+            </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="paragrafi">
+                    <p>È l’acronimo per Cyan, Magenta, Yellow e blacK (ciano, magenta, giallo e nero).È un
+                        metodo di colore a 4 canali, detto <span class="parole-arancioni">quadricromia </span>.
+                        A differenza del metodo RGB, si tratta di una tecnica di colore di tipo <span
+                                        class="parole-verdi">sottrattivo</span>: il colore si ottiene dalla differenza
+                        delle luminosità di ogni colore. La somma di 100% di ciano, magenta e giallo non dà origine al nero,
+                        bensì al <span
+                                        class="parole-arancioni">bistro</span>, una tonalità di marrone. Ecco perché è stato aggiunto il nero: per ottenere il colore
+                        nero pieno nei processi di stampa, per aggiungere maggiore contrasto e percezione di profondità e,
+                        infine, per eliminare alcuni difetti dei pigmenti colorati. È il modello di colore utilizzato dalle comuni
+                        stampanti.È utilizzato in prevalenza per la <span class="parole-verdi">tipografia</span>.
+                    </p>
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="titoli-testi">
-                            <p>COLORI <span class="titoli-testi-blu">CMYK</span></p>
-                        </div>
+                <div class="col-md-3"></div>
 
-                        <div class="paragrafi">
-                            <p>È l’acronimo per Cyan, Magenta, Yellow e blacK (ciano, magenta, giallo e nero).È un
-                                metodo di colore a 4 canali, detto <span class="parole-arancioni">quadricromia </span>.
-                                A differenza del metodo RGB, si tratta di una tecnica di colore di tipo <span
-                                        class="parole-verdi">sottrattivo</span>: il colore si ottiene dalla differenza
-                                delle
-                                luminosità di ogni colore.
-                                La somma di 100% di ciano, magenta e giallo non dà origine al nero, bensì al <span
-                                        class="parole-arancioni">bistro</span>, una tonalità di marrone. Ecco perché è
-                                stato
-                                aggiunto il nero:
-                                per ottenere il colore nero pieno nei processi di stampa, per aggiungere maggiore
-                                contrasto e percezione di profondità e, infine, per eliminare alcuni
-                                difetti dei pigmenti colorati. È il modello di colore utilizzato dalle comuni stampanti.
-                                È utilizzato in prevalenza per la <span class="parole-verdi">tipografia</span>.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-1"></div>
-
-                    <div class="col-md-7 ">
-                        <div class="row">
-                            <div class="col-md-12 vuoto"></div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12 vuoto"></div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12 rettangolo pt-4 ">
-                                <div class="testo-bianco"><p>La differenza fra CMYK ed RGB è quella tra due metodi
-                                    diversi di calcolo del colore destinati a due diverse finalità,
-                                    il web e la stampa. La gamma colori CMYK è minore rispetto a quella RGB,
-                                    specialmente nelle tonalità brillanti, fluo e metalliche.
-                                    L’RGB gestisce moltissimi colori che non esistono in CMYK: una conversione di
-                                    un’immagine da RGB a CMYK, in presenza di determinati colori,
-                                    dà un risultato di stampa normalmente più spento, le tonalità di colore su monitor
-                                    cambiano notevolmente rispetto al risultato finale nella stampa.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-9"></div>
-                            <div class="col-md-3">
-                                <img style="weight:100px;height:100px"
-                                     src="img/puntini_arancioni.png">
-                            </div>
+                <div class="col-md-5 ">
+                    <div class="row">
+                        <div>
+                            <img style="height:330px" src="img/CMYK.png">
                         </div>
                     </div>
                 </div>
@@ -1145,13 +1746,15 @@
     </div>
 </section>
 
-<br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 
 <!-- 06 - La stampa -->
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 numero-capitolo "><p>06</p></div>
+            <div class="col-md-6 ">
+                <p class="numero-capitolo"><a id="6">06</a></p>
+            </div>
             <div class="col-md-6"></div>
         </div>
 
@@ -1198,7 +1801,7 @@
     </div>
 </section>
 
-<br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 <!-- Offset -->
 <section>
     <div class="container">
@@ -1306,7 +1909,7 @@
     </div>
 </section>
 
-<br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 <!-- Serigrafia -->
 <section>
     <div class="container">
@@ -1395,9 +1998,10 @@
 
                     <div class="col-md-6">
                         <div class="rettangolo pt-4 pr-3">
-                            <div class="testo-bianco">
-                                <h4>PERCHÈ SCEGLIERE LA STAMPA SERIGRAFICA</h4>
-                                <p>La stampa serigrafica è l’unica tecnologia che permette di scegliere quale <span
+                                <h3 class="luminosità">
+                                    PERCHÈ SCEGLIERE LA STAMPA SERIGRAFICA
+                                </h3>
+                                <p class="testo-bianco">La stampa serigrafica è l’unica tecnologia che permette di scegliere quale <span
                                         class="parole-arancioni">spessore</span> di inchiostro vogliamo ottenere,
                                     e per questo è la più utilizzata in ambito di decorazione industriale. Non solo, è
                                     l’unica che consente si utilizzare
@@ -1406,8 +2010,8 @@
                                     termocromici, fotocromici, retroriflettenti, soft-touch. Inoltre può essere
                                     utilizzata su una grandissima varietà di
                                     <span class="parole-arancioni">supporti</span>, come biciclette e caschi, scarpe,
-                                    borse, tende per esterno, pannelli decorativi in laminato plastico.</p>
-                            </div>
+                                    borse, tende per esterno, pannelli decorativi in laminato plastico.
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -1416,7 +2020,7 @@
     </div>
 </section>
 
-<br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 <!-- Letterpress -->
 <section>
     <div class="container">
@@ -1528,7 +2132,7 @@
         </div>
     </div>
 </section>
-<br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 
 <!-- Digitale -->
 <section>
@@ -1635,181 +2239,17 @@
         </div>
     </div>
 </section>
-
-<br/><br/><br/>
-
-<!-- interlinea-->
+</br></br><br/><br/><br/></br></br><br/><br/><br/>
+<!-- Footer -->
 <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <img style="height:30px" src="img/ondine_lilla.png">
-                <p class="titolo-capitolo-blu">
-                    INTERLINEA
-                </p>
-                <br>
-                <p class="paragrafi">
-                    La distanza che intercorre tra una linea di composizione del testo e la successiva.
-                    È sempre rapportata al corpo del testo ed entrambi si misurano in punti tipografici,
-                    <span class="parole-arancioni">pt.</span>
-                </p>
-            </div>
+    <footer class="bg-light text-center text-lg-start">
 
-            <div class="col-md-4"></div>
-
-            <div class="col-md-4">
-                <div class="rettangolo pr-4 pt-4 pb-1">
-                    <p class="testo-bianco">
-                        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
-                        ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-                    </p>
-                    <p class="interlinea">
-                        8/10 pt
-                    </p>
-                </div>
-            </div>
+        <div class="text-center pt-4 pb-4" style="background-color:#aeb8fe">
+            <h5 style="color:white">Progetto a cura di Alessi Carolina e Migliore Martina</h5>
+            <h5 style="color:white">Abana © 2020</h5>
         </div>
-        <div class="conteiner">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="paragrafi">
-                        L’interlinea automatica dei software è impostata sul 120% del corpo del carattere, ma
-                        ascendenti, discendenti e l’altezza delle “x”
-                        influiscono su questa percentuale che non può essere considerata identica per tutti i caratteri.
-                        Per questo motivo si può
-                        aumentare o diminuire per migliorare la <span class="parole-arancioni">leggibilità</span> di un
-                        testo in relazione
-                        al tipo di carattere che viene utilizzato. Facendo partica sarà sempre più facile capire se
-                        l'interlinea applicata è giusta o meno.
-                    </p>
-                </div>
-
-                <div class="col-md-4"></div>
-
-                <div class="col-md-4">
-                    <div class="rettangolo pr-4 pt-4 pb-1">
-                        <p class="testo-bianco" style="line-height:18pt">
-                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
-                            ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-                        </p>
-                        <p class="interlinea">
-                            8/12 pt
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="conteiner">
-                <div class="row">
-                    <div class="col-md-4">
-                        <p class="paragrafi">
-                            Un testo breve come in titolo può avere un'interlinea negativa, cioè inferiore al corpo del
-                            testo, a condizione che ascendenti
-                            e discendenti non si tocchino tra loro.
-                        </p>
-                        <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
-                    </div>
-
-                    <div class="col-md-4"></div>
-
-                    <div class="col-md-4">
-                        <div class="rettangolo pr-4 pt-4 pb-1">
-                            <p class="testo-bianco" style="line-height:20pt">
-                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt
-                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem
-                                ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-                            </p>
-                            <p class="interlinea">
-                                8/15 pt
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </footer>
 </section>
-</br></br></br>
-<!-- Lunghezza o giustezza-->
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <p class="titolo-capitolo-lilla">
-                    LUNGHEZZA
-                </p>
-                <h3>
-                    o GIUSTEZZA
-                </h3>
-            </div>
-            <div class="col-md-6"></div>
-            <div class="col-md-2">
-                <img style="weight:60px;height:100px" src="img/puntini_arancioni.png"/>
-            </div>
-        </div>
-        <div class="conteiner">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="paragrafi">
-                        La giustezza della riga deve permettere una lettura facile e veloce; righe troppo lunghe
-                        rendono difficile la lettura e ritrovare l'accapo successivo. Il numero ideale di caratteri
-                        per riga varia da <span class="parole-arancioni">60</span> a <span
-                            class="parole-arancioni">72</span>.</br></br>
-                        La giustezza dipende da vari fattori:
-                    <ul class="paragrafi">
-                        <li>La gabbia di impaginazione;</li>
-                        <li>Il formato della pagina;</li>
-                        <li>Il numero di colonne;</li>
-                        <li>L'allineamento del testo;</li>
-                        <li>Ccorpo del testo;</li>
-                        <li>Interlinea del carattere;</li>
-                    </ul>
-                    </p>
-                </div>
-
-                <div class="col-md-3"></div>
-
-                <div class="col-md-5">
-                    <div class="rettangolo pr-4 pt-4 pb-1">
-                        <h1 class="luminosità">COSE da RICORDARE</h1>
-                        <h5 style="color:white">SILLABAZIONE</h5>
-                        <p class="testo-bianco">Nello stabilire i margini di una pagina, bisogna considerare il tipo di
-                            pubblicazione:
-                            nelle brossure i margini tendono a essere ridotti per mantenere basso i numeri
-                            delle pagine e contenere i costi, mentre le pubblicazioni ricche di immagini hanno spesso
-                            margini e spazi bianchi più ampi. In questo caso a pesare maggiormente sono le
-                            considerazioni
-                            economiche: brochure proporzionali e strumenti di vendita in genere hanno budget più ampi
-                            rispetto a pubblicazioni scientifiche o di narrativa.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="conteiner">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="rettangolo pr-4">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="https://i.pinimg.com/564x/73/f6/a0/73f6a006c481518a2af10099ca38346c.jpg">
-                                </div>
-
-                                <div class="col-md-4">
-                                    <img src="https://i.pinimg.com/564x/73/f6/a0/73f6a006c481518a2af10099ca38346c.jpg">
-                                </div>
-
-                                <div class="col-md-4">
-                                    <img src="https://i.pinimg.com/564x/73/f6/a0/73f6a006c481518a2af10099ca38346c.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-</section>
-
-
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
