@@ -16,6 +16,15 @@ scroll-behavior: smooth
     text-align: center;
 }
 
+#anatomia-parte-due {
+    height: 48em;
+    text-align: center;
+}
+
+.space {
+    height: 5em;
+}
+
 @media (max-width:767px) {
     #abcdef {
         height:6em;
@@ -26,6 +35,10 @@ scroll-behavior: smooth
     #anatomia-parte-uno {
         height: 18em;
     }
+    #anatomia-parte-due {
+            height: 30em;
+            margin-left:2em;
+        }
     .mob-pad-right-2 {
         padding-right: 2em;
     }
@@ -37,6 +50,9 @@ scroll-behavior: smooth
     }
     .mob-margin-1 {
         margin: 1em;
+    }
+    .space {
+        height: 1em;
     }
 }
 
