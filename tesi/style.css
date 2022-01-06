@@ -6,13 +6,40 @@ scroll-behavior: smooth
     height: 24em;
     text-align: center;
 }
+#abcdef {
+    height:15em;
+    text-align: center;
+}
+
+#anatomia-parte-uno {
+    height: 32em;
+    text-align: center;
+}
 
 @media (max-width:767px) {
+    #abcdef {
+        height:6em;
+    }
     #my-logo {
         height: 12em;
-        text-align: center;
+    }
+    #anatomia-parte-uno {
+        height: 18em;
+    }
+    .mob-pad-right-2 {
+        padding-right: 2em;
+    }
+    .mob-mar-top-2 {
+        margin-top: 2em;
+    }
+    .mob-hidden {
+        display: none;
+    }
+    .mob-margin-1 {
+        margin: 1em;
     }
 }
+
 
 .sfondo{
     background: url("img/sfondo.portrait1.png");
@@ -106,6 +133,7 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom: 16px;
     padding-left: 20pt;
     border-radius: 20px;
+    margin-top: 1em;
     box-shadow: 20px 20px 20px rgba(179, 187, 255, 0.4)
 }
 
