@@ -2,6 +2,17 @@ html{
 scroll-behavior: smooth
 }
 
+#my-logo {
+    height: 24em;
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    #my-logo {
+        height: 12em;
+        text-align: center;
+    }
+}
 
 .sfondo{
     background: url("img/sfondo.portrait1.png");
