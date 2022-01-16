@@ -25,10 +25,23 @@ scroll-behavior: smooth
     height: 5em;
 }
 
+.space-2 {
+    height:10em;
+}
+
 @media (max-width:767px) {
     #abcdef {
         height:6em;
     }
+    #gerarchia{
+        height:22em;
+    }
+    #allineamento {
+        font-size: 3em;
+    }
+    #informazioni {
+            font-size: 3em;
+        }
     #my-logo {
         height: 12em;
     }
@@ -42,8 +55,15 @@ scroll-behavior: smooth
     .mob-pad-right-2 {
         padding-right: 2em;
     }
+
     .mob-mar-top-2 {
         margin-top: 2em;
+    }
+    .mob-mar-left-2 {
+         margin-left: 4em;
+    }
+    .mob-mar-left-3 {
+         margin-left: 1em;
     }
     .mob-hidden {
         display: none;
@@ -51,9 +71,10 @@ scroll-behavior: smooth
     .mob-margin-1 {
         margin: 1em;
     }
-    .space {
-        height: 1em;
+    .mob-space {
+        height:3em;
     }
+
 }
 
 
@@ -152,7 +173,13 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 1em;
     box-shadow: 20px 20px 20px rgba(179, 187, 255, 0.4)
 }
+.img-giustificato{
+    height:13em;
+}
 
+.gerarchia{
+    height:28em;
+}
 .quadrato{
     background-color: #aeb8fe;
     margin-left: 20;
