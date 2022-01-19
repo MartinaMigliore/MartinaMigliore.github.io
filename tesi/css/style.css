@@ -2,6 +2,10 @@ html{
 scroll-behavior: smooth
 }
 
+.hide {
+    display:none;
+}
+
 #my-logo {
     height: 24em;
     text-align: center;
@@ -34,10 +38,16 @@ scroll-behavior: smooth
         height:6em;
     }
     #gerarchia{
-        height:22em;
+        height:20em;
     }
     #allineamento {
         font-size: 3em;
+    }
+    #vedove{
+        max-height: 21em;
+    }
+    #traking{
+        max-height: 4.4em;
     }
     #informazioni {
             font-size: 3em;
@@ -48,9 +58,43 @@ scroll-behavior: smooth
     #anatomia-parte-uno {
         height: 18em;
     }
+    #serigrafia {
+        max-height: 16.5em;
+    }
+    #fi{
+         max-height: 6em;
+         padding-left: 1em;
+    }
+    #palette{
+        max-height: 23em;
+    }
     #anatomia-parte-due {
-            height: 30em;
-            margin-left:2em;
+         height: 30em;
+         margin-left:2em;
+        }
+    #letterpress{
+          max-height:18em
+    }
+    #digitale{
+           max-height:14em
+    }
+    #footer{
+        font-size: 10pt;
+    }
+    #aldo{
+        height:32em;
+    }
+    #formattazione {
+         font-size: 2.5em;
+    }
+    #tazione{
+         display:inline-block;
+    }
+    #caratteri-aldo{
+          display:inline-block;
+    }
+    #mostra-caratteri{
+          display:inline-block;
         }
     .mob-pad-right-2 {
         padding-right: 2em;
@@ -59,11 +103,22 @@ scroll-behavior: smooth
     .mob-mar-top-2 {
         margin-top: 2em;
     }
+    .mob-mar-top-3 {
+         margin-top: 1em;
+     }
     .mob-mar-left-2 {
          margin-left: 4em;
     }
     .mob-mar-left-3 {
-         margin-left: 1em;
+         margin-left: 0.5em;
+    }
+    .mob-mar-left-4 {
+         margin-left:4em;
+         margin-top:2em;
+    }
+    .lettere {
+          margin:1em;
+          margin-left:10em;
     }
     .mob-hidden {
         display: none;
@@ -71,18 +126,47 @@ scroll-behavior: smooth
     .mob-margin-1 {
         margin: 1em;
     }
+    .mob-margin-2 {
+       margin: 5em;
+    }
+    .mob-margin-3 {
+       margin: 2em;
+    }
+    .mob-margin-4 {
+         margin: 3em;
+     }
     .mob-space {
         height:3em;
+    }
+    .mob-space-2 {
+         height:4em;
+    }
+    .mob-space-neg{
+        margin-top: -4em;
+        }
+    .mob-space-neg-2{
+        margin-top: -1.8em;
+    }
+
+    .mob-space-neg-3{
+         margin-top: -3em;
     }
 
 }
 
+ @media (max-width:1680px) {
+ .nascondi{
+     display:none;
+ }
+
+ }
+
 
 .sfondo{
-    background: url("img/sfondo.portrait1.png");
+    background: url("../img/sfondo.portrait1.png");
     background-size: 100%;
     background-attachment: scroll;
-    background-repeat: repeat;
+
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -129,7 +213,7 @@ h1,h2,h3,h4,h5,h6{
     line-height: 20pt;
 }
 
-.numero-capitolo{
+.numero-cap{
     color: #cdd079;
     font-size: 60pt;
     font-weight: bold;
@@ -254,7 +338,7 @@ h1,h2,h3,h4,h5,h6{
 
 .blu{
     background-color: blue;
-    height:30px;
+
 }
 
 .rosso{
@@ -264,6 +348,10 @@ h1,h2,h3,h4,h5,h6{
 
 .immagine{
     background-color: pink;
+}
+
+.class-caratteri{
+    height:100px;
 }
 
 /* menù*/

@@ -10,7 +10,7 @@ function hamburgerChange(elem) {
 
 function positioning() {
     // elenco menù
-    menu.style.top = (window.innerHeight) / 7; // per far salire il menù
+    menu.style.top = (window.innerHeight) / 10; // per far salire il menù
 }
 
 function showMenu() {
@@ -18,7 +18,7 @@ function showMenu() {
         whiteBackground.style.width = 0;
         menu.style.display = 'none';
     } else {
-        whiteBackground.style.width = '35%'; // per aumentare la sezione bianca
+        whiteBackground.style.width = '23%'; // per aumentare la sezione lilla
         menu.style.display = 'block';
     }
     return true;
