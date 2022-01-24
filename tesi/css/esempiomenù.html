@@ -12,7 +12,7 @@
     <style>
         .navbar-toggler-1 {
             padding: 0.25rem 0.75rem;
-            margin-top:0.5em;
+            margin-top:0.2em;
             font-size: 1.25rem;
             line-height: 1;
             background-color: transparent;
@@ -22,20 +22,32 @@
         }
 
         .spazio{
-        padding: 0.25rem 0.75rem;
+            padding: 0.25rem 0.75rem;
         }
 
+        #bg-light{
+        background-color:#aeb8fe;
+        opacity:0.7;
+        }
 
+        #testo{
+        color:#27187e;
+        font-size:14pt;
+        font-weight:bold;
+        }
 
+        #immagine{
+        background-image:url("../img/hamburgher.PNG");
+        }
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-light bg-light">
+<nav  class="navbar navbar-light" id="bg-light">
     <div class="container-fluid">
 
         <button class="navbar-toggler-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span id="sfondo" class="navbar-toggler-icon"></span>
+            <span id="immagine" class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse spazio" id="navbarNavDropdown">
             <ul class="navbar-nav ml-1">
@@ -43,24 +55,23 @@
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Il layout</a>
+                    <a id="testo" class="nav-link active" aria-current="page" href="#">Il layout</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Aldo Novarese</a>
+                    <a id="testo" class="nav-link active" href="#">Aldo Novarese</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Carattere e font</a>
+                    <a id="testo" class="nav-link active" href="#">Carattere e font</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Gestire un testo</a>
+                    <a id="testo" class="nav-link active" href="#">Gestire un testo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Il colore</a>
+                    <a id="testo" class="nav-link active" href="#">Il colore</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">La stampa</a>
+                    <a id="testo" class="nav-link active" href="#">La stampa</a>
                 </li>
-
             </ul>
         </div>
     </div>
