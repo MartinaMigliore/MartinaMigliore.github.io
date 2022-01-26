@@ -1,53 +1,43 @@
-    html{
-    scroll-behavior: smooth
-    }
+html{
+scroll-behavior: smooth
+}
 
-    .hide {
-        display:none;
-    }
+.hide {
+    display:none;
+}
 
-    #my-logo {
-        height: 24em;
-        text-align: center;
-    }
-    #abcdef {
-        height:15em;
-        text-align: center;
-    }
+#my-logo {
+    height: 24em;
+    text-align: center;
+}
+#abcdef {
+    height:15em;
+    text-align: center;
+}
 
-    #anatomia-parte-uno {
-        height: 32em;
-        text-align: center;
-    }
-    #anatomia-parte-due {
-        height: 48em;
-        text-align: center;
-    }
-    .space {
-        height: 5em;
-    }
-    .space-2 {
-        height:10em;
-    }
+#anatomia-parte-uno {
+    height: 30em;
+    text-align: center;
+}
+#anatomia-parte-due {
+    height: 45em;
+    text-align: center;
+}
+.space {
+    height: 5em;
+}
+.space-2 {
+    height:10em;
+}
+
+#footer {
+    font-size: 10pt;
+    background-color: #aeb8fe !important;
+}
 
 @media (max-width:767px) {
-    #mob-cap-01{
+    .mob-cap {
         font-size:45pt;
-    }
-    #mob-cap-02{
-         font-size:45pt;
-    }
-    #mob-cap-03{
-         font-size:45pt;
-    }
-    #mob-cap-04{
-         font-size:45pt;
-    }
-    #mob-cap-05{
-         font-size:45pt;
-    }
-    #mob-cap-06{
-         font-size:45pt;
     }
     #la{
         font-size:26pt;
@@ -71,10 +61,10 @@
         padding-top: 2em;
     }
     #traking{
-        max-height: 3.6em;
+        max-height: 3em;
     }
     #layout_arancione{
-        max-height:24em;
+        max-height:23em;
     }
     #cmyk{
         max-height: 16em;
@@ -82,171 +72,90 @@
         margin-top: 1em;
     }
     #rgb{
-          max-height: 16em;
-          margin-left: 3.5em;
-          margin-top: 1em;
+        max-height: 16em;
+        margin-left: 3.5em;
+        margin-top: 1em;
     }
     #sagomato{
-           max-height:9em;
-
+       max-height:8.5em;
     }
     #informazioni {
-            font-size: 2.5em;
-        }
+        font-size: 2.5em;
+    }
     #my-logo {
-          height: 12em;
-          margin-top: 4em;
-          margin-left: -14px;
+      height: 12em;
+      margin-top: 5em;
+      margin-left: -18px;
     }
     #anatomia-parte-uno {
-            height: 14em;
-            margin-left: 1.5em;
+        height: 14em;
+        margin-left: 1.5em;
     }
     #serigrafia {
-         max-height: 13.8em;;
+         max-height: 12.6em;;
     }
     #fi{
-         max-height: 5em;
+         max-height:4.5em;
     }
     #palette{
-        max-height: 19em;
+        max-height: 18.5em;
     }
     #anatomia-parte-due {
-         height: 26em;
-         margin-left:2em;
-         margin-bottom: 2em;
+        height: 26em;
+        margin-left:2em;
+        margin-bottom: 2em;
     }
     #letterpress{
-          max-height:15.5em
+        max-height:14.5em
     }
     #digitale{
-           max-height:12em
+        max-height:11em
     }
     #offset{
-            max-height:16em
+        max-height:15em
     }
     #offset2{
-              max-height:7em
-    }
-    #footer{
-        font-size: 10pt;
-    }
-    #footer2{
-         font-size: 10pt;
+      max-height:6em
     }
     #aldo{
-        max-height: 27em;;
+        max-height: 20em;;
     }
     #formattazione {
          font-size: 2.5em;
     }
-    #tazione{
-         display:inline-block;
-    }
-    #caratteri-aldo{
-          display:inline-block;
-    }
-    #mostra-caratteri{
-          display:inline-block;
-    }
-    #mostra-caratteri2{
-          display:inline-block;
-    }
-    #mostra-caratteri3{
-          display:inline-block;
-    }
-    #mostra-caratteri4{
-           display:inline-block;
-    }
-    #mostra-caratteri5{
-          display:inline-block;
-    }
-    #mostra-caratteri6{
-          display:inline-block;
-    }
-    #mostra-caratteri7{
-           display:inline-block;
-    }
-    #mostra-caratteri8{
-            display:inline-block;
+    .inline-block {
+         display:inline-block !important;
    }
-   #mostra-caratteri9{
-            display:inline-block;
+   .titles-pt {
+      font-size:24pt !important;
+      line-height: 12pt !important;
    }
-   #mostra-caratteri10{
-             display:inline-block;
+   .titles-em {
+      font-size:24pt !important;
+      line-height: 1em !important;
    }
-   #chi{
-          font-size:24pt;
-          line-height: 12pt;
+   .lilla {
+        color: #27187e !important;
    }
-   #siamo{
-           font-size:24pt;
-           line-height: 12pt;
-   }
-   #cap-layout{
-          font-size:24pt;
-          line-height: 1em;
-    }
-    #cap-griglie{
-          font-size:24pt;
-          line-height: 1em;
-    }
-    #cap-novarese{
-           font-size:24pt;
-           line-height: 1em;
-    }
-    #elementi-griglia{
-           font-size:24pt;
-           line-height: 1em;
-    }
-    #elementi-griglia2{
-            font-size:24pt;
-            line-height: 1em;
-    }
-    #anatomia2{
-           font-size:24pt;
-           line-height: 1em;
-    }
-    #classificazione{
-            font-size:24pt;
-            line-height: 1em;
-     }
-    #carattere{
-             font-size: 24pt;
-             line-height: 1em;
-    }
-    #font2{
-          font-size:24pt;
-          line-height: 1.2em;;
+    #font2 {
+        font-size:24pt;
+        line-height: 1.2em;;
     }
     #testo2{
-           font-size:24pt;
-           line-height: 1.2em;;
+       font-size:24pt;
+       line-height: 1.2em;;
     }
     #interlinea{
-            font-size:24pt;
-             line-height: 0.2em;;
+        font-size:24pt;
+        line-height: 0.2em;;
     }
     #mob-lilla-margini{
         font-size:30pt;
         line-height: 1em;
     }
-    #mob-lilla-colonne{
+    .subtitles-em {
          font-size:30pt;
          line-height: 1em;
-    }
-    #mob-lilla-esempi{
-          font-size:30pt;
-          line-height: 1em;
-    }
-    #mob-lilla-anatomia{
-           font-size:30pt;
-           line-height: 1em;
-    }
-    #mob-lilla-font{
-           font-size:30pt;
-           line-height: 1em;
     }
      #mob-lilla-lunghezza{
             font-size:30pt;
@@ -263,34 +172,34 @@
    .puntini{
         max-height:4.5em;
    }
-     .mob-pad-right-2 {
-            padding-right: 2em;
-     }
+    .mob-pad-right-2 {
+        padding-right: 2em;
+    }
      .mob-size{
-            font-size:14pt;
-            font-weight: 600;
+        font-size:14pt;
+        font-weight: 600;
      }
      .mob-size-2{
-            font-size:16pt;
-            line-height: 1em;
+        font-size:16pt;
+        line-height: 1em;
      }
      .mob-size-3{
-             font-size:16pt;
-             line-height:0em;
+         font-size:16pt;
+         line-height:0em;
      }
      .mob-size-4{
-             font-size:28pt;
-             line-height:0em;
+         font-size:28pt;
+         line-height:0em;
      }
      .mob-size-5{
-              font-size:28pt;
+        font-size:28pt;
      }
      .mob-cose-da-ricordare{
-            font-size:20pt;
+        font-size:20pt;
      }
     .mob-giustificato{
-          max-height: 11em;
-          padding-top: 0.3em;
+        max-height: 10.5em;
+        padding-top: 0.3em;
     }
     .mob-mar-top-2 {
         margin-top: 2em;
@@ -364,7 +273,6 @@
  .nascondi{
      display:none;
  }
-
  }
 
 
