@@ -9,9 +9,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
   background-color: #aeb8fe;
-  opacity:0.9;
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -47,15 +45,20 @@
 }
 
 .hamburgher{
-    background-color:#aeb8fe
-    font-size:32px;
+    font-size:35px;
     cursor:pointer;
-    color:white;
+    color:#aeb8fe;
     font-weight: bold;
-    margin-left:0.5em;
     position: fixed;
     z-index: 2;
     }
+
+  #menu-mob{
+     position:fixed;
+     background-color:#f0f0f5;
+     height:3.5em;
+     z-index: 1;
+  }
 
 .quadratino{
     background-color:#aeb8fe;

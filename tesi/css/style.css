@@ -61,7 +61,7 @@ scroll-behavior: smooth
         padding-top: 2em;
     }
     #traking{
-        max-height: 3em;
+        max-height: 4.5em;
     }
     #layout_arancione{
         max-height:23em;
@@ -84,44 +84,48 @@ scroll-behavior: smooth
     }
     #my-logo {
       height: 12em;
-      margin-top: 5em;
+      margin-top:6em;
       margin-left: -18px;
     }
     #anatomia-parte-uno {
-        height: 14em;
-        margin-left: 1.5em;
+        height: 13em;
+        margin-left: 1.3em;
     }
     #serigrafia {
-         max-height: 12.6em;;
+         max-height: 13em;;
     }
     #fi{
          max-height:4.5em;
     }
     #palette{
-        max-height: 18.5em;
+        max-height: 18.3em;
     }
     #anatomia-parte-due {
-        height: 26em;
-        margin-left:2em;
+        height: 24em;
+        margin-left:1.5em;
         margin-bottom: 2em;
     }
     #letterpress{
         max-height:14.5em
     }
     #digitale{
-        max-height:11em
+        max-height:11.5em
     }
     #offset{
-        max-height:15em
+        max-height:15.3em
     }
     #offset2{
-      max-height:6em
+      max-height:8em
     }
     #aldo{
         max-height: 20em;;
     }
     #formattazione {
          font-size: 2.5em;
+    }
+    #mob-footer{
+        color:white;
+        font-size:9pt;
     }
     .inline-block {
          display:inline-block !important;
@@ -162,7 +166,7 @@ scroll-behavior: smooth
             line-height: 0.5em;
      }
      #mob-lilla-colore{
-            font-size:35pt;
+            font-size:30pt;
             line-height: 1em;
      }
      #mob-lilla-stampa{
@@ -198,7 +202,7 @@ scroll-behavior: smooth
         font-size:20pt;
      }
     .mob-giustificato{
-        max-height: 10.5em;
+        max-height: 10.3em;
         padding-top: 0.3em;
     }
     .mob-mar-top-2 {
@@ -225,7 +229,7 @@ scroll-behavior: smooth
     }
     .lettere {
           margin:1em;
-          margin-left: 8.5em;
+          margin-left: 8.3em;
     }
     .mob-hidden {
         display: none;
@@ -376,7 +380,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .gerarchia{
-    height:28em;
+    height:27em;
 }
 .quadrato{
     background-color: #aeb8fe;
