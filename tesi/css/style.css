@@ -77,7 +77,7 @@ scroll-behavior: smooth
         margin-top: 1em;
     }
     #sagomato{
-       max-height:8.5em;
+       max-height:8em;
     }
     #informazioni {
         font-size: 2.5em;
@@ -85,7 +85,7 @@ scroll-behavior: smooth
     #my-logo {
       height: 12em;
       margin-top:6em;
-      margin-left: -18px;
+      margin-left: -22px;
     }
     #anatomia-parte-uno {
         height: 13em;
@@ -222,14 +222,17 @@ scroll-behavior: smooth
          margin-top:2em;
     }
     .mob-rettangolo{
+         margin: 1em;
          margin-bottom: 3em;
     }
-    .mob-rettangolo-2{
-          margin-bottom: 2em;
+    .mob-rettangolo-allineamento{
+         margin-bottom: 3em;
+         margin-right:2em;
     }
+
     .lettere {
           margin:1em;
-          margin-left: 8.3em;
+          margin-left: 8em;
     }
     .mob-hidden {
         display: none;
@@ -242,6 +245,8 @@ scroll-behavior: smooth
     }
     .mob-margin-3 {
        margin: 2em;
+       margin-right: 2.5em;
+
     }
     .mob-margin-4 {
          margin: 3em;
