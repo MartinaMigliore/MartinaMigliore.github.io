@@ -50,18 +50,18 @@ scroll-behavior: smooth
         max-height: 8em;
     }
     #gerarchia{
-        height:18em;
+        height:17em;
         margin-bottom: 2em;
     }
     #allineamento {
         font-size: 2.5em;
     }
     #vedove{
-        max-height: 20em;
+        max-height: 19.5em;
         padding-top: 2em;
     }
     #traking{
-        max-height: 4.5em;
+        max-height: 3.6em;
     }
     #layout_arancione{
         max-height:23em;
@@ -69,15 +69,15 @@ scroll-behavior: smooth
     #cmyk{
         max-height: 16em;
         margin-left: 3.5em;
-        margin-top: 1em;
+        margin-top:3em;
     }
     #rgb{
         max-height: 16em;
         margin-left: 3.5em;
-        margin-top: 1em;
+        margin-top:3em;
     }
     #sagomato{
-       max-height:8em;
+       max-height:7em;
     }
     #informazioni {
         font-size: 2.5em;
@@ -98,7 +98,7 @@ scroll-behavior: smooth
          max-height:4.5em;
     }
     #palette{
-        max-height: 18.3em;
+        max-height: 18em;
     }
     #anatomia-parte-due {
         height: 24em;
@@ -115,7 +115,7 @@ scroll-behavior: smooth
         max-height:15.3em
     }
     #offset2{
-      max-height:8em
+      max-height:7em
     }
     #aldo{
         max-height: 20em;;
@@ -226,8 +226,10 @@ scroll-behavior: smooth
          margin-bottom: 3em;
     }
     .mob-rettangolo-allineamento{
-         margin-bottom: 3em;
-         margin-right:2em;
+         margin:2em;
+    }
+    .mob-bottom-neg{
+        margin-bottom:-0.8em;
     }
 
     .lettere {
@@ -246,7 +248,6 @@ scroll-behavior: smooth
     .mob-margin-3 {
        margin: 2em;
        margin-right: 2.5em;
-
     }
     .mob-margin-4 {
          margin: 3em;
