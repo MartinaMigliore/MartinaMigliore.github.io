@@ -175,7 +175,7 @@
 
 <!--menù telefono-->
 <section>
-    <div class="container">
+    <div class="container" id="nascondi2">
         <div class="row">
             <div class="col-12" id="menu-mob">
                 <span class="hamburgher" onclick="openNav()">&#9776;</span>
@@ -263,7 +263,7 @@
             <div class="col-md-6 rettangolo pt-4 pr-3 mob-margin-3">
                 <div class="row">
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità"><a href="#1">01</a></h1>
+                        <h1 class="luminosità">01</h1>
                     </div>
                     <div class="col-md-5">
                         <h4 class="mob-size">COSTRUZIONE di un LAYOUT</h4>
@@ -271,39 +271,18 @@
                             una struttura unitaria.</p>
                     </div>
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità"><a href="#4">04</a></h1>
-                    </div>
-                    <div class="col-md-5">
-                        <h4 class="mob-size">GESTIRE un TESTO</h4>
-                        <p class="testo-bianco">La disposizione delle parti su una pagina stampata/web
-                            deve tener conto di spaziatura, organizzazione visiva, stile, dimensione e formato del lavoro finito.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità"><a href="#2">02</a></h1>
+                        <h1 class="luminosità">02</h1>
                     </div>
                     <div class="col-md-5">
                         <h4 class="mob-size">ALDO NOVARESE</h4>
-                        <p class="testo-bianco">Imparare a conoscere la struttura delle lettere è fondamentale per
-                            capire le differenze e i tratti comuni dei caratteri tipografici.</p>
-                    </div>
-                    <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità"><a href="#5">05</a></h1>
-                    </div>
-                    <div class="col-md-5">
-                        <h4 class="mob-size">Il COLORE</h4>
-                        <p class="testo-bianco">Capire l'importanza dell'uso del colore nella comunicazione visiva e
-                            dell'influenza che
-                            questo esercita nella sfera psicologica. Differenza tra i colori RGB (web) e
-                            CMYK(stampa).</p>
+                        <p class="testo-bianco">Imparare a conoscere la struttura delle lettere è fondamentale per capire
+                            le differenze e i tratti comuni dei caratteri tipografici.</p>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità"><a href="#3">03</a></h1>
+                        <h1 class="luminosità">03</h1>
                     </div>
                     <div class="col-md-5">
                         <h4 class="mob-size">DIFFERENZA tra CARATTERE e FONT</h4>
@@ -311,7 +290,26 @@
                             influenzano maggiormente la scelta della font.</p>
                     </div>
                     <div class="col-md-1 pl-2" style="color:#ffffff">
-                        <h1 class="luminosità"><a href="#6">06</a></h1>
+                        <h1 class="luminosità">04</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="mob-size">GESTIRE un TESTO</h4>
+                        <p class="testo-bianco">La disposizione delle parti su una pagina stampata/web deve tener conto di spaziatura,
+                            organizzazione visiva, stile, dimensione e formato del lavoro finito.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1 pl-2" style="color:#ffffff">
+                        <h1 class="luminosità">05</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="mob-size">il COLORE</h4>
+                        <p class="testo-bianco">Capire l'importanza dell'uso del colore nella comunicazione visiva e dell'influenza
+                            che questo esercita nella sfera psicologica. Differenza tra i colori RGB (web) e CMYK(stampa).</p>
+                    </div>
+                    <div class="col-md-1 pl-2" style="color:#ffffff">
+                        <h1 class="luminosità">06</h1>
                     </div>
                     <div class="col-md-5">
                         <h4 class="mob-size">Le TECNICHE di STAMPA</h4>
@@ -323,6 +321,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <div class="space-2 mob-space"></div>
@@ -2081,14 +2080,14 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <img id="offset2" class="border-radius mob-space-neg" style="weight:130px;height:130px" src="img/2_offset.png">
+                                <img class="border-radius mob-space-neg mob-hidden" style="weight:130px;height:130px" src="img/2_offset.png">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-8"></div>
                             <div class="col-md-4 ">
-                                <img style="height:60px" src="img/puntini_verdi.png">
+                                <img class="mob-hidden" style="height:60px" src="img/puntini_verdi.png">
                             </div>
                         </div>
 
@@ -2099,7 +2098,7 @@
     </div>
 </section>
 
-<div class="space-2 mob-space"></div>
+<div class="space-2 mob-space-3"></div>
 <!-- Serigrafia -->
 <section>
     <div class="container">
@@ -2432,7 +2431,7 @@
     <footer class="bg-light text-center text-lg-start">
 
         <div id="footer" class="text-center pt-4 pb-4">
-            <h5 id="mob-footer" style="color:white">Progetto a cura di Alessi Carolina e Migliore Martina <br/> Abana © 2020</h5>
+            <p id="mob-footer" style="color:white">Progetto a cura di Alessi Carolina e Migliore Martina <br/> Abana © 2020</p>
         </div>
 
     </footer>
