@@ -36,6 +36,9 @@ scroll-behavior: smooth
     line-height: 16pt;
     background-color: #aeb8fe !important;
 }
+.aldo{
+    max-height:2em;
+}
 
 @media (max-width:767px) {
     .mob-cap {
@@ -49,7 +52,7 @@ scroll-behavior: smooth
     }
     #afgx {
         margin-bottom: 1em;
-        max-height: 8em;
+        max-height: 7em;
     }
     #gerarchia{
         height:17em;
@@ -119,8 +122,9 @@ scroll-behavior: smooth
     #offset2{
       max-height:6.5em;
     }
-    #aldo{
-        max-height: 20em;;
+    #aldo-mob{
+        max-height: 27em;
+        margin-top: 2em;
     }
     #formattazione {
          font-size: 2.5em;
@@ -233,7 +237,6 @@ scroll-behavior: smooth
     .mob-bottom-neg{
         margin-bottom:-0.8em;
     }
-
     .lettere {
           margin:1em;
           margin-left: 7.5em;
@@ -404,7 +407,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .ombra{
-    box-shadow: 20px 20px 20px rgba(230, 230, 230,0.4);
+    box-shadow: 15px 15px 15px rgba(230, 230, 230,0.4);
     }
 
 .testo-bianco{
