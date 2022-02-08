@@ -257,6 +257,9 @@ scroll-behavior: smooth
     .mob-margin-4 {
          margin: 3em;
      }
+    .mob-margin-5 {
+         margin: 2em;
+    }
     .mob-space {
         height:3em;
     }
@@ -281,7 +284,10 @@ scroll-behavior: smooth
     .mob-space-neg-5{
          margin-top: -8em;
     }
-
+    #rettangolo-mob{
+        box-shadow: 10px 10px 10px
+        rgba(179, 187, 255, 0.4);
+}
 }
 
  @media screen and (max-width:1600px) {
