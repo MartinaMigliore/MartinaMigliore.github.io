@@ -1,3 +1,4 @@
+
 .testo-tel-menu{
     font-family: 'Calibri',sans-serif;
 }
@@ -53,26 +54,7 @@
     z-index: 2;
     }
 
-  #menu-mob{
-     position:fixed;
-     background-color:#f0f0f5;
-     height:3.5em;
-     z-index: 1;
-  }
 
-.quadratino{
-    background-color:#aeb8fe;
-    border-radius:10px;
-    margin-left:0.5em;
-    margin-top:12px;
-    position: fixed;
-    weight:12px;
-    padding: 0.2em;
-    padding-top: 0;
-    padding-bottom: 0.1em;
-
-    z-index: 1;
-}
 
 .num-cap{
     color: white;

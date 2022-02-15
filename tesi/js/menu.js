@@ -41,11 +41,28 @@ function toggleSubMenu(id) {
     }
 }
 
-/*
-$(window).scroll(function(event) {
-     var scroll = $(window).scrollTop();
-     $(hamburgerOpen).css("top", scroll);
+$(document).ready(function() {
+    var hamburgerOpen = $('#hamburger-open');
+    var overlayContent = $('.overlay-content');
+    var subMenuElem = $('.sub-menu-elem');
+    var closeBtn = $('.closebtn');
+
+    // se siamo nella modalità mobile, chiude la finestra quando seleziona una voce del menù
+    if(window.innerWidth <= 414) {
+        overlayContent.click(function() {
+                closeBtn.trigger('click');
+        });
+    } else {
+        hamburgerOpen.css('z-index', 99999);
+        subMenuElem.click(function() {
+            // chiude la voce di menù
+            var idToToggle = $(this).closest('.menu-list-padding-top').find('.sub-menu').attr('id');
+            toggleSubMenu(idToToggle);
+            // chiude il menù
+            hamburgerOpen.trigger('click');
+        });
+    }
+
 });
-*/
 
 positioning();

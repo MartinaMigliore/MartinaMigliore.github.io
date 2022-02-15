@@ -1,3 +1,9 @@
+
+/* blocca lo scroll orizzontale */
+body, html {
+    overflow-x:hidden;
+}
+
 .numero-capitolo{
     color: white;
     font-size: 30pt;
@@ -78,7 +84,7 @@
     font-weight:bold;
     display: none;
     position: absolute;
-    left:2.5%;
+    margin-left:2.5em;
     margin-top:60px;
     line-height:54px;
     position:fixed;
