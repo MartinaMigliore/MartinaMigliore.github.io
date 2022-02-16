@@ -48,13 +48,12 @@
 .hamburgher{
     font-size:35px;
     cursor:pointer;
+    margin-top: -0.1em;
     color:#aeb8fe;
     font-weight: bold;
     position: fixed;
     z-index: 2;
-    }
-
-
+}
 
 .num-cap{
     color: white;
@@ -71,4 +70,19 @@
   top: 15px;
   right: 35px;
   }
+}
+
+@media (max-width:414px) {
+    .hamburgher {
+        margin-left: 83%;
+        color: white;
+    }
+    .fascia {
+        background-image: url("../img/sottomenu.png");
+        margin-top: 0.5em;
+        background-size: 374px 47px;
+        height: 47px;
+        position: fixed;
+        z-index: 1;
+    }
 }
